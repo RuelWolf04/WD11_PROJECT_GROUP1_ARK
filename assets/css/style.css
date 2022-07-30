@@ -101,7 +101,7 @@ html {
 }
 
 body {
-  background: var(--black-background);
+  background: #f2f2f2;
   overflow-x: hidden;
   
 }
@@ -144,16 +144,33 @@ p {
 }
 
 header {
-	background: var(--black-background);
+	background: url('../img/backgrounds/bg-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	height: 100vh;
   padding-top: 3rem;
+  position: relative;
 }
 
-.navbar {
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #2d2d2d73, #2d2d2d73, #2d2d2d73, rgba(204, 204, 204, 0.452)) ;
+}
+
+
+#navbar {
 	width: 80%;
 	min-height: 50px;
-
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
 }
 
 .navbar--sticky {
@@ -165,3 +182,23 @@ header {
 	width: 100%;
 }
 
+
+#logo {
+  width: 100px;
+}
+
+.nav-links{
+  margin-inline: 0.5rem;
+  color: var(--text-in-black);
+  font-weight: var(--fw-500);
+}
+
+#nav-buttons button {
+}
+
+#nav-buttons #log-in{
+background-color: var(--button-color);
+padding-inline: 20px;
+padding-block: 10px;
+border-radius: 5px ;
+}
