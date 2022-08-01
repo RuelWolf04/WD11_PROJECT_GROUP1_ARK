@@ -45,6 +45,26 @@ body {
 }
 
 
+
+
+header {
+	background: url('../img/backgrounds/bg-3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	height: 50vh;
+
+  position: relative;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
 h1 {
 font-size: var(--fs-100);
 font-weight: var(--fw-700);
@@ -161,134 +181,6 @@ button.normal {
 
 #menu-btn {
   border: none;
-}
-
-
-
-#p-hero {
-  width: 80%;
-}
-
-.hero-button {
-  margin-top: .5rem;
-}
-
-
-/* --------- brands --------- */
-#bike-container {
-  margin: 10px 20px;
-}
-
-
-
-
-
-
-
-
-/* --------- Bikes --------- */
-#popular-bikes {
-  background-color: var(--white); 
-}
-
-.motor {
-  background-color: #eeeeee;
-  border-radius: var(--border-radius-5);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
-  text-align: center;
-}
-
-.motor img {
-  margin-bottom: 1rem;
-  border-radius: var(--border-radius-5);
-}
-
-.motor h4 {
-  font-weight: var(--fw-700);
-}
-
-.motor .star p{
-  font-size: var(--fs-15);
-  font-weight: var(--fw-700);
-}
-
-.motor .star i{
-  font-size: var(--fs-15);
-}
-
-span.h6 {
- display: block;
- font-weight: var(--fw-600);
-}
-
-
-
-/* --------- section banner--------- */
-#banner {
-  background: url(../img/backgrounds/banner.jpg);
-  height: 10rem;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-#banner h2 {
-  font-weight: 600;
-  color: var(--text-in-white);
-  margin-block: 1rem;
-}
-
-#off {
-  color: var(--red);
-}
-
-
-
-
-
-/* --------- section why us --------- */
-#why-us {
-  background-color: var(--black-background);
-}
-
-
-
-#why-us h4.title {
-  text-transform: capitalize;
-  color: var(--white);
-}
-
-.reasons {
- 
-}
-
-.reason {
-display: flex;
-padding: 1rem; 
-background-color: var(--white-background);
-min-width: 200px;
-border-radius: 5px;
-}
-
-.reason i {
-  padding: .3rem .5rem;
-  color: var(--orange-neon);
-}
-
-#reason-brief{
-padding-block: .2rem;
-}
-
-#banner-button {
-  border: 1px solid var(--white);
-  color: var(--white);
 }
 
 

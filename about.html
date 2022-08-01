@@ -25,21 +25,69 @@
 <body>
   
   <header>
-    <nav class="px-5 navbar" id="navbar">
-      <a href="#"><img src="./assets/img/ARK-logo.png" alt="logo " id="logo"></a>
 
-      <div class="d-flex">
-        <a href="#" class="nav-links">Home</a>
-        <a href="#" class="nav-links">Rides</a>
-        <a href="#" class="nav-links">About</a>
-        <a href="#" class="nav-links">Contact</a>
-        <a href="#" class="nav-links">Where to go</a>
-        <a href="#" class="nav-links">FAQ's</a>
+    <section class="top-header">
+      <div class="container d-flex" style="justify-content: space-between">
+        <a class="text-light p">Lorem ipsum dolor sit amet consectetur.</a>
+
+        <a class="text-light p">Lorem ipsum dolor sit amet consectetur.</a>
       </div>
+    </section>
 
-      <div class="d-flex gap-2 align-items-center" id="nav-buttons">
-        <a href="#" class="nav-links">Register </a>
-        <a href="#" class="nav-links" id="log-in">Login</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div style="width: 15%; min-width: 100px;">
+          <a class="" href="#">
+            <img width="100%" src="./assets/img/ARK-logo.png" alt="" />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="menu-btn"
+            
+          >
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo02"
+        >
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active p" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link p" href="#">Rides</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link p" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link p" href="#">Spots</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link p" href="#">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link p" id="nav-login">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -236,7 +284,7 @@
               />
 
               <button class="px-4" type="button">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                Subscribe
               </button>
             </div>
           </div>

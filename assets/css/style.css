@@ -9,9 +9,9 @@
   --fw-400: 400;
 
 
-  --fs-15: .75rem;
-  --fs-14: .70rem;
-  --fs-13: .65rem;
+  --fs-15: 15px;
+  --fs-14: 14px;
+  --fs-13: 13px;
 
 
   --text-in-white: #f8f8f8;
@@ -29,8 +29,8 @@
 
   --transition: all 0.3s ease;
 
-  --border-radius-5: 0.25rem;
-  --border-radius-20: 1rem;
+  --border-radius-5: 5px;
+  --border-radius-20: 20px;
 
   --fs-100: clamp(1.5rem, 4vw, 5rem);
   --fs-50: clamp(1rem, 4vw, 2.5rem);
@@ -46,41 +46,37 @@ body {
 
 
 h1 {
-font-size: var(--fs-100);
+font-size: 3.125rem;
 font-weight: var(--fw-700);
 }
 
 h2 {
-font-size: var(--fs-50);
+font-size: 2.875rem;
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: .6rem;
+  font-size: .75rem;
 }
 .h6 {
-  font-size: .6rem;
+  font-size: .75rem;
 }
 
 p {
-  font-size: .8rem;
-  padding: .5rem 0;
+  font-size: 1rem;
+  padding: .625rem 0;
   margin: 0;
 }
 
 .p {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 a {
 text-decoration: none;
-}
-
-.container {
-width: 90% !important;
 }
 
 
@@ -92,7 +88,7 @@ img {
 button {
   background-color: var(--button-color);
   color: var(--white);
-  padding: .5rem .75rem;
+  padding: 10px 20px;
   border: none;
   transition: var(--transition);
   cursor: pointer;
@@ -104,7 +100,7 @@ button {
 button.card-button {
   background-color: var(--button-color);
   color: var(--white);
-  padding: .15rem 1.5rem;
+  padding: 5px 30px;
   border: none;
   border-radius: 5rem;
   transition: var(--transition);
@@ -118,8 +114,7 @@ button.card-button.variant {
   background-color: transparent;
   color: var(--button-color);
   border: 1px solid var(--button-color);
-  padding: .14rem 1rem;
-  border-radius: 1rem;
+  border-radius: 20px;
   transition: var(--transition);
   cursor: pointer;
   font-weight: var(--fw-600);
@@ -128,7 +123,7 @@ button.card-button.variant {
 
 button.normal {
   background-color: transparent;
-  padding: .5rem 1rem;
+  padding: 10px 20px;
 }
 
 
@@ -142,7 +137,7 @@ button.normal {
 }
 
 .nav-item a {
-  font-size: .75rem;
+  font-size: var(--fs-15);
   font-weight: var(--fw-600);
   color: #2d2d2d;
   transition: var(--transition);
@@ -156,7 +151,7 @@ button.normal {
   color: var(--white);
   background-color: var(--button-color);
   border-radius: var(--border-radius-5);
-  padding: .25rem .5rem;
+  padding: 5px 10px;
 }
 
 #menu-btn {
@@ -170,7 +165,7 @@ button.normal {
 }
 
 .hero-button {
-  margin-top: .5rem;
+  margin-top: 10px;
 }
 
 
@@ -194,10 +189,10 @@ button.normal {
 .motor {
   background-color: #eeeeee;
   border-radius: var(--border-radius-5);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
   text-align: center;
 }
 
@@ -208,11 +203,13 @@ button.normal {
 
 .motor h4 {
   font-weight: var(--fw-700);
+  margin-bottom: .8rem;
 }
 
 .motor .star p{
   font-size: var(--fs-15);
   font-weight: var(--fw-700);
+  
 }
 
 .motor .star i{
@@ -222,6 +219,8 @@ button.normal {
 span.h6 {
  display: block;
  font-weight: var(--fw-600);
+ margin-bottom: .8rem;
+
 }
 
 
@@ -278,12 +277,13 @@ border-radius: 5px;
 }
 
 .reason i {
+  font-size: 1.5rem;
   padding: .3rem .5rem;
   color: var(--orange-neon);
 }
 
 #reason-brief{
-padding-block: .2rem;
+padding: .2rem 1rem;
 }
 
 #banner-button {
