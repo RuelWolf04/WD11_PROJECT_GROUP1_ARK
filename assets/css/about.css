@@ -7,7 +7,7 @@
   /**
    * colors
    */
-  --text-in-black: #f8f8f8;
+  --text-in-black: #fff;
   --button-color: #ff8b00;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
@@ -124,8 +124,6 @@ body {
 
  /* -------------------- custom css------------------------ */
 
- body {
-}
 
 html {
 	font-family: "Lato", sans-serif;
@@ -145,16 +143,17 @@ p {
 }
 
 header {
-	background: url('../img/backgrounds/bg-1.jpg');
+	background: url('../img/backgrounds/bg-3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 	height: 50vh;
   padding-top: 3rem;
   position: relative;
+  z-index: -1;
 }
 
-header::before{
+/* header::before{
   content: '';
   position: absolute;
   top: 0;
@@ -162,10 +161,10 @@ header::before{
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to top, #2d2d2d73, #2d2d2d73, #2d2d2d73, rgba(204, 204, 204, 0.452)) ;
-}
+} */
 
 
-#navbar {
+.navbar {
 	width: 80%;
 	min-height: 50px;
   display: flex;
@@ -194,12 +193,18 @@ header::before{
   font-weight: var(--fw-500);
 }
 
-#nav-buttons button {
-}
 
 #nav-buttons #log-in{
 background-color: var(--button-color);
 padding-inline: 20px;
 padding-block: 10px;
 border-radius: 5px ;
+}
+
+#title{
+font-weight: var(--fw-700);
+color: var(--text-in-black);
+}
+#firstrow{
+  background-color: #979797;
 }
