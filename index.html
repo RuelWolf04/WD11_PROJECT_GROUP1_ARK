@@ -1,194 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARK - Motor Rental</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARK - Motor Rental</title>
+    <!-------------------- bootstrap css --------------------->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css" />
 
+    <!-------------------- custom css --------------------->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-
-
-  <!-------------------- bootstrap css --------------------->
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
-
-
-
-
-  <!-------------------- custom css --------------------->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-
-
-
-  <!-------------------- fontawesome icon --------------------->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-
-
-
-  <!-------------------- header --------------------->
-
+    <!-------------------- fontawesome icon --------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
+    <!-------------------- header --------------------->
     <header>
-      <nav class="container px-5" id="navbar">
-        <a href="#"><img src="./assets/img/ARK-logo.png" alt="logo " id="logo"></a>
+      <section class="top-header">
+        <div class="container d-flex" style="justify-content: space-between">
+          <a class="text-light p">Lorem ipsum dolor sit amet consectetur.</a>
 
-        <div class="d-flex">
-          <a href="#" class="nav-links">Home</a>
-          <a href="#" class="nav-links">Rides</a>
-          <a href="#" class="nav-links">About</a>
-          <a href="#" class="nav-links">Contact</a>
-          <a href="#" class="nav-links">Where to go</a>
-          <a href="#" class="nav-links">FAQ's</a>
+          <a class="text-light p">Lorem ipsum dolor sit amet consectetur.</a>
         </div>
+      </section>
 
-        <div class="d-flex gap-2 align-items-center" id="nav-buttons">
-          <a href="#" class="nav-links">Register </a>
-          <a href="#" class="nav-links" id="log-in">Login</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <div style="width: 15%; min-width: 100px;">
+            <a class="" href="#">
+              <img width="100%" src="./assets/img/ARK-logo.png" alt="" />
+            </a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="menu-btn"
+              
+            >
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarTogglerDemo02"
+          >
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active p" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p" href="#">Rides</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p" href="#">Spots</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p" href="#">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link p" id="nav-login">Login</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-
-
-
-
-
-      <!-- <nav id="navbar" class="navbar" style="display: flex; justify-content: space-between; align-items: center; margin-inline: auto; padding-inline: 100px">
-    <a href="#"><img src="./assets/img/ARK-logo.png" alt="" style="width: 100px"></a>
-
-    <div style="display: flex;">
-    <a href="#" style="text-decoration: none; font-weight: 600; font-size: 18px; color: #6670ff; margiinline: 20px;">Home</a>
-
-    <a href="#" style="text-decoration: none; font-weight: 600; font-size: 18px; color: #6670ff; margin-inline: 20px;">About</a>
-
-    <a href="#" style="text-decoration: none; font-weight: 600; font-size: 18px; color: #6670ff; margin-inline: 20px;">Contact</a>
-
-    <a href="#" style="text-decoration: none; font-weight: 600; font-size: 18px; color: #6670ff; margin-inline: 20px;">Bikes</a>
-  </div>
-  </nav> -->
-
-      <!----------------------end of nav------------------------>
-
-
-
-
     </header>
-
-
-
     <main>
+      <!-------------------- hero --------------------->
 
+      <section class="section-1 p-5" id="hero" >
+        <div class="container p-5">
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center"
+            >
+              <div class="mb-5">
+                <h1>The Number 1 Motor Rental in the Philippines</h1>
+                <p id="p-hero">
+                  If your finding motor/bike to rent you’ve come to the right
+                  place, find your Ride now.
+                </p>
+                <button class="hero-button">Get My Ride</button>
+              </div>
+            </div>
 
-    </main>
-
-
-
-
-
-
-
-    <footer>
-
-
-      <div class="container">
-
-        <!----------------------footer 1st row------------------------>
-
-        <div class="row">
-          <div class="col-lg-7">
-            <h2>Subscribe to our newsletter</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam necessitatibus!</p>
-          </div>
-          <div class="col-lg-5 input-group">
-            <input type="text" class="form-control" placeholder="Email" aria-label="" aria-describedby="basic-addon1">
-            <div>
-              <button class="btn" type="button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+            <div
+              class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center"
+            >
+              <img
+                class="w-100"
+                src="assets/img/motor/yamaha/yamaha-supert-tener-2019/yst.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
-        <div class="row"></div>
-        <div class="row"></div>
-      
+      </section>
+      <!---------------------- end of hero ------------------------>
 
+      <section class="banner" id="banner">
+        <h2>Get <span id="off">50% OFF</span> in Your First Rent</h2>
+        <button class="normal" id="banner-button">Rent now</button>
+      </section>
+      <!---------------------- end of banner section ------------------------>
+
+      <section class="popular-bikes p-5" id="popular-bikes">
+        <div class="container text-center">
+          <div class="row text-center">
+            <h2>ARK Popular Motorcycles</h2>
+          </div>
+          <div class="row my-5 gy-3 justify-content-center">
+            <div class="col-lg-3 col-md-6 col-8">
+              <div class="motor">
+                <div
+                  class="d-flex px-3 pt-3 m-0 star"
+                  style="align-items: center; justify-content: space-between"
+                >
+                  <span class="h6 m-0">Kawasaki</span>
+                  <div class="d-flex" style="align-items: center">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+
+                <img
+                  src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg"
+                  alt=""
+                />
+
+                <div class="pb-3">
+                  <h4>Ninja-400 2019</h4>
+                  <span class="h6">P500/Day</span>
+                  <div
+                    class="input-group d-flex"
+                    style="justify-content: center"
+                  >
+                    <button class="card-button">Ride</button>
+                    <button class="card-button variant">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-8">
+              <div class="motor">
+                <div
+                  class="d-flex px-3 pt-3 m-0 star"
+                  style="align-items: center; justify-content: space-between"
+                >
+                  <span class="h6 m-0">Kawasaki</span>
+                  <div class="d-flex" style="align-items: center">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+
+                <img
+                  src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg"
+                  alt=""
+                />
+
+                <div class="pb-3">
+                  <h4>Ninja-400 2019</h4>
+                  <span class="h6">P500/Day</span>
+                  <div
+                    class="input-group d-flex"
+                    style="justify-content: center"
+                  >
+                    <button class="card-button">Ride</button>
+                    <button class="card-button variant">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-8">
+              <div class="motor">
+                <div
+                  class="d-flex px-3 pt-3 m-0 star"
+                  style="align-items: center; justify-content: space-between"
+                >
+                  <span class="h6 m-0">Kawasaki</span>
+                  <div class="d-flex" style="align-items: center">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+
+                <img
+                  src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg"
+                  alt=""
+                />
+
+                <div class="pb-3">
+                  <h4>Ninja-400 2019</h4>
+                  <span class="h6">P500/Day</span>
+                  <div
+                    class="input-group d-flex"
+                    style="justify-content: center"
+                  >
+                    <button class="card-button">Ride</button>
+                    <button class="card-button variant">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-8">
+              <div class="motor">
+                <div
+                  class="d-flex px-3 pt-3 m-0 star"
+                  style="align-items: center; justify-content: space-between"
+                >
+                  <span class="h6 m-0">Kawasaki</span>
+                  <div class="d-flex" style="align-items: center">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                </div>
+
+                <img
+                  src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg"
+                  alt=""
+                />
+
+                <div class="pb-3">
+                  <h4>Ninja-400 2019</h4>
+                  <span class="h6">P500/Day</span>
+                  <div
+                    class="input-group d-flex"
+                    style="justify-content: center"
+                  >
+                    <button class="card-button">Ride</button>
+                    <button class="card-button variant">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="card-button variant py-1 px-5">
+            See all bikes <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </section>
+      <!---------------------- end of bikes section ------------------------>
+
+      <section class="brands" id="brands">
+        <div class="container-fluid p-5">
+          <div class="row">
+            <div
+              class="d-flex flex-row flex-wrap px-5"
+              style="justify-content: space-evenly; align-items: center"
+            >
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/2000px-Honda_Logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/bmw-logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/Ducati_red_logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/kawasaki-logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/KTM-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/kymco-logo.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/suzuki.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="d-flex justify-content-center"
+                style="width: 80px"
+                id="bike-container"
+              >
+                <img
+                  class=""
+                  src="assets/img/motor/motor-brands/yamaha-logo.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------- end of brands section ------------------------>
+
+      <section class="why-us p-5" id="why-us">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <h4 class="title">Why rent in ark motorcycle rentals?</h4>
+
+            <div class="row reasons g-1 py-2">
+              <div class="col-lg-3 col-md-6 p-1">
+                <div class="reason">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <div id="reason-brief">
+                    <h4>Competitice Price</h4>
+                    <p class="m-0">
+                      Drive the ride you want at a price you can afford!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 p-1">
+                <div class="reason">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <div id="reason-brief">
+                    <h4>Friendly, 24/7 Customer Service</h4>
+                    <p class="m-0">
+                      Drive the ride you want at a price you can afford!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 p-1">
+                <div class="reason">
+                  <i class="fa-solid fa-star"></i>
+                  <div id="reason-brief">
+                    <h4>Top Brands</h4>
+                    <p class="m-0">
+                      Drive the ride you want at a price you can afford!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 p-1">
+                <div class="reason">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <div id="reason-brief">
+                    <h4>Flexible Rentals</h4>
+                    <p class="m-0">
+                      Drive the ride you want at a price you can afford!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------- end of why us section ------------------------>
+    </main>
+    <footer>
+      <!----------------------footer 1st row------------------------>
+      <div class="container-fluid first footer">
+        <div class="container">
+          <div class="row row1 align-items-center">
+            <div class="col-lg-7 col-md-6 col-sm-12">
+              <h2 class="fs-6 m-0" style="line-height: 2rem">
+                Subscribe to our newsletter
+              </h2>
+              <p class="p-0 w-75" style="font-size: 15px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                ipsam necessitatibus!
+              </p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label=""
+                  aria-describedby="basic-addon1"
+                />
+
+                <button class="px-4" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!----------------------footer 2nd row------------------------>
-      <div class="row">
-        <div class="col-lg-4">
-          <div>
-            <img src="./assets/img/ARK-logo.png" alt="">
-          </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut nemo praesentium libero vel iste id.
-            Nesciunt debitis iste inventore!</p>
-        </div>
-        <div class="col-lg-7">
+      <div class="container-fluid second footer">
+        <div class="container py-5">
           <div class="row">
-            <div class="col-lg-4">
-              <h3>Site Map</h3>
-
-              <a href="#">Bikes</a>
-              <a href="#">About</a>
-              <a href="#">Where to go</a>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-3 text-center">
+              <div class="mx-auto" style="width: 75%">
+                <img class="w-100" src="./assets/img/ARK-logo.png" alt="" />
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat!
+              </p>
             </div>
+            <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+              <div class="row p-3">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3">
+                  <h3>Site Map</h3>
+                  <div class="d-flex flex-column">
+                  <a href="#">Bikes</a>
+                  <a href="#">About</a>
+                  <a href="#">Where to go</a>
+                </div>
+                </div>
 
-            <div class="col-lg-4">
-              <h3>Support</h3>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3">
+                  <h3>Support</h3>
+                  <div class="d-flex flex-column">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Help</a>
+                  <a href="#">Privacy Policy</a>
+                  </div>
+                </div>
 
-              <a href="#">FAQ's</a>
-              <a href="#">Help</a>
-              <a href="#">Privacy Policy</a>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3">
+                  <h3>Contact</h3>
+                  <div class="d-flex flex-column">
+                  <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+                  <p class="p-0">Phone: 0912-345-4567</p>
+                  <a href="#">Email: ark.motorental@gmail.com</a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="col-lg-4">
-              <h3>Contact</h3>
-
-              <address>Address: 21 Pio Del Pilar, Makati City
-              </address>
-              <p>Phone: 0912-345-4567</p>
-              <a href="#">Email: ark.motorental@gmail.com</a>
-            </div>
-
           </div>
         </div>
       </div>
-
 
       <!----------------------footer 3nd row------------------------>
-      <div class="row">
-        <div class="d-flex justify-content-space-between align-items-center">
-          <div class="d-flex gap-3">
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+      <div class="container-fluid first footer">
+        <div class="container">
+          <div class="row d-flex align-items-center" style="justify-content: space-between;">
+            
+              <div class="d-flex gap-3 col-lg-6 col-md-6 col-sm-12 col-12 justify-content-center">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+              <p>&copy; 2021 ARK Motorcycle Rentals All Rights Reserved</p>
+            </div>
+          
           </div>
-
-
-
-        <p> &copy; 2021 ARK Motor Rentals All Rights Reserved</p>
+        </div>
       </div>
-      </div>
-      
-
-
-    </div>
-
     </footer>
-
-
 
     <!-------------------- js --------------------->
     <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="./assets/js/index.js"></script>
-
+    <!-- <script src="./assets/js/index.js"></script> -->
   </body>
-
 </html>
