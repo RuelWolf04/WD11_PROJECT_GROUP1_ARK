@@ -123,8 +123,6 @@ body {
 
  /* -------------------- custom css------------------------ */
 
- body {
-}
 
 html {
 	font-family: "Lato", sans-serif;
@@ -193,8 +191,6 @@ header::before{
   font-weight: var(--fw-500);
 }
 
-#nav-buttons button {
-}
 
 #nav-buttons #log-in{
 background-color: var(--button-color);
