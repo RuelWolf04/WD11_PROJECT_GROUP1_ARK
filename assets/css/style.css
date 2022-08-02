@@ -160,9 +160,7 @@ button.normal {
 
 
 
-#p-hero {
-  width: 80%;
-}
+
 
 .hero-button {
   margin-top: 10px;
@@ -319,10 +317,7 @@ padding: .2rem 1rem;
   border: none;
 }
 
-.footer a {
-  font-size: .8rem;
-  color: var(--gray);
-}
+
 
 .footer a i {
   color: var(--black-background);
