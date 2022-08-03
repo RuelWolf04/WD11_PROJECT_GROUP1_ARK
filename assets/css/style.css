@@ -16,7 +16,7 @@
 
   --text-in-white: #f8f8f8;
   --white: #fff;
-  --button-color: #ff8b00;
+  --button-color: #FEB800;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
@@ -34,6 +34,7 @@
 
   --fs-100: clamp(1.5rem, 4vw, 5rem);
   --fs-50: clamp(1rem, 4vw, 2.5rem);
+  --fs-25: clamp(.8rem, 10%, 1.5rem);
 
 }
 
@@ -93,7 +94,7 @@ button {
   transition: var(--transition);
   cursor: pointer;
   font-weight: var(--fw-600);
-  font-size: var(--fs-15);
+  font-size: clamp(.8rem, 20%, 1.1rem);
   border-radius: var(--border-radius-5);
 }
 
@@ -118,7 +119,7 @@ button.card-button.variant {
   transition: var(--transition);
   cursor: pointer;
   font-weight: var(--fw-600);
-  font-size: var(--fs-13);  
+  font-size: var(--fs-25);  
 }
 
 button.normal {

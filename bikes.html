@@ -7,28 +7,412 @@
   <title>ARK - Rides</title>
 
 
+
+
+    <!------------------ custom style css link ----------------------->
+    <link rel="stylesheet" href="assets/css/bikes.css">
+
+
+
+
+
+
   <!------------------ bootstrap css link ----------------------->
-  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/mdbootstrap/css/mdb.min.css">
 
 
-  <!------------------ custom style css link ----------------------->
-  <link rel="stylesheet" href="./assets/css/bikes.css">
 
+  <!------------------ font awesome ----------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
 </head>
-<body style="padding-top: 80px">
-  
+<body>
+  <header>
+
+  <!------------------ header top section ----------------------->
+<section id="section-top-header">
+
+  <div id="container" class="container d-flex align-items-center py-1">
+
+    <div class="d-flex" style="width: 100%; justify-content: space-between;">
+
+      <div class="d-flex">
+        <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
+        <i class="fa-brands fa-instagram mx-1 text-light"></i>
+      </div>
+
+      <div>
+        <p class="text-light p-0 m-0" id="header-email">ARKmotorrentals@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+  <!------------------ header navbar ----------------------->
+  <nav class="navbar navbar-expand-lg navbar-scroll shadow-0" id="navbar">
+
+    <div class="container">
+      <div class="logo-container">
+      <a class="navbar-brand" href="#!"><img src="assets/img/ARK-logo.png" alt=""></a>
+    </div>
+
+      <button class="navbar-toggler" 
+        type="button" 
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto" style="">
+          <li class="nav-item">
+            <a class="nav-link tc" href="#!">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tc" href="#!">Motorcycles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tc" href="#!">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tc" href="#!">Sign In</a>
+          </li>
+          <button id="nav-button" type="button" class="btn btn-dark ms-3">Login</button>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  </header>
+  <main>
+    
+
+  <!------------------ hero section ----------------------->
+
+    <section id="hero">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div id="sub-container" class="">
+          <h1>ARK Motorcycles</h1>
+        </div>
+      </div>
+    </section>
+
+
+
+  <!------------------ bikes section ----------------------->
+
+    <section id="bikes">
+      <div class="container">
+        <div class="row g-3">
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card green mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Kawasaki</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">Ninja-400</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card red mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Honda</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/honda/rs150r-2019/rs-150.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">RS150R</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card maroon mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Yamaha</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/yamaha/mio-sporty-2019/y-mio-sporty.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">Mio Sporty</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card gray mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Yamaha</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/yamaha/yamaha-supert-tener-2019/yst.png" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">Super Tener</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card red mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Honda</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/honda/xrm-125-2019/xrm-125.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">XRM-125</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card dark-green mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Honda</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/kawasaki/w-800-2019/w-800.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">RS150R</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card red mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Honda</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/honda/crf300l/crf300l.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">Mio Sporty</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+
+            <div class="card green mx-auto">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal;">Kawasaki</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+
+              </div>
+              <img src="assets/img/motor/kawasaki/versys 1000/versys1000.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+              <div class="card-footer text-center">
+                <h5 class="card-title">Super Tener</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                <button href="#!" class="btn">Book Now</button>
+                <button href="#!" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </div>
+              
+              </div>
+            </div>
+            
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <h2></h2>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+
+  </main>
+  <footer>
+
+
+
+
+
+  </footer>
+
 
   
-
-
-
-
-
-
   
-
+  
+  
   <!------------------ bootstrap js link ----------------------->
-  <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/mdbootstrap/js/mdb.min.js"></script>
+  
+  <script src="assets/js/index.js"></script>
+
+
+
 
 
 </body>
