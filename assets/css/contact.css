@@ -1,20 +1,27 @@
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
 
   /**
    * colors
    */
-  --text-in-black: #f8f8f8;
+
+  --text-in-white: #f8f8f8;
   --button-color: #ff8b00;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
   --gray: #979797;
-	--red: #f32424;
+	--red: #df4343;
+  --maroon: #803C44;
+  --green: #56B349;
+  --dark-green: #2a473e;
+
+
+
+
+  /* --red: #F90716; */
 	--darker-red: #b20600;
   
 
@@ -26,14 +33,19 @@
    * typography
    */
 
-  --ff-nunito-sans: "Nunito Sans", sans-serif;
-  --ff-poppins: "Poppins", sans-serif;
 
-  --fs-1-title: 1.875rem;
-  --fs-2-subt: 1.5rem;
+   --ff-montserrat: 'Montserrat Alternates', sans-serif;
+   --ff-poppins: 'Poppins', sans-serif;
+
+   /* 30px */
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
   --fs-3: 1.375rem;
   --fs-4: 1.125rem;
-  --fs-5: 0.875rem;
+
+  /* 14px */
+  --fs-5: 0.875rem; 
+
   --fs-6: 0.813rem;
   --fs-7: 0.75rem;
 
@@ -47,158 +59,184 @@
 
   --transition: 0.25s ease;
 
-  /**
-   * spacing
-   */
-
-  --section-padding: 100px;
-
-  /**
-   * shadow
-   */
-
-  --shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
-  --shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
 
 }
-
-
-
-
-
- /* -------------------- Reset ------------------------ */
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-li { list-style: none; }
-
-a { text-decoration: none; }
-
-a,
-img,
-span,
-button,
-ion-icon { display: block; }
-
-button {
-  border: none;
-  background: none;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-address { font-style: normal; }
-
 
 html {
-  font-family: var(--ff-nunito-sans);
   scroll-behavior: smooth;
 }
 
+
 body {
-  background: #f2f2f2;
-  overflow-x: hidden;
-  
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track { background: var(--white); }
-
-::-webkit-scrollbar-thumb {
-  background: var(--black-background);
-  border-left: 2px solid var(--white);
+  font-family: var(--ff-poppins);
+  height: 100rem;
 }
 
 
-
-
- /* -------------------- custom css------------------------ */
-
- body {
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-montserrat);
 }
 
-html {
-	font-family: "Lato", sans-serif;
+p{
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-h1 {
-	margin: 3rem 0 1.38rem;
-	margin-top: 0;
-	font-family: "Lato", sans-serif;
-	font-size: 3.052rem;
-	font-weight: 400;
-	line-height: 1.3;
+i {
+  display: block !important;
 }
 
-p {
-	margin-bottom: 1rem;
+img {
+  width: 100%;
 }
 
-header {
-	background: url('../img/backgrounds/bg-1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
+.tc {
+  text-align: center !important;
+}
+
+.jsb {
+  justify-content: space-between !important;
+}
+
+/* header */
+
+#section-top-header {
+  background-color: #477eff;
+}
+
+#header-email {
+  font-size: var(--fs-6);
+}
+
+/* header navbar */
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: var(--white);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
+
+.logo-container {
+  width: min(200px, 20%);
+}
+
+.nav-link {
+  font-size: var(--fs-5)!important;
+  font-weight: var(--fw-600);
+  color: black;
+}
+
+#nav-button {
+  background-color: var(--button-color);
+  border: none;
+}
+
+
+/* ----------- hero section ------------ */
+
+#hero {
+  background-image: url('../img/backgrounds/motors-bg.jpg');
+  height: min(200px, 20vw);
   background-size: cover;
-	height: 50vh;
-  padding-top: 3rem;
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-header::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to top, #2d2d2d73, #2d2d2d73, #2d2d2d73, rgba(204, 204, 204, 0.452)) ;
+#hero .container {
+  height: 100% !important;
 }
 
-
-.navbar {
-	width: 80%;
-	min-height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: auto;
+#hero h1 {
+  color: var(--text-in-white);
+  font-weight: var(--fw-700);
 }
 
-.navbar--sticky {
-	padding: 1rem;
-	background-color: #f2f2f2;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+#sec1-span{
+  transition: transform 0.3s ease;
 }
 
+#sec1-span:is(:hover, :focus){
+  transform: translateX(10px);
+} 
 
-#logo {
-  width: 100px;
+#section1 i{
+  font-size: 20px !important;
+  color: var(--button-color);
+}
+#section1 a i{
+  font-size: 30px !important;
+  transition: transform 0.20s ease;
+}
+#section1 a i:hover{
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.514);
+  transform: scale(1.2); 
 }
 
-.nav-links{
-  margin-inline: 0.5rem;
-  color: var(--text-in-black);
-  font-weight: var(--fw-500);
+#right-section1 input,
+#right-section1 textarea,
+#right-section1 button{
+  margin-block: 5px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
 }
 
-#nav-buttons button {
+#right-section1 input:focus,
+#right-section1 textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.514) inset;
 }
 
-#nav-buttons #log-in{
-background-color: var(--button-color);
-padding-inline: 20px;
-padding-block: 10px;
-border-radius: 5px ;
+#right-section1 textarea::placeholder,
+#right-section1 input::placeholder{
+  font-size: 18px;
+}
+
+#right-section1-btn{
+  background-color: var(--button-color);
+  color: white;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+#right-section1-btn:hover{
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.514);
+  transform: scale(0.95); 
+}
+
+#rs-1{
+  background-color: #979797;
+  border-radius: 16px;
 }
