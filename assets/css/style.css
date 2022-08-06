@@ -2,9 +2,11 @@
 
 :root {
 
+
   /**
    * colors
    */
+
 
   --text-in-white: #f8f8f8;
   --button-color: #ff8b00;
@@ -32,6 +34,7 @@
   /**
    * typography
    */
+
 
 
    --ff-montserrat: 'Montserrat Alternates', sans-serif;
@@ -85,6 +88,7 @@ p{
   padding: 0 !important;
 }
 
+
 i {
   display: block !important;
 }
@@ -115,6 +119,7 @@ button{
 
 #header-email {
   font-size: var(--fs-6);
+
 }
 
 /* header navbar */
@@ -125,6 +130,7 @@ button{
 .navbar-scroll .navbar-brand {
   color: #262626;
 }
+
 
 /* Color of the navbar BEFORE scroll */
 .navbar-scroll {
@@ -137,6 +143,7 @@ button{
 .navbar-scroll .navbar-brand {
   color: #262626;
 }
+
 
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
@@ -159,6 +166,7 @@ button{
 
 .nav-link {
   font-size: var(--fs-5)!important;
+
   font-weight: var(--fw-600);
   color: black;
 }
@@ -189,6 +197,7 @@ button{
 
 #hero p {
   margin-block: 1rem !important;
+
 }
 
 #hero input {
@@ -211,23 +220,25 @@ button{
   border-radius: .475rem;
 }
 
+
 #hero button.c{
   background-color: var(--button-color);
   color: white;
   padding: 5px 15px;
   border-radius: .475rem;
   margin-top: 11px;
+
 }
 
 #inputG{
   margin: 10px;
 }
 
+
 #inputG button {
   background-color: white;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-
 
 }
 
@@ -245,11 +256,13 @@ button{
   bottom: -7rem;
   border-radius: 1rem;
 
+
 }
 
 #booked button {
   padding: 5px 15px;
   margin-top: 8px;
+
 }
 
 
@@ -272,14 +285,17 @@ button{
   width: 14rem;
 }
 
+
 .card:is(:hover, :focus){
   box-shadow: 0 0 30px rgb(24, 24, 24);
+
 }
 
 
 .jsb p {
   font-size: var(--fs-6);
 }
+
 
 .card-header, .card-footer {
   border: none !important;
@@ -288,6 +304,7 @@ button{
 
 .card img {
   border-radius: 10px;
+
 }
 
 #five-star i{
@@ -295,8 +312,10 @@ button{
   transform: translateY(5px) !important;
 }
 
+
 .card-title {
   font-weight: var(--fw-600);
+
 }
 
 .card-footer p {
@@ -378,6 +397,7 @@ button{
 - bikes button
  */
 
+
 #seeall{
   background-color: var(--button-color);
   border-radius: 1.5rem;
@@ -385,6 +405,7 @@ button{
 
 #seeall a, #seeall a i {
   color: white;
+
 }
 
 
@@ -445,9 +466,11 @@ button{
   font-size: 20px;
 }
 
+
 .review-content p {
   font-size: 14px;
 }
+
 
 #review-card {
   background-color: #83a8ff;
