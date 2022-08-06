@@ -37,8 +37,8 @@
 
 
 
-   --ff-montserrat: 'Montserrat Alternates', sans-serif;
-   --ff-poppins: 'Poppins', sans-serif;
+  --ff-montserrat: 'Montserrat Alternates', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
    /* 30px */
   --fs-1: 1.875rem;
@@ -97,6 +97,7 @@ img {
   width: 100%;
 }
 
+
 button{
   border: none;
   outline: none;
@@ -147,7 +148,7 @@ button{
 
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.808);
+  background-color: rgba(255, 255, 255, 0.854);
 }
 
 /* An optional height of the navbar AFTER scroll */
@@ -161,7 +162,7 @@ button{
 }
 
 .logo-container {
-  width: min(200px, 20%);
+  width: min(200px, 30%);
 }
 
 .nav-link {
@@ -480,3 +481,26 @@ button{
   width: 90%;
   margin-inline: auto;
 }
+
+
+/* ----------- stats section ------------ */
+#stats i{
+  color: var(--button-color) !important;
+}
+
+
+
+/* ----------- newsletter section section ------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+

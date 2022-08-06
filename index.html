@@ -21,6 +21,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <header>
       <!------------------ header top section ----------------------->
@@ -45,7 +46,10 @@
       </section>
 
       <!------------------ header navbar ----------------------->
-      <nav class="navbar navbar-expand-lg navbar-scroll shadow-0" id="navbar">
+      <nav
+        class="navbar navbar-expand-lg navbar-scroll shadow-0 pt-4 pb-2"
+        id="navbar"
+      >
         <div class="container">
           <div class="logo-container">
             <a class="navbar-brand" href="#!"
@@ -71,10 +75,10 @@
                 <a class="nav-link tc" href="#!">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tc" href="#!">Motorcycles</a>
+                <a class="nav-link tc" href="bikes.html">Motorcycles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tc" href="#!">About</a>
+                <a class="nav-link tc" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link tc" href="#!">Sign In</a>
@@ -92,7 +96,6 @@
 
       <section id="hero">
         <div class="container d-flex" style="align-items: center">
-
           <div class="row">
             <div class="col-lg-6 d-flex align-items-center">
               <div class="greeting" style="padding-right: 30px">
@@ -101,7 +104,9 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Quibusdam, ducimus.
                 </p>
-                <button class="b">Choose Ride</button>
+                <button class="b">
+                  <a class="text-white" href="bikes.html">Choose Ride</a>
+                </button>
               </div>
             </div>
             <div class="col-lg-6">
@@ -173,7 +178,6 @@
       </section>
 
       <!------------------ bikes section ----------------------->
-
 
       <section id="bikes" class="pt-5">
         <div class="container pt-5">
@@ -330,10 +334,8 @@
         </div>
       </section>
 
-
       <!------------------ how it works section ----------------------->
       <section id="hiw" class="py-5">
-
         <div class="container">
           <div class="row text-center">
             <h2 class="mb-4">How It Works</h2>
@@ -376,11 +378,9 @@
         </div>
       </section>
 
-
       <!------------------ popular deals section ----------------------->
       <section id="popular-deals" class="pt-5 bg-success">
         <div class="container pt-3">
-
           <div class="row">
             <h2 class="text-center">Most Popular Deals</h2>
 
@@ -704,7 +704,89 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!------------------ stats section ----------------------->
+      <section class="ratings-section py-4 bg-info" id="stats">
+        <div class="container">
+          <div class="row justify-content-space-evenly px-5">
+            <div class="col-lg-3 align-items-center">
+              <div
+                class="Icont d-flex justify-content-center align-items-center mb-1"
+                id="ratings"
+              >
+                <h4 class="m-0 me-1">5</h4>
+                <i class="fa-solid fa-star" style="font-size: 1.5rem"></i>
+              </div>
+
+              <p class="text-center" style="font-weight: bolder">
+                Google Rating
+              </p>
+            </div>
+
+            <div class="col-lg-3 align-items-center">
+              <div
+                class="d-flex justify-content-center align-items-center mb-1"
+              >
+                <h4 class="me-1 m-0">100</h4>
+                <i class="fa-solid fa-motorcycle" style="font-size: 1.5rem"></i>
+              </div>
+              <div class="justify-content-center">
+                <p class="text-center" style="font-weight: bolder">
+                  Bikes Available
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 align-items-center">
+              <div class="d-flex justify-content-center mb-1">
+                <h4 class="me-1 m-0">59</h4>
+                <i class="fa-solid fa-key" style="font-size: 1.5rem"></i>
+              </div>
+              <div class="justify-content-center">
+                <p class="text-center" style="font-weight: bolder">
+                  Rental Outlets
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 align-items-center">
+              <div class="d-flex justify-content-center mb-1">
+                <h4 class="me-1 m-0">150</h4>
+                <i class="fa-solid fa-wrench" style="font-size: 1.5rem"></i>
+              </div>
+              <div class="justify-content-center">
+                <p class="text-center" style="font-weight: bolder">
+                  Repair Shops
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------ newsletter section ----------------------->
+      <section id="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h4>Subscribe to our Newsletter</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate dolorem eaque expedita illo animi tempora cumque,
+                nobis voluptate quos dignissimos.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div>
+                <div class="input-group">
+                  <input type="text" />
+                  <button id="subscribe">Subscribe</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
