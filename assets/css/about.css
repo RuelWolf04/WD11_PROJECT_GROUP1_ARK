@@ -1,222 +1,306 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-  --ff-montserrat: 'Montserrat Alternates', sans-serif;
-  --ff-poppins: 'Poppins', sans-serif;
 
-  --fw-700: 700;
-  --fw-600: 600;
-  --fw-400: 400;
-
-
-  --fs-15: .75rem;
-  --fs-14: .70rem;
-  --fs-13: .65rem;
-
+  /**
+   * colors
+   */
 
   --text-in-white: #f8f8f8;
-  --white: #fff;
   --button-color: #ff8b00;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
   --gray: #979797;
-	--red: #f32424;
+	--red: #df4343;
+  --maroon: #803C44;
+  --green: #56B349;
+  --dark-green: #2a473e;
+
+
+
+
+  /* --red: #F90716; */
 	--darker-red: #b20600;
+  
+
 	--orange-neon: #ff8d29;
 	--orange: #ff5f00;
 
-  --transition: all 0.3s ease;
 
-  --border-radius-5: 0.25rem;
-  --border-radius-20: 1rem;
+  /**
+   * typography
+   */
 
-  --fs-100: clamp(1.5rem, 4vw, 5rem);
-  --fs-50: clamp(1rem, 4vw, 2.5rem);
+
+   --ff-montserrat: 'Montserrat Alternates', sans-serif;
+   --ff-poppins: 'Poppins', sans-serif;
+
+   /* 30px */
+  --fs-1: 1.875rem;
+  --fs-2: 1.5rem;
+  --fs-3: 1.375rem;
+  --fs-4: 1.125rem;
+
+  /* 14px */
+  --fs-5: 0.875rem; 
+
+  --fs-6: 0.813rem;
+  --fs-7: 0.75rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /**
+   * transition
+   */
+
+  --transition: 0.25s ease;
+
 
 }
 
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
+  font-family: var(--ff-poppins);
+  height: 100rem;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--ff-montserrat);
 }
 
-
-
-
-header {
-	background: url('../img/backgrounds/bg-3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-	height: 50vh;
-
-  position: relative;
-  z-index: -1;
+p{
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-
-
-
-
-
-
-
-h1 {
-font-size: var(--fs-100);
-font-weight: var(--fw-700);
+i {
+  display: block !important;
 }
-
-h2 {
-font-size: var(--fs-50);
-}
-
-h4 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: .6rem;
-}
-.h6 {
-  font-size: .6rem;
-}
-
-p {
-  font-size: .8rem;
-  padding: .5rem 0;
-  margin: 0;
-}
-
-.p {
-  font-size: .8rem;
-}
-
-a {
-text-decoration: none;
-}
-
-.container {
-width: 90% !important;
-}
-
 
 img {
   width: 100%;
 }
 
-
-button {
-  background-color: var(--button-color);
-  color: var(--white);
-  padding: .5rem .75rem;
-  border: none;
-  transition: var(--transition);
-  cursor: pointer;
-  font-weight: var(--fw-600);
-  font-size: var(--fs-15);
-  border-radius: var(--border-radius-5);
+.tc {
+  text-align: center !important;
 }
 
-button.card-button {
-  background-color: var(--button-color);
-  color: var(--white);
-  padding: .15rem 1.5rem;
-  border: none;
-  border-radius: 5rem;
-  transition: var(--transition);
-  cursor: pointer;
+.jsb {
+  justify-content: space-between !important;
+}
+
+/* header */
+
+#section-top-header {
+  background-color: #477eff;
+}
+
+#header-email {
+  font-size: var(--fs-6);
+}
+
+/* header navbar */
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: var(--white);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
+
+.logo-container {
+  width: min(200px, 20%);
+}
+
+.nav-link {
+  font-size: var(--fs-5)!important;
   font-weight: var(--fw-600);
-  font-size: var(--fs-13);  
+  color: black;
+}
+
+#nav-button {
+  background-color: var(--button-color);
+  border: none;
 }
 
 
-button.card-button.variant {
-  background-color: transparent;
-  color: var(--button-color);
+/* ----------- hero section ------------ */
+
+#hero {
+  background-image: url('../img/backgrounds/motors-bg.jpg');
+  height: min(200px, 50vw);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hero .container {
+  height: 100% !important;
+}
+
+#hero h1 {
+  color: var(--text-in-white);
+  font-weight: var(--fw-700);
+}
+
+
+
+/* ----------- bikes section ------------ */
+
+#bikes {
+  background-color: var(--black-background);
+  padding: 3rem;
+}
+
+.card{
+  margin-bottom: 10px;
+  width: 14rem;
+}
+
+.card:is(:hover, :focus){
+  box-shadow: 0 0 30px rgb(24, 24, 24);
+}
+
+
+.jsb p {
+  font-size: var(--fs-6);
+}
+
+.card-header, .card-footer {
+  border: none !important;
+  outline: none !important;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+#five-star i{
+  font-size: var(--fs-7);
+  transform: translateY(5px) !important;
+}
+
+.card-title {
+  font-weight: var(--fw-600);
+}
+
+.card-footer p {
+  font-weight: var(--fw-700);
+}
+
+.card-footer button {
+  border-radius: 20px;
+  font-size: calc(13px, 2vw) !important;
+
+}
+
+.card-footer button:nth-child(1) {
+  background-color: var(--button-color);
+  color: white;
+  border: none !important;
+}
+
+.card-footer button:nth-child(1):is(:hover, :focus) {
+ background-color: #f8f8f8;
+ color: var(--button-color);
+ font-weight: var(--fw-600);
+ padding: 10px 15px;
+}
+
+.card-footer button:nth-child(2) {
   border: 1px solid var(--button-color);
-  padding: .14rem 1rem;
-  border-radius: 1rem;
-  transition: var(--transition);
-  cursor: pointer;
-  font-weight: var(--fw-600);
-  font-size: var(--fs-13);  
+  color: #262626;
+  padding: 10px 15px;
 }
 
-button.normal {
-  background-color: transparent;
-  padding: .5rem 1rem;
+.card-footer button:nth-child(2):is(:hover, :focus) {
+  background-color: #f8f8f8;
 }
 
+/* card color */
 
-
-
-/* --------------------- my style -------------------- */
-
-
-.top-header {
-  background-color: var(--blue-for-background-lighter);
+.card p, .card h5 {
+  color: white;
 }
 
-.nav-item a {
-  font-size: .75rem;
-  font-weight: var(--fw-600);
-  color: #2d2d2d;
-  transition: var(--transition);
+.card.green {
+  background-color: var(--green);
+  padding: 5px;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
-.nav-item a:is(:hover, :focus){
-  color: var(--orange-neon);
+.card.red {
+  background-color: var(--red);
+  padding: 5px;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
-#nav-login {
-  color: var(--white);
-  background-color: var(--button-color);
-  border-radius: var(--border-radius-5);
-  padding: .25rem .5rem;
-}
-
-#menu-btn {
-  border: none;
+.card.maroon {
+  background-color: var(--maroon);
+  padding: 5px;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 
-
-
-/* --------- footer --------- */
-.container-fluid.footer {
-  padding-block: 1rem;
-  font-family: var(--ff-poppins);
+.card.gray {
+  background-color: var(--gray  );
+  padding: 5px;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
-.container-fluid.footer h3 {
-  font-size: 1rem;
+.card.dark-green {
+  background-color: var(--dark-green);
+  padding: 5px;
+  border-top-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
-
-
-.container-fluid.first{
-  background-color: #929292;
-
+#ourTeam .container{
+  background-color: #8ed6e2 !important;
+  border-radius: 15px;
 }
-
-
-.row1 input{
-  font-size: .7rem;
-}
-
-.row1 input:focus {
-  border: none;
-}
-
-.footer a {
-  font-size: .8rem;
-  color: var(--gray);
-}
-
-.footer a i {
-  color: var(--black-background);
-  font-size: .8rem;
+.Icont i{
+  font-size: 25px;
+  transform: translateY(5px) !important;
 }
