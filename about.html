@@ -55,42 +55,53 @@
 
 
     <!------------------ header navbar ----------------------->
-    <nav class="navbar navbar-expand-lg navbar-scroll shadow-0 pt-4 pb-3" id="navbar">
-      <div class="container">
-        <div class="logo-container">
-          <a class="navbar-brand" href="#!"><img src="assets/img/ARK-logo.png" alt="" /></a>
-        </div>
-
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto d-flex gap-3" style="">
-            <li class="nav-item">
-              <a class="nav-link tc" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active tc" href="#!">Motorcycles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tc" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tc" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link tc" href="signin.html">Sign In</a>
-            </li>
-            <button id="nav-button" type="button" class="btn btn-dark">
-              <a href="signin.html" class="text-light">Login</a>
-            </button>
-          </ul>
-        </div>
+    <nav
+    class="navbar navbar-expand-lg navbar-scroll py-3"
+    id="navbar"
+  >
+    <div class="container">
+      <div class="logo-container">
+        <a class="navbar-brand" href="#!"
+          ><img src="assets/img/ARK-logo.png" alt=""
+        /></a>
       </div>
-    </nav>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto gap-3" style="">
+          <li class="nav-item">
+            <a class="nav-link tc" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tc" href="bikes.html">Motorcycles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active tc" href="#!">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tc" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tc" href="#!">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-button" class="btn btn-dark">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   </header>
 
@@ -104,6 +115,8 @@
         </div>
       </div>
     </section>
+
+
 
 
 
@@ -128,183 +141,307 @@
             </div>
           </div>
   </section>
-  <!---------------------------end of section 1------------------------------------------------------->
+  <!---------------------end of section 1------------------------------------------>
 
-  <!---------------------------start of section 2------------------------------------------------------->
+
+
+
+
+  <!---------------------start of section 2----------------------------------------->
 
   <section class="section2 justify-content-space-between" id="ourTeam">
     <div class="container">
+
       <h1 class="text-center text-black pt-3 pb-5" style="font-weight: 900;">Our Team</h1>
-      <div class="row justify-content-center">
-        <div class=" d-flex flex-column col-lg-4 justify-content-center align-items-center mb-3">
-          <img src="./assets/img/profile/kerwin.jpg" alt="" class="rounded-circle img-center"">
-          <h5 CLASS=" text-center pt-3 text-black">John Kerwin Oropeza</h5>
-          <h5 CLASS="text-center text-black" style="font-weight: 700;">Graphics UI/UX</h5>
-          <p CLASS="text-center text-black" style="font-weight: 600;">DESIGNER</p>
+
+      <div class="row">
+
+        <div class="mc-container col-lg-4 mb-3">
+          <div class="member-card">
+            <img src="./assets/img/profile/nhold.jpg" alt="">
+            <h5 CLASS="">Arnold Balcena</h5>
+            <h6 CLASS="" style="font-weight: 700;">Front-End</h6>
+            <p CLASS="" style="font-weight: 500;">DEVELOPER</p>
+          </div>
         </div>
-        <div class=" d-flex flex-column col-lg-4 justify-content-center align-items-center mb-3">
+
+        <div class="mc-container col-lg-4 mb-3">
+          <div class="member-card">
+            <img src="./assets/img/profile/ruel.jpg" alt="">
+            <h5 CLASS="">Ruel Lobo</h5>
+            <h6 CLASS="" style="font-weight: 700;">Project Manager</h6>
+            <p CLASS="" style="font-weight: 500;">DESIGNER</p>
+          </div>
+        </div>
+        
+        <div class="mc-container col-lg-4 mb-3">
+          <div class="member-card">
+            <img src="./assets/img/profile/kerwin.jpg" alt="">
+            <h5 CLASS="">John Kerwin Oropeza</h5>
+            <h6 CLASS="" style="font-weight: 700;">Graphics UI/UX</h6>
+            <p CLASS="" style="font-weight: 500;">DESIGNER</p>
+          </div>
+        </div>
+
+
+
+        <!-- <div class=" d-flex flex-column col-lg-4 justify-content-center align-items-center mb-3">
           <img src="./assets/img/profile/ruel.jpg" alt="" class="rounded-circle img-center"">
           <h5 CLASS=" text-center pt-3 text-black">Ruel Lobo</h5>
           <h5 CLASS="text-center text-black" style="font-weight: 700;">Project Manager</h5>
           <p CLASS="text-center text-black" style="font-weight: 600;">DESIGNER</p>
-        </div>
-        <div class=" d-flex flex-column col-lg-4 justify-content-center mb-3">
+        </div> -->
+
+        <!-- <div class=" d-flex flex-column col-lg-4 justify-content-center mb-3">
           <img src="./assets/img/profile/nhold.jpg" alt="" class="rounded-circle img-center">
           <h5 CLASS="text-center pt-3 text-black">Arnold Balcena</h5>
           <h5 CLASS="text-center text-black" style="font-weight: 700;">Front-End</h5>
           <p CLASS="text-center text-black" style="font-weight: 600;">DEVELOPER</p>
-        </div>
+        </div> -->
+
       </div>
     </div>
   </section>
-  <!------------------------end of section 2----------------------------------------->
-
-
-<section id="mav">
-  <!------------------------start of vision ----------------------------------------->
-  <div class="Vison py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-
-        </div>
-
-        <div class="col-lg-6">
-          <h1 class="text-center">Vission of ARK</h1>
-          <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in id
-            dolor, voluptas aspernatur nostrum voluptatem dicta pariatur ipsa repudiandae quis sed suscipit provident
-            asperiores explicabo veritatis adipisci dolorem eligendi. Illo, quis. Reprehenderit porro modi quia tempore.
-            Voluptate, sunt ipsum ea beatae tenetur maxime recusandae totam, neque mollitia, adipisci voluptates!</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!------------------------start of mission ----------------------------------------->
-  <div class="mission py-5">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-6">
-          <h1 class="text-center">Mission of ARK</h1>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in id dolor,
-            voluptas aspernatur nostrum voluptatem dicta pariatur ipsa repudiandae quis sed suscipit provident
-            asperiores explicabo veritatis adipisci dolorem eligendi. Illo, quis. Reprehenderit porro modi quia tempore.
-            Voluptate, sunt ipsum ea beatae tenetur maxime recusandae totam, neque mollitia, adipisci voluptates!</p>
-        </div>
-
-
-        <div class="col-lg-6">
-
-        </div>
+  <!------------------------end of section 2---------------------------------------->
 
 
 
-      </div>
-    </div>
-  </div>
 
-</section>    
- 
-  <!------------------------start  of ratings----------------------------------------->
-      <section class="ratings-section py-4 bg-info" id="stats">
-        <div class="container">
-          <div class="row justify-content-space-evenly px-5 g-3">
-            <div class="col-lg-3 col-md-6 col-6 align-items-center">
-              <div
-                class="Icont d-flex justify-content-center align-items-center mb-1"
-                id="ratings"
-              >
-                <h4 class="m-0 me-1">5</h4>
-                <i class="fa-solid fa-star" style="font-size: 1.5rem"></i>
-              </div>
 
-              <p class="text-center" style="font-weight: bolder">
-                Google Rating
-              </p>
-            </div>
+  <section id="mav">
+    <!------------------------start of vision ---------------------------------------->
+    <div class="Vison py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
 
-            <div class="col-lg-3 col-md-6 col-6 align-items-center">
-              <div
-                class="d-flex justify-content-center align-items-center mb-1"
-              >
-                <h4 class="me-1 m-0">100</h4>
-                <i class="fa-solid fa-motorcycle" style="font-size: 1.5rem"></i>
-              </div>
-              <div class="justify-content-center">
-                <p class="text-center" style="font-weight: bolder">
-                  Bikes Available
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-6 align-items-center">
-              <div class="d-flex justify-content-center mb-1">
-                <h4 class="me-1 m-0">59</h4>
-                <i class="fa-solid fa-key" style="font-size: 1.5rem"></i>
-              </div>
-              <div class="justify-content-center">
-                <p class="text-center" style="font-weight: bolder">
-                  Rental Outlets
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-6 align-items-center">
-              <div class="d-flex justify-content-center mb-1">
-                <h4 class="me-1 m-0">150</h4>
-                <i class="fa-solid fa-wrench" style="font-size: 1.5rem"></i>
-              </div>
-              <div class="justify-content-center">
-                <p class="text-center" style="font-weight: bolder">
-                  Repair Shops
-                </p>
-              </div>
-            </div>
           </div>
+
+          <div class="col-lg-6">
+            <h1 class="text-center">Vission of ARK</h1>
+            <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in id
+              dolor, voluptas aspernatur nostrum voluptatem dicta pariatur ipsa repudiandae quis sed suscipit provident
+              asperiores explicabo veritatis adipisci dolorem eligendi. Illo, quis. Reprehenderit porro modi quia
+              tempore.
+              Voluptate, sunt ipsum ea beatae tenetur maxime recusandae totam, neque mollitia, adipisci voluptates!</p>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </div>
+
+    <!------------------------start of mission ----------------------------------------->
+    <div class="mission py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <h1 class="text-center">Mission of ARK</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut in id dolor,
+              voluptas aspernatur nostrum voluptatem dicta pariatur ipsa repudiandae quis sed suscipit provident
+              asperiores explicabo veritatis adipisci dolorem eligendi. Illo, quis. Reprehenderit porro modi quia
+              tempore.
+              Voluptate, sunt ipsum ea beatae tenetur maxime recusandae totam, neque mollitia, adipisci voluptates!</p>
+          </div>
+
+
+          <div class="col-lg-6">
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!------------------------start  of ratings----------------------------------------->
+  <section id="stats">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-6 p-3">
+          <div id="stat-container">
+          <div class="mb-1" id="top-stats">
+            <h4>5</h4>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            Google Rating
+          </p>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 p-3">
+          <div id="stat-container">
+          <div class="mb-1" id="top-stats">
+            <h4>100</h4>
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <p>
+            Bikes Available
+          </p>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 p-3">
+          <div id="stat-container">
+          <div class="mb-1" id="top-stats">
+            <h4>59</h4>
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <p>
+            Rental Outlets
+          </p>
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 p-3">
+          <div id="stat-container">
+          <div class="mb-1" id="top-stats">
+            <h4>150</h4>
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <p>
+            Repair Shops
+          </p>
+        </div>
+        </div>
+
+
+        <!-- <div class="col-lg-3 col-md-6 col-6 align-items-center">
+          <div class="d-flex justify-content-center align-items-center mb-1">
+            <h4 class="me-1 m-0">100</h4>
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <div class="justify-content-center">
+            <p class="text-center" style="font-weight: bolder">
+              Bikes Available
+            </p>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="col-lg-3 col-md-6 col-6 align-items-center">
+          <div class="d-flex justify-content-center mb-1">
+            <h4 class="me-1 m-0">59</h4>
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <div class="justify-content-center">
+            <p class="text-center" style="font-weight: bolder">
+              Rental Outlets
+            </p>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-lg-3 col-md-6 col-6 align-items-center">
+          <div class="d-flex justify-content-center mb-1">
+            <h4 class="me-1 m-0">150</h4>
+            <i class="fa-solid fa-wrench" style="font-size: 1.5rem"></i>
+          </div>
+          <div class="justify-content-center">
+            <p class="text-center" style="font-weight: bolder">
+              Repair Shops
+            </p>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
   <!------------------------end of ratings ----------------------------------------->
 
+
+
+
   <!------------------------start of testimonials ----------------------------------------->
-  <section class="testimonials p-5 m-5 mx-5">
-    <div class="container bg-primary pb-5" style="border-radius: 15px;">
-      <h1 class="text-center text-light pt-3 pb-3" style="font-weight: 900;">Testimonials</h1>
-      <div class="row justify-content-evenly">
-        <div class="col-lg-4 d-flex flex-column justify-content-center px-5"
-          style="border-radius: 0%; font-weight: 700;">
-          <img class="rounded mt-4" style="width: 200px; height: 200px; margin: auto;"
-            src="./assets/img/testimonial/john doe2.webp" alt="">
-          <h6 class="text-center text-light pt-3" style="font-weight: 800;">John Doe</h6>
-          <p class="text-center text-light">"Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit.
-            Aperiam, ipsa."
-          </p>
+  <section class="" id="comment-section">
+
+    <div class="container">
+      <h2>What our clients says?</h2>
+      <p class="top-parag">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae accusantium perspiciatis eius
+        beatae impedit odio? </p>
+
+
+      <div class="row mt-4">
+
+        <div class="col-lg-4">
+          <article class="swiper-slide">
+            <div class="comment-container">
+              <div class="comment-top">
+                <img src="assets/img/profile/nhold.jpg" alt="">
+                <div class="r-side">
+                  <h5>Arnold Balcena</h5>
+                  <div class="comment-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eius, a doloremque sunt sapiente
+                aliquid ratione adipisci laborum et placeat, at hic suscipit qui dicta, ad numquam eveniet ab.</p>
+            </div>
+          </article>
         </div>
-        <div class="col-lg-4 d-flex flex-column justify-content-center px-5"
-          style="border-radius: 0%; font-weight: 700;">
-          <img class="rounded mt-4" style="width: 200px; height: 200px; margin: auto;"
-            src="./assets/img/testimonial/jane doe.jpg" alt="">
-          <h6 class="text-center text-light pt-3" style="font-weight: 800;">Jane Doe</h6>
-          <p class="text-center text-light">"Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit.
-            Aperiam, ipsa."
-          </p>
+
+        <div class="col-lg-4">
+          <article class="swiper-slide">
+            <div class="comment-container">
+              <div class="comment-top">
+                <img src="assets/img/profile/nhold.jpg" alt="">
+                <div class="r-side">
+                  <h5>Arnold Balcena</h5>
+                  <div class="comment-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eius, a doloremque sunt sapiente
+                aliquid ratione adipisci laborum et placeat, at hic suscipit qui dicta, ad numquam eveniet ab.</p>
+            </div>
+          </article>
         </div>
-        <div class="col-lg-4 d-flex flex-column justify-content-center px-5"
-          style="border-radius: 0%; font-weight: 700;">
-          <img class="rounded mt-4" style="width: 200px; height: 200px; margin: auto;"
-            src="./assets/img/testimonial/john doe3.webp" alt="">
-          <h6 class="text-center text-light pt-3" style="font-weight: 800;">Juan Doe</h6>
-          <p class="text-center text-light">"Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit.
-            Aperiam, ipsa."
-          </p>
+
+        <div class="col-lg-4">
+          <article class="swiper-slide">
+            <div class="comment-container">
+              <div class="comment-top">
+                <img src="assets/img/profile/nhold.jpg" alt="">
+                <div class="r-side">
+                  <h5>Arnold Balcena</h5>
+                  <div class="comment-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eius, a doloremque sunt sapiente
+                aliquid ratione adipisci laborum et placeat, at hic suscipit qui dicta, ad numquam eveniet ab.</p>
+            </div>
+          </article>
         </div>
+
       </div>
     </div>
+
   </section>
+
   <!------------------------end of testimonials----------------------------------------->
 
   </main>

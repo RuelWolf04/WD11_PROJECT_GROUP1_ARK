@@ -7,7 +7,8 @@
    */
 
   --text-in-white: #f8f8f8;
-  --button-color: #ff8b00;
+  --button-color: #FEB800;
+
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
@@ -28,17 +29,12 @@
   --third-color: #212227ff;
   --fourth-color: #e0ca3cff;
   --fifth-color: #fceff9ff;
-
   --sixth-color: #2E0249;
   --erro-color: #C20114;
-
-
-  /* --red: #F90716; */
 	--darker-red: #b20600;
-  
-
 	--orange-neon: #ff8d29;
 	--orange: #ff5f00;
+  --star: #FFA900;
 
 
   /**
@@ -151,6 +147,8 @@ button{
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
   background-color: rgba(255, 255, 255, 0.808);
+  box-shadow: 0 1px 15px #2d2d2db0 !important;
+
 }
 
 /* An optional height of the navbar AFTER scroll */
@@ -171,16 +169,38 @@ button{
   font-size: var(--fs-5)!important;
   font-weight: var(--fw-600);
   color: black;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+
 }
+
+.nav-link.active{
+  color: var(--button-color)
+}
+
+.nav-link:is(:hover, :focus){
+  color: var(--button-color) !important;
+}
+
 
 #nav-button {
   background-color: var(--button-color);
   border: none;
+  font-weight: var(--fw-700);
+  color: white;
+
+  border: 1px solid var(--button-color) !important;
+
+}
+
+#nav-button:is(:hover, :focus){
+  background-color: #f8f8f8;
+  color: var(--button-color);
 }
 
 
-/* ----------- hero section ------------ */
 
+/* ----------- hero section ------------ */
 #hero {
   background-image: url('../img/backgrounds/motors-bg.jpg');
   height: min(200px, 50vw);
@@ -197,6 +217,9 @@ button{
   color: var(--text-in-white);
   font-weight: var(--fw-700);
 }
+
+
+
 
 
 /* ----------- who we are section ------------ */
@@ -216,16 +239,36 @@ button{
   left: -30px;
 }
 
+
+
+
+/* ----------- our team section ------------ */
 #ourTeam {
   padding-block: 5rem;
 }
 
-#ourTeam img {
-  width: 150px;
-  height: 150px;
-  margin: auto;
+.mc-container {
+  padding: 2rem 4rem;
+  display: grid;
+  place-items: center;
 }
 
+#ourTeam .member-card {
+  text-align: center;
+  background-color: var(--text-in-white);
+  border-radius: .8rem;
+  padding: 3rem 5px;
+  width: 15rem;
+  box-shadow: 0 .2rem .1rem #2d2d2db0;
+}
+
+#ourTeam img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-bottom: 3rem;
+  /* margin: auto; */
+}
 
 #mav {
   padding-block: 3rem;
@@ -237,11 +280,98 @@ button{
   color: white;
 }
 
+
+
+
+
 /* ----------- stats section ------------ */
+#stats {
+  background-color: #2d2d2d;
+  
+}
 
 #stats i{
   color: var(--button-color) !important;
+  font-size: 1.5rem;
 }
+
+#stats h4,
+#stats p {
+  color: white;
+}
+
+#stat-container {
+text-align: center;
+padding: 3rem;
+}
+
+#top-stats {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/* -----------comment section ------------ */
+#comment-section {
+  padding-block: 10rem;
+  
+}
+
+#comment-section .top-parag {
+  width: 30rem;
+}
+
+.comment-container {
+  /* width: 30rem; */
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 .2rem .3rem #2d2d2db0;
+}
+
+.comment-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+}
+
+.comment-top,
+.comment-stars {
+  display: flex;
+}
+
+.comment-stars i{
+  color: var(--star);
+}
+
+.r-side {
+  margin: auto 0;
+  margin-left: 10px;
+}
+
+.comment-container p {
+  margin-block: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

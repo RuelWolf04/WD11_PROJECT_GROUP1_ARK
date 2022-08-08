@@ -170,6 +170,8 @@ button{
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
   background-color: rgba(255, 255, 255, 0.854);
+  box-shadow: 0 1px 15px #2d2d2db0 !important;
+
 }
 
 /* An optional height of the navbar AFTER scroll */
@@ -189,10 +191,11 @@ button{
 }
 
 .nav-link {
-  font-size: var(--fs-7)!important;
+  font-size: var(--fs-5)!important;
   letter-spacing: 1px;
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
   color: black;
+  border: 2px solid transparent;
 }
 
 .nav-link.active{
@@ -210,11 +213,14 @@ button{
   background-color: var(--button-color);
   border: none;
   font-weight: var(--fw-700);
+  color: white;
+  border: 1px solid var(--button-color) !important;
+
 }
-#nav-button:is(:hover, :focus){
+
+#nav-button:is(:hover, :active){
   background-color: #f8f8f8;
   color: var(--button-color);
-  border: 1px solid var(--button-color);
 }
 
 
@@ -222,7 +228,7 @@ button{
 /* ----------- hero section ------------ */
 
 #hero {
-  padding-top: 1rem;
+  padding-top: .1rem;
   padding-bottom: 3rem;
   background-size: cover;
 }
