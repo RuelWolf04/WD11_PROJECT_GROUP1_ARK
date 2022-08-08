@@ -1,0 +1,60 @@
+#info_typein{
+    padding-bottom: 50px;
+}
+
+
+#info_typein input{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+#info_typein label{
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+#orderoption ul{
+    padding: 0% !important;
+}
+#orderprice .title_2{
+    display: block;
+    align-items: end;
+    margin-left: 100px;
+}
+
+
+#metadata li{
+    display: inline;
+    font-size: small;
+}
+#metadata li + li::before{
+    content: " | ";
+}
+
+/* .title{
+    float: left;
+}
+.title_2{
+    float: right;
+    margin-right: 80px;
+}
+.total {
+    float: left;
+}
+.price {
+    float: right;
+    padding-right: 80px;
+} */
+/* #choosen_option label{
+    float: left;
+}
+#choosen_option .choosen_price{
+    float:right
+} */
+#choosenoption{
+display: block;
+}
+#choosenoprice{
+display: block;
+}
+#choosenoption img{
+    margin: auto;
+}
