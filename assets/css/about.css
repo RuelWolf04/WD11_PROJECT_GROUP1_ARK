@@ -21,6 +21,18 @@
 
 
 
+
+  --first-color: #56a3a6ff;
+  /* --second-color: #c16200ff; */
+  --second-color: #ff5f00ff;
+  --third-color: #212227ff;
+  --fourth-color: #e0ca3cff;
+  --fifth-color: #fceff9ff;
+
+  --sixth-color: #2E0249;
+  --erro-color: #C20114;
+
+
   /* --red: #F90716; */
 	--darker-red: #b20600;
   
@@ -68,7 +80,6 @@ html {
 
 body {
   font-family: var(--ff-poppins);
-  height: 100rem;
 }
 
 
@@ -90,6 +101,12 @@ i {
 
 img {
   width: 100%;
+}
+
+button{
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .tc {
@@ -182,125 +199,110 @@ img {
 }
 
 
-
-/* ----------- bikes section ------------ */
-
-#bikes {
-  background-color: var(--black-background);
-  padding: 3rem;
+/* ----------- who we are section ------------ */
+#firstrow h2{
+  position: relative;
+  margin: 0;
+  padding: 0 !important;
 }
 
-.card{
-  margin-bottom: 10px;
-  width: 14rem;
-}
-
-.card:is(:hover, :focus){
-  box-shadow: 0 0 30px rgb(24, 24, 24);
-}
-
-
-.jsb p {
-  font-size: var(--fs-6);
-}
-
-.card-header, .card-footer {
-  border: none !important;
-  outline: none !important;
-}
-
-.card img {
-  border-radius: 10px;
-}
-
-#five-star i{
-  font-size: var(--fs-7);
-  transform: translateY(5px) !important;
-}
-
-.card-title {
-  font-weight: var(--fw-600);
-}
-
-.card-footer p {
-  font-weight: var(--fw-700);
-}
-
-.card-footer button {
-  border-radius: 20px;
-  font-size: calc(13px, 2vw) !important;
-
-}
-
-.card-footer button:nth-child(1) {
+#firstrow h2::before {
+  position: absolute;
+  content: "";
   background-color: var(--button-color);
+  height: 5px;
+  width: 30px;
+  top: 8px; 
+  left: -30px;
+}
+
+#ourTeam {
+  padding-block: 5rem;
+}
+
+#ourTeam img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+
+#mav {
+  padding-block: 3rem;
+  background-color: #2d2d2d;
+}
+
+#mav h1,
+#mav p {
   color: white;
-  border: none !important;
 }
 
-.card-footer button:nth-child(1):is(:hover, :focus) {
- background-color: #f8f8f8;
- color: var(--button-color);
- font-weight: var(--fw-600);
- padding: 10px 15px;
+/* ----------- stats section ------------ */
+
+#stats i{
+  color: var(--button-color) !important;
 }
 
-.card-footer button:nth-child(2) {
-  border: 1px solid var(--button-color);
-  color: #262626;
-  padding: 10px 15px;
+
+
+
+
+
+
+
+
+/* ----------- newsletter section section ------------ */
+#newsletter {
+  background-color: var(--black-background);
 }
 
-.card-footer button:nth-child(2):is(:hover, :focus) {
-  background-color: #f8f8f8;
-}
-
-/* card color */
-
-.card p, .card h5 {
+#newsletter h4,
+#newsletter p {
   color: white;
+
 }
 
-.card.green {
-  background-color: var(--green);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+#newsletter input{
+  width: min(100px, auto);
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-.card.red {
-  background-color: var(--red);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-.card.maroon {
-  background-color: var(--maroon);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+#newsletter button{
+  color: white !important;
+  background-color: var(--button-color);
+  padding: 5px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 600;
 }
 
 
-.card.gray {
-  background-color: var(--gray  );
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+
+
+
+
+/* ----------- footer section ------------ */
+#footer i {
+  font-size: 1.5rem;
 }
 
-.card.dark-green {
-  background-color: var(--dark-green);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+#footer a,
+#footer p {
+  color: #979797;
+  font-weight: 600;
+
 }
-#ourTeam .container{
-  background-color: #8ed6e2 !important;
-  border-radius: 15px;
+
+#footer a:hover {
+  color: var(--button-color);
 }
-.Icont i{
-  font-size: 25px;
-  transform: translateY(5px) !important;
+
+#footer .col-lg-3:nth-child(2),
+#footer .col-lg-3:nth-child(3),
+#footer .col-lg-3:nth-child(4){
+  padding-left: 2rem;
+  margin-block: 10px;
 }

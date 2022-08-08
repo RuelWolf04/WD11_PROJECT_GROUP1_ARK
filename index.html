@@ -70,9 +70,9 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto" style="">
+            <ul class="navbar-nav ms-auto d-flex gap-3" style="">
               <li class="nav-item">
-                <a class="nav-link tc" href="#!">Home</a>
+                <a class="nav-link active tc" href="#!">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link tc" href="bikes.html">Motorcycles</a>
@@ -81,11 +81,14 @@
                 <a class="nav-link tc" href="about.html">About</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link tc" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link tc" href="#!">Sign In</a>
               </li>
-              <button id="nav-button" type="button" class="btn btn-dark ms-3">
-                Login
-              </button>
+              <li class="nav-item">
+                <button id="nav-button" class="btn btn-dark">Login</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -95,9 +98,9 @@
       <!------------------ hero section ----------------------->
 
       <section id="hero">
-        <div class="container d-flex" style="align-items: center">
+        <div class="container" style="align-items: center">
           <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
+            <div class="col-lg-6 d-flex align-items-center pt-md-5    ">
               <div class="greeting" style="padding-right: 30px">
                 <h1>The number 1 motorcycle Rental in the philippines.</h1>
                 <p>
@@ -113,9 +116,10 @@
               <img src="assets/img/hero/riding.jpg" alt="" />
             </div>
           </div>
-          <div id="booked" class="d-flex flex-row px-3">
-            <div id="inputG">
-              <span>Return location</span>
+
+          <div id="booked" class="row mx-auto">
+            <div class="col-lg-3 mt-1" id="inputG">
+              <span>Pick-up Location</span>
               <div class="input-group">
                 <button class="mt-0 pe-1">
                   <i class="fa-solid fa-location-dot"></i>
@@ -128,7 +132,7 @@
               </div>
             </div>
 
-            <div id="inputG">
+            <div class="col-lg-3 mt-1" id="inputG">
               <span>Return location</span>
               <form class="input-group">
                 <button class="mt-0 pe-1">
@@ -142,35 +146,37 @@
               </form>
             </div>
 
-            <div id="inputG" class="">
-              <span>Return location</span>
+            <div class="col-lg-3 mt-1" id="inputG">
+              <span>Pick-up date</span>
               <div class="input-group">
                 <button class="mt-0 pe-1">
                   <i class="fa-solid fa-location-dot"></i>
                 </button>
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder="Location"
-                />
+                <input class="form-control" type="date" />
               </div>
             </div>
 
-            <div id="inputG">
-              <span>Return location</span>
+            <div class="col-lg-3 mt-1" id="inputG">
+              <span>Return Date</span>
               <div class="input-group">
                 <button class="mt-0 pe-1">
                   <i class="fa-solid fa-location-dot"></i>
                 </button>
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder="Location"
-                />
+                <input class="form-control" type="date" />
               </div>
             </div>
+            <div
+              class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center"
+            >
+              <label for="rtl" class="text-light">
+                <input type="checkbox" name="rtl" id="" class="me-1" />Return to
+                same location</label
+              >
+            </div>
 
-            <div class="pt-4">
+            <div
+              class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-end"
+            >
               <button class="c">Submit</button>
             </div>
           </div>
@@ -182,7 +188,7 @@
       <section id="bikes" class="pt-5">
         <div class="container pt-5">
           <div class="row g-3 text-center">
-            <h2 class="mt-3 text-light mb-3">ARK Popular Motorcycles</h2>
+            <h2 class="mt-3 text-dark mb-3">ARK Popular Motorcycles</h2>
 
             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
               <div class="card green mx-auto">
@@ -354,7 +360,7 @@
 
               <div class="hiw-card">
                 <div class="icon-container">
-                  <i class="fa-solid fa-calendar-days"></i>
+                  <i class="fa-solid fa-calendar-days" id="gahig-ulo"></i>
                 </div>
                 <h4>Pick Up Date</h4>
                 <p>
@@ -378,8 +384,70 @@
         </div>
       </section>
 
+
+      <!------------------ stats section ----------------------->
+      <section class="ratings-section py-4 bg-info" id="stats">
+        <div class="container">
+          <div class="row justify-content-space-evenly px-5 g-3">
+            <div class="col-lg-3 col-md-6 col-6 align-items-center">
+              <div
+                class="Icont d-flex justify-content-center align-items-center mb-1"
+                id="ratings"
+              >
+                <h4 class="m-0 me-1">5</h4>
+                <i class="fa-solid fa-star" style="font-size: 1.5rem"></i>
+              </div>
+
+              <p class="text-center" style="font-weight: bolder">
+                Google Rating
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6 align-items-center">
+              <div
+                class="d-flex justify-content-center align-items-center mb-1"
+              >
+                <h4 class="me-1 m-0">100</h4>
+                <i class="fa-solid fa-motorcycle" style="font-size: 1.5rem"></i>
+              </div>
+              <div class="justify-content-center">
+                <p class="text-center" style="font-weight: bolder">
+                  Bikes Available
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6 align-items-center">
+              <div class="d-flex justify-content-center mb-1">
+                <h4 class="me-1 m-0">59</h4>
+                <i class="fa-solid fa-key" style="font-size: 1.5rem"></i>
+              </div>
+              <div class="justify-content-center">
+                <p class="text-center" style="font-weight: bolder">
+                  Rental Outlets
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6 align-items-center">
+              <div class="d-flex justify-content-center mb-1">
+                <h4 class="me-1 m-0">150</h4>
+                <i class="fa-solid fa-wrench" style="font-size: 1.5rem"></i>
+              </div>
+              <div class="justify-content-center">
+                <p class="text-center" style="font-weight: bolder">
+                  Repair Shops
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       <!------------------ popular deals section ----------------------->
-      <section id="popular-deals" class="pt-5 bg-success">
+      <section id="popular-deals" class="pt-5">
         <div class="container pt-3">
           <div class="row">
             <h2 class="text-center">Most Popular Deals</h2>
@@ -709,90 +777,80 @@
         </div>
       </section>
 
-      <!------------------ stats section ----------------------->
-      <section class="ratings-section py-4 bg-info" id="stats">
-        <div class="container">
-          <div class="row justify-content-space-evenly px-5">
-            <div class="col-lg-3 align-items-center">
-              <div
-                class="Icont d-flex justify-content-center align-items-center mb-1"
-                id="ratings"
-              >
-                <h4 class="m-0 me-1">5</h4>
-                <i class="fa-solid fa-star" style="font-size: 1.5rem"></i>
-              </div>
-
-              <p class="text-center" style="font-weight: bolder">
-                Google Rating
-              </p>
-            </div>
-
-            <div class="col-lg-3 align-items-center">
-              <div
-                class="d-flex justify-content-center align-items-center mb-1"
-              >
-                <h4 class="me-1 m-0">100</h4>
-                <i class="fa-solid fa-motorcycle" style="font-size: 1.5rem"></i>
-              </div>
-              <div class="justify-content-center">
-                <p class="text-center" style="font-weight: bolder">
-                  Bikes Available
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 align-items-center">
-              <div class="d-flex justify-content-center mb-1">
-                <h4 class="me-1 m-0">59</h4>
-                <i class="fa-solid fa-key" style="font-size: 1.5rem"></i>
-              </div>
-              <div class="justify-content-center">
-                <p class="text-center" style="font-weight: bolder">
-                  Rental Outlets
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 align-items-center">
-              <div class="d-flex justify-content-center mb-1">
-                <h4 class="me-1 m-0">150</h4>
-                <i class="fa-solid fa-wrench" style="font-size: 1.5rem"></i>
-              </div>
-              <div class="justify-content-center">
-                <p class="text-center" style="font-weight: bolder">
-                  Repair Shops
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!------------------ newsletter section ----------------------->
-      <section id="newsletter">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <h4>Subscribe to our Newsletter</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Cupiditate dolorem eaque expedita illo animi tempora cumque,
-                nobis voluptate quos dignissimos.
-              </p>
-            </div>
-            <div class="col-lg-5">
-              <div>
-                <div class="input-group">
-                  <input type="text" />
-                  <button id="subscribe">Subscribe</button>
+    </main>
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#0099ff" fill-opacity="1" d="M0,160L34.3,170.7C68.6,181,137,203,206,224C274.3,245,343,267,411,272C480,277,549,267,617,240C685.7,213,754,171,823,154.7C891.4,139,960,149,1029,160C1097.1,171,1166,181,1234,192C1302.9,203,1371,213,1406,218.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            <!------------------ newsletter section ----------------------->
+            <section id="newsletter" class="py-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div
+                    class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center"
+                  >
+                    <div class="newsletter-ig">
+                      <form class="input-group w-100">
+                        <input type="text" class="d-inline-block" />
+                        <button id="subscribe">Subscribe</button>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </section>
+      <section class="py-5" id="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2">
+            <img src="assets/img/ARK-white1.png" alt="">
+            <div class="d-flex gap-2 justify-content-center mt-4">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
             </div>
           </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-4  col-12 my-sm-2">
+              <h3>Site Map</h3>
+              <div class="d-flex flex-column">
+              <a href="#">Bikes</a>
+              <a href="#">About</a>
+              <a href="#">Where to go</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-4  col-12 my-sm-2">
+            <h3>Support</h3>
+            <div class="d-flex flex-column">
+            <a href="#">FAQ's</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-4 col-12 my-sm-2">
+            <h3>Contact</h3>
+                <div class="d-flex flex-column">
+                <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+                <p class="p-0">Phone: 0912-345-4567</p>
+                <a href="#">Email: ark.motorental@gmail.com</a>
+                </div>
+          </div>
+
         </div>
-      </section>
-    </main>
-    <footer></footer>
+      </div>
+    </section>
+      <div class="container-fluid">
+        <div class="row text-center p-3 bg-dark">
+          <p class="text-light">&copy; Alrights Reserved</p>
+        </div>
+      </div>
+
+    </footer>
 
     <!------------------ bootstrap js link ----------------------->
     <script src="assets/mdbootstrap/js/mdb.min.js"></script>
