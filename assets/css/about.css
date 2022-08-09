@@ -272,7 +272,6 @@ button{
 
 #mav {
   padding-block: 3rem;
-  background-color: #2d2d2d;
 }
 
 #mav h1,
@@ -280,13 +279,23 @@ button{
   color: white;
 }
 
+.Vison,
+.mission {
+  background-color: var(--blue-for-background-lighter);
+}
+
+
+#img-container-mav {
+  width: 30rem;
+
+}
 
 
 
 
 /* ----------- stats section ------------ */
 #stats {
-  background-color: #2d2d2d;
+  background-color: var(--blue-for-background-lighter);
   
 }
 
