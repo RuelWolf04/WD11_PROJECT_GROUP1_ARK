@@ -55,7 +55,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto gap-3" style="">
             <li class="nav-item">
-              <a class="nav-link active tc" href="index.html">Home</a>
+              <a class="nav-link tc" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link tc" href="bikes.html">Motorcycles</a>
@@ -67,7 +67,7 @@
               <a class="nav-link tc" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link tc" href="reservation-step1.html">Book Now</a>
+              <a class="nav-link active tc" href="reservation-step1.html">Book Now</a>
             </li>
             <li class="nav-item">
               <a id="nav-button" href="signin.html" class="btn btn-dark">Sign In</a>
@@ -112,43 +112,88 @@
 
 
 
-
-    <!------------------ date summary section------------------->
-    <section class="p-2">
-      <div class="container" id="check_out">
-        <div class="row bg-dark my-4" id="date-summary">
-          <div class="col-lg-6">
-            <h4>PICK-UP</h4>
-            <div class="pis">
-              <p>FRIDAY, AUGUST 25, 2022 at 9:00AM</p>
-              <p>Mactan International Airport, Cebu City</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <h4>RETURN</h4>
-            <div class="pis">
-              <p>FRIDAY, AUGUST 25, 2022 at 9:00PM</p>
-              <p>Mactan International Airport, Cebu City</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <!------------------ select date and time section------------------->
     
     <section id="section-1">
       <div class="container">
         <div class="row">
-          
+          <div class="col-lg-6 my-2">
+            <h3>Pick-up</h3>
+            <div class="pick-day-container">
+              
+            <p>Location</p>
+            <input type="text" name="" id="">
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="pick-day-container">
+              <p>Date</p>
+              <input type="date" name="" id="">
+            </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="pick-day-container">
+              <p>Time</p>
+              <input type="time" name="" id="">
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-lg-6 my-2">
+            <h3>Return</h3>
+
+            <div class="pick-day-container">
+              <p>Location</p>
+              <input type="text" name="" id="">
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="pick-day-container">
+                <p>Date</p>
+                <input type="date" name="" id="">
+              </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="pick-day-container">
+                <p>Time</p>
+                <input type="time" name="" id="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="row" id="promo-code">
+          <div class="col-lg-6">
+            <div class="pick-day-container">
+              
+              <p>Promo Code</p>
+              <input type="text" name="" id="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div style="display: grid; justify-content: end; align-items: center; height: 100%;">
+            <button><a href="reservation-step2.html">Contiue</a></button>
+          </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
 
+    <div id="gradient-1">
+      <img src="assets/img/gradients/1.png" alt="">
+    </div>
 
+    <div id="gradient-2">
+      <img src="assets/img/gradients/2.png" alt="">
+    </div>
+
+    <div id="gradient-3">
+      <img src="assets/img/gradients/3.png" alt="">
+    </div>
 
 
 

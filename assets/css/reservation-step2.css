@@ -392,13 +392,14 @@ button{
   background-color: var(--button-color);
   color: white;
   border: none !important;
+  padding: 10px 15px;
+  border: 1px solid var(--button-color);
 }
 
-.card-footer button:nth-child(1):is(:hover, :focus) {
+.card-footer button:nth-child(1):hover {
  background-color: #f8f8f8;
  color: var(--button-color);
  font-weight: var(--fw-600);
- padding: 10px 15px;
 }
 
 .card-footer button:nth-child(2) {
@@ -407,7 +408,7 @@ button{
   padding: 10px 15px;
 }
 
-.card-footer button:nth-child(2):is(:hover, :focus) {
+.card-footer button:nth-child(2):hover{
   background-color: #f8f8f8;
 }
 
