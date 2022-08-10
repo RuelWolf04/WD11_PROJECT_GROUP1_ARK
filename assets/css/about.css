@@ -332,8 +332,10 @@ padding: 3rem;
   
 }
 
-#comment-section .top-parag {
-  width: 30rem;
+#comment-section #client-says {
+  width: 40rem;
+  margin-inline: auto;
+  
 }
 
 .comment-container {
