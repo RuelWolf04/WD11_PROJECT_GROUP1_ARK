@@ -1,8 +1,4 @@
-const btns = document.querySelectorAll('.btn');
 
-for(let i = 0; i <= btns.length; i++){
-  btns[i].classList.add("select");
-}
 
 
 
