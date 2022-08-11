@@ -157,7 +157,7 @@ justify-content: center;
 
 .signin-container h2 {
   margin-block: 20px;
-
+  font-size: min(30px, max( 20px, 3vw));
 }
 
 .input-group {
@@ -173,6 +173,7 @@ justify-content: center;
   outline: none;
   border: 1px solid lightslategray;
   position: relative;
+  font-size: min(16px, 80vw);
 }
 
 .input-group input:is(:hover, :focus){
@@ -233,7 +234,15 @@ justify-content: center;
   width: min(90%, 90vh);
   height: max(30rem, 45vw);
   border-radius: 16px;
-  padding: 2rem;
+
+  background-color: var(--blue-for-background-dark);
+}
+
+#left-side-img-container {
+  width: max(112px, 3vw);
+  position: absolute;
+  top: 3rem;
+
 }
 
 .sub-container {
@@ -242,8 +251,20 @@ text-align: center;
 margin: auto;
 }
 
+.sub-container img {
+  /* width: max(200px, min(80%, 60vw)); */
+  width: min(400px, max(10rem, 20vw));
+}
+
 .sub-container h5 {
   font-weight: 700;
-  line-height: 25px;
+  margin-top: 3rem;
+  line-height: 28px;
   color: white;
+  font-size: max(18px, 1.8vw);  
 }
+
+
+
+
+
