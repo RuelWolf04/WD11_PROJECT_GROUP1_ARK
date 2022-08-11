@@ -227,6 +227,47 @@ button{
 
 
 
+
+
+/* ----------- main------------ */
+
+main {
+  position: relative;
+}
+
+
+
+
+
+
+.main-bottom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.main-bottom-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.main-bottom-divider .shape-fill {
+  fill: var(--blue-for-background-lighter);
+}
+
+
+
+
+
+
+
+
 /* ----------- hero section ------------ */
 #hero {
     padding: 5rem 0 0;
@@ -288,8 +329,22 @@ button{
 
 
 
+
+
+
+
+
+
+#reservation-step-4 {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+
+
 .personal-info-container {
     padding-block: 3rem;
+
 }
 
 
@@ -413,8 +468,8 @@ button{
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
-    /* background-color: var(--black-background); */
-    background-color: #0099FF;
+  background-color: var(--blue-for-background-lighter);
+
     margin-top: -1px;
   }
   
@@ -448,7 +503,8 @@ button{
 
   /* ----------- footer section ------------ */
   #footer {
-    background-color: #0099FF;
+    background-color: var(--blue-for-background-lighter);
+
     margin-top: -1px;
 
   }

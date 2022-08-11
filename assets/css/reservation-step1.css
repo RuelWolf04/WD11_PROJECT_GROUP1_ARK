@@ -264,6 +264,30 @@ main {
 
 
 
+.main-bottom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.main-bottom-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.main-bottom-divider .shape-fill {
+  fill: var(--blue-for-background-lighter);
+}
+
+
+
+
 
 
 
@@ -453,8 +477,8 @@ main {
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
-    /* background-color: var(--black-background); */
-    background-color: #0099FF;
+  background-color: var(--blue-for-background-lighter);
+
     margin-top: -1px;
   }
   
@@ -491,7 +515,8 @@ main {
   
   /* ----------- footer section ------------ */
   #footer {
-    background-color: #0099FF;
+  background-color: var(--blue-for-background-lighter);
+    
     margin-top: -1px;
 
   }

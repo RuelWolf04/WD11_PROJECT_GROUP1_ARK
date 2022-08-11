@@ -14,7 +14,7 @@
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
-  --light-blue: #3B9AE1;
+  --light-blue: #67b2eb;
   --gray: #979797;
 	--red: #df4343;
   --maroon: #803C44;
@@ -33,6 +33,8 @@
   --nineth-color: rgb(41,41,41);
   --seventh-color: rgb(34,34,34);
   --eigth-color: rgb(31,31,31);
+  --star: #FFA900;
+
 
 
 
@@ -211,11 +213,60 @@ button{
 
 
 
+
+/* ----------- main------------ */
+
+main {
+  position: relative;
+}
+
+
+
+
+
+
+.main-bottom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.main-bottom-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.main-bottom-divider .shape-fill {
+  fill: var(--blue-for-background-lighter);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------- hero section ------------ */
 
 #hero {
   padding-top: .1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
   background-size: cover;
 }
 
@@ -266,33 +317,44 @@ button{
   
 }
 
-#inputG{
-
+#inputG .input-group{
+  position: relative;
 }
 
-#inputG span{
+#inputG p {
   color: white;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-#inputG button {
-  background-color: white;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-
+  margin: .625rem !important;
 }
 
 #inputG input {
-  padding-left: 5px;
+  padding: .625rem;
+  padding-left: 2rem;
+  width: 100%;
+  border-radius: 10px;
 }
 
-#inputG button i {
-  display: inline-block;
-  font-size: 1rem;
-  line-height: ;
+#inputG input[type=datetime-local] {
+  padding: .625rem;
+  width: 100%;
+  border-radius: 10px;
 }
+
+
+#inputG .input-group i{
+  position: absolute;
+  top: 50%;
+  left: .77rem;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
 
 
 #booked {
@@ -303,9 +365,11 @@ button{
 
 }
 
-#booked button {
-  padding: 5px 15px;
-
+#booked a{
+  padding: .625rem 1.5rem;
+  background-color: var(--button-color);
+  color: white;
+  border-radius: 10px;
   font-weight: 600;
 }
 
@@ -320,9 +384,47 @@ button{
 /* ----------- bikes section ------------ */
 
 #bikes {
-  background-color: var(--white-background);
-  padding: 3rem;
+  background-color: var(--blue-for-background-lighter);
+  padding-bottom: 2rem;
+  padding-block: 8rem;
+  margin-top: 1px;
+  position: relative;
   
+}
+
+.custom-shape-divider-top-1660187733 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+}
+
+.custom-shape-divider-top-1660187733 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.custom-shape-divider-top-1660187733 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+#bikes h2 {
+  color: white !important;
+  font-weight: 700;
 }
 
 .card{
@@ -378,26 +480,33 @@ button{
   background-color: var(--button-color);
   color: white;
   border: none !important;
-  transition: 0.15s ease;
+  transition: .5s ease;
+  font-weight: var(--fw-600);
+  padding: 10px 15px;
+
 }
 
-.card-footer button:nth-child(1):is(:hover, :focus) {
+.card-footer button:nth-child(1):hover {
  background-color: #f8f8f8;
  color: var(--button-color);
- font-weight: var(--fw-600);
- padding: 10px 15px;
 }
+
+.card-footer button:nth-child(1):active {
+  background-color: var(--orange-neon);
+  color: white;
+ }
 
 .card-footer button:nth-child(2) {
   border: 1px solid var(--button-color);
   color: #262626;
+  background-color: #bebebe38;
   padding: 10px 15px;
   transition: 0.15s ease;
 
 }
 
-.card-footer button:nth-child(2):is(:hover, :focus) {
-  background-color: #f8f8f8;
+.card-footer button:nth-child(2):hover {
+  background-color: #f1f1f1;
 }
 
 /* card color */
@@ -460,23 +569,27 @@ button{
 
 
 /* ----------- how it works section ------------ */
+#hiw {
+  /* background-color: var(--blue-for-background-lighter); */
+  background-color: white;
+}
+
+
 
 .hiw-card {
-  background-color: #d1d1d1;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgb(231, 231, 231);
+  backdrop-filter: blur(1px);
   border-radius: 1rem;
   padding: 2rem 3rem;
   width: 300px;
   margin-block: 10px;
 }
 
-.hiw-card .icon-container i{
+.hiw-card:nth-child(1) .icon-container i,
+.hiw-card:nth-child(3) .icon-container i{
   font-size: 30px;
-  color: var(--button-color);
-}
-
-.hiw-card .icon-container i{
-  /* background: rgb(253,187,45); */
-
 background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 53%, rgba(253,187,45,1) 90%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;  
@@ -494,67 +607,125 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   margin-bottom: 1rem;
 }
 
+.hiw-card:nth-child(2) .icon-container i{
+  font-size: 30px;
+  color: #eeeeee;
+}
 
 .hiw-card:nth-child(2) .icon-container {
-background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 53%, rgba(253,187,45,1) 90%);
-
-  
+  background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 53%, rgba(253,187,45,1) 90%);
 }
 
-.hiw-card:nth-child(2) .icon-container #gahig-ulo {
-  color: white !important;
-}
+
+
+
+
+
 
 
 
 
 /* ----------- popular deals with reviews section ------------ */
 
-.review-pic-cont {
-  width: 80px;
-  padding: 10px;
+#deals-section {
+  background-color: var(--blue-for-background-lighter);
+  margin-block: -1px;
 }
 
-.review-pic-cont img{
-  border-radius: 50%;
+#deals-section h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: white;
 }
 
-.review-content {
-  padding: 10px;
+#deals-section .deal p {
+  margin-top: 1rem !important;
+  font-size: 1.5rem;
+  color: white;
 }
 
-.review-content h4 {
-  font-size: 20px;
+#deals-section .key-word-deals {
+  font-weight: 600;
+  color: #F90716;
+
 }
 
-
-.review-content p {
-  font-size: 14px;
-}
-
-
-#review-card {
-  background-color: #83a8ff;
-  padding: 1rem;
+#deals-section .deal button {
+  background-color: var(--button-color);
+  width: 100%;
+  margin-top: 1rem;
+  padding-block: 10px;
+  line-height: normal;
+  color: white;
   border-radius: 10px;
-  margin-block: 10px;
-  width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------comment section ------------ */
+#comment-section {
+  padding-bottom: 10rem;
+  
+}
+
+#comment-section #client-says {
+  width: 40rem;
   margin-inline: auto;
+  
+}
+
+.comment-container {
+  /* width: 30rem; */
+  background-color: #eeeeee;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 .2rem .3rem #2d2d2db0;
+}
+
+.comment-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+}
+
+.comment-top,
+.comment-stars {
+  display: flex;
+}
+
+.comment-stars i{
+  color: var(--star);
+}
+
+.r-side {
+  margin: auto 0;
+  margin-left: 10px;
+}
+
+.comment-container p {
+  margin-block: 10px !important;
 }
 
 
-/* ----------- stats section ------------ */
 
-#stats i{
-  color: var(--button-color) !important;
-}
+
+
+
 
 
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
   /* background-color: var(--black-background); */
-  background-color: #0099FF;
+  /* background-color: #0099FF; */
+  background-color: var(--blue-for-background-lighter);
 }
 
 #newsletter h4,
@@ -590,7 +761,9 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 /* ----------- footer section ------------ */
 #footer {
-  background-color: #0099FF;
+  /* background-color: #0099FF; */
+  background-color: var(--blue-for-background-lighter);
+
 }
 
 #footer i {
@@ -613,4 +786,12 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 #footer .col-lg-3:nth-child(4){
   padding-left: 2rem;
   margin-block: 10px;
+}
+
+
+
+@media (max-width: 780px) {
+  #hero{
+    padding-top: 2rem;
+  }
 }

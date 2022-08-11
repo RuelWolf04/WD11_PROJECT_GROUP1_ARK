@@ -209,6 +209,60 @@ button{
   color: var(--button-color);
 }
 
+
+
+
+
+/* ----------- main------------ */
+
+main {
+  position: relative;
+}
+
+
+
+
+
+
+.main-bottom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.main-bottom-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+}
+
+.main-bottom-divider .shape-fill {
+  fill: var(--blue-for-background-lighter);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------- hero section ------------ */
 
 #hero {
@@ -235,6 +289,15 @@ button{
 #sec1-span:is(:hover, :focus){
   transform: translateX(10px);
 } 
+
+
+
+
+#section1 {
+  padding-bottom: 10rem;
+}
+
+
 
 #section1 i{
   font-size: 20px !important;
@@ -315,7 +378,8 @@ button{
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
-  background-color: var(--black-background);
+  background-color: var(--blue-for-background-lighter);
+
 }
 
 #newsletter h4,
@@ -346,14 +410,22 @@ button{
 
 
 
+
+
+
 /* ----------- footer section ------------ */
+#footer {
+  background-color: var(--blue-for-background-lighter);
+
+}
+
 #footer i {
   font-size: 1.5rem;
 }
 
 #footer a,
 #footer p {
-  color: #979797;
+  color: white;
   font-weight: 600;
 
 }
@@ -368,3 +440,4 @@ button{
   padding-left: 2rem;
   margin-block: 10px;
 }
+
