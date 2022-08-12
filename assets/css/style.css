@@ -122,15 +122,37 @@ button{
 
 
 /* header */
+.navbar {
+  z-index: 999;
+}
+
 
 #section-top-header {
   background-color: #477eff;
+  padding-block: .325rem;
+}
+
+
+
+.top-header-contact {
+  display: flex;
+  align-items: center;
 }
 
 #header-email {
   font-size: var(--fs-6);
-
+  padding-right: 5px !important;
+  text-decoration: underline;
 }
+
+.top-header-contact a {
+  color: white !important;
+  font-size: var(--fs-6);
+  padding-left: 5px !important;
+  border-left: 1px solid white;
+  text-decoration: underline;
+}
+
 
 /* header navbar */
 
@@ -385,11 +407,11 @@ main {
 
 #bikes {
   background-color: var(--blue-for-background-lighter);
+  padding-top: 8rem;
   padding-bottom: 2rem;
-  padding-block: 8rem;
   margin-top: 1px;
   position: relative;
-  
+
 }
 
 .custom-shape-divider-top-1660187733 {
@@ -630,6 +652,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 #deals-section {
   background-color: var(--blue-for-background-lighter);
   margin-block: -1px;
+  padding-top: 3rem;
 }
 
 #deals-section h2 {
@@ -672,6 +695,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 /* -----------comment section ------------ */
 #comment-section {
   padding-bottom: 10rem;
+  padding-top: 5rem;
   
 }
 
@@ -790,8 +814,20 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 
 
+@media (max-width: 991px) {
+
+}
+
+
+
 @media (max-width: 780px) {
   #hero{
     padding-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #popular-bikes-- {
+    display: flex;
   }
 }
