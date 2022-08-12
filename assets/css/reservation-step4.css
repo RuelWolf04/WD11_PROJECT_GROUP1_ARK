@@ -530,3 +530,58 @@ main {
     padding-left: 2rem;
     margin-block: 10px;
   }
+
+
+
+
+
+  /* 
+  
+  modal
+
+  */
+
+  .btn-close {
+    opacity: 1 !important;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: var(--darker-red) !important;
+    padding: 8px !important;
+    border-radius: 50% !important;
+
+  }
+
+  .modal-body h4 {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .modal-body h5 {
+    margin-bottom: 1rem;
+  }
+
+  .modal-body input{
+    width: 100%;
+    margin-bottom: .625rem;
+    padding: 5px 10px 5px 5px;
+  }
+
+  .modal-body input[type=submit] {
+    margin-block: .625rem;
+    background-color: #56B349;
+    border: none;
+    padding-block: .625rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .modal-body img {
+    height: 2.4rem;
+    width: auto;
+    margin-bottom: .635rem;
+  }
+
+  .modal-body .input-box {
+  }
+

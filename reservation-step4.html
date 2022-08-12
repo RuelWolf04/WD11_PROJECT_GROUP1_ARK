@@ -177,7 +177,7 @@
 
             <p class="mt-2"><input type="checkbox" name="" id="pm-terms">  I agree with the <a href="terms.html">Terms and Conditions</a></p>
 
-            <button>Book Now</button>
+            <button data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">Book Now</button>
             </div>
           </div>
 
@@ -341,6 +341,129 @@
       </div>
     </div>
   </footer>
+
+
+
+
+
+
+
+<!-- 
+
+    modals
+
+-->
+
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+        <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      
+      <div class="modal-body">
+        <div class="container-fluid">
+        <div class="row">
+          <h4>ARK Motorcycle Rental</h4>
+          <div class="col-lg-6">
+            <h5>Billing Address</h5>
+
+            <div>
+              <span>Full Name:</span>
+              <input type="text" name="" id="">
+            </div>
+
+            <div>
+              <span>Email:</span>
+              <input type="text" name="" id="">
+            </div>
+
+            <div>
+              <span>Address:</span>
+              <input type="text" name="" id="">
+            </div>
+
+            <div>
+              <span>City:</span>
+              <input type="text" name="" id="">
+            </div>
+
+            <div class="input-box d-flex gap-2">
+              <div>
+                <span>Exp. Year:</span>
+                <input type="text" name="" id="">
+              </div>
+              <div>
+                <span>CVV:</span>
+                <input type="text" name="" id="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h5>Payment</h5>
+
+            <div class="input-box">
+              <span>Cards Accepted:</span>
+              <img src="assets/img/Payment_Apps/cards-final.jpg" alt="">
+            </div>
+
+            <div class="input-box">
+              <span>Name on Card:</span>
+              <input type="text" name="" id="">
+            </div>
+
+            <div class="input-box">
+              <span>Credit Card Number:</span>
+              <input type="text" name="" id="">
+            </div>
+
+            <div class="input-box">
+              <span>Exp. Month:</span>
+              <input type="text" name="" id="">
+            </div>
+
+
+              <div class="input-box d-flex gap-2">
+                <div>
+                  <span>Exp. Year:</span>
+                  <input type="text" name="" id="">
+                </div>
+                <div>
+                  <span>CVV:</span>
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+
+            </div>
+              
+          </div> 
+          <input type="submit" value="Submit">
+        </div>
+          </div>
+        </div>
+      </div>
+      
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
   <!------------------ bootstrap js link ----------------------->
   <script src="assets/mdbootstrap/js/mdb.min.js"></script>
