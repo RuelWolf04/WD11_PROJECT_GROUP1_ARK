@@ -10,6 +10,7 @@
 
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
+  --button-color1: #ffc32a;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
@@ -124,6 +125,7 @@ button{
 /* header */
 .navbar {
   z-index: 999;
+  padding-block: 1rem !important;
 }
 
 
@@ -132,7 +134,11 @@ button{
   padding-block: .325rem;
 }
 
-
+.top-header-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
 .top-header-contact {
   display: flex;
@@ -225,13 +231,25 @@ button{
   font-weight: var(--fw-700);
   color: white;
   border: 1px solid var(--button-color) !important;
+  transition: transform 0.4s ease;
 
 }
 
-#nav-button:is(:hover, :active){
+#nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -241,11 +259,6 @@ button{
 main {
   position: relative;
 }
-
-
-
-
-
 
 .main-bottom-divider {
   position: absolute;
@@ -290,6 +303,7 @@ main {
   padding-top: .1rem;
   padding-bottom: 1.5rem;
   background-size: cover;
+  margin-bottom: -1px;
 }
 
 #hero .container {
@@ -322,22 +336,21 @@ main {
 
 #hero button.b{
   background-color: var(--button-color);
-  color: white;
   padding: .625rem 3rem;
   border-radius: .475rem;
   font-weight: 800;
+  transition: transform 0.4s ease;
 }
 
+#hero button.b:hover{
+  background-color: var(--button-color1);
+}
 
-#hero button.c{
+#hero button.b:active{
   background-color: var(--button-color);
-  color: white;
-  padding: 5px 15px;
-  border-radius: .475rem;
-  margin-top: 11px;
-  background: radial-gradient(circle, rgba(255,141,41,1) 35%, rgba(249,212,35,1) 100%);
-  
+  transform: scale(.9);
 }
+
 
 #inputG .input-group{
   position: relative;
@@ -370,15 +383,6 @@ main {
   z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-
 #booked {
   background-color: var(--light-blue);
   padding: 0.625rem;
@@ -388,15 +392,23 @@ main {
 }
 
 #booked a{
-  padding: .625rem 1.5rem;
+  padding: .525rem 1.5rem;
   background-color: var(--button-color);
   color: white;
   border-radius: 10px;
   font-weight: 600;
+  transition: transform 0.4s ease;
 }
 
 
+#booked a:hover{
+  background-color: var(--button-color1);
+}
 
+#booked a:active{
+  background-color: var(--button-color);
+  transform: scale(.9);
+}
 
 
 
@@ -408,10 +420,17 @@ main {
 #bikes {
   background-color: var(--blue-for-background-lighter);
   padding-top: 8rem;
-  padding-bottom: 2rem;
-  margin-top: 1px;
+  padding-bottom: 4rem;
+  margin-top: -1px;
   position: relative;
 
+}
+
+#popular-bikes-- {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .custom-shape-divider-top-1660187733 {
@@ -421,7 +440,6 @@ main {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-
 }
 
 .custom-shape-divider-top-1660187733 svg {
@@ -437,13 +455,6 @@ main {
 
 
 
-
-
-
-
-
-
-
 #bikes h2 {
   color: white !important;
   font-weight: 700;
@@ -451,12 +462,13 @@ main {
 
 .card{
   margin-bottom: 10px;
-  width: 14rem;
+  width: 15rem !important;
   transition: 0.2s ease;
+
 }
 
 
-.card:is(:hover, :focus){
+.card:hover{
   box-shadow: 0 5px 10px rgb(24, 24, 24);
 
 }
@@ -464,6 +476,7 @@ main {
 
 .jsb p {
   font-size: var(--fs-6);
+
 }
 
 
@@ -485,11 +498,13 @@ main {
 
 .card-title {
   font-weight: var(--fw-600);
+  color: #2d2d2d !important;
 
 }
 
 .card-footer p {
   font-weight: var(--fw-700);
+  color: #2d2d2d !important;
 }
 
 .card-footer button {
@@ -534,14 +549,15 @@ main {
 /* card color */
 
 .card p, .card h5 {
-  color: white;
+  color: #2d2d2d;
 }
 
 .card.green {
-  background-color: var(--green);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.705);
 }
 
 .card.red {
@@ -582,21 +598,34 @@ main {
   background-color: var(--button-color);
   border-radius: 1.5rem;
   font-weight: 700;
+  transition: transform 0.4s ease;
 }
 
 #seeall a, #seeall a i {
   color: white;
-
 }
+
+#seeall:hover{
+  background-color: var(--button-color1);
+}
+
+#seeall:active{
+  background-color: var(--button-color);
+  transform: scale(.9);
+}
+
+
+
+
 
 
 /* ----------- how it works section ------------ */
 #hiw {
   /* background-color: var(--blue-for-background-lighter); */
   background-color: white;
+  padding-block: 4rem;
+  box-shadow: -1px 2px 5px rgba(29, 29, 29, 0.795) inset;
 }
-
-
 
 .hiw-card {
   border-radius: 10px;
@@ -650,9 +679,11 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 /* ----------- popular deals with reviews section ------------ */
 
 #deals-section {
-  background-color: var(--blue-for-background-lighter);
+  /* background-color: var(--seventh-color); */
+  background-color: #2B2B2B;
+
   margin-block: -1px;
-  padding-top: 3rem;
+  padding-block: 4rem;
 }
 
 #deals-section h2 {
@@ -681,10 +712,17 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   line-height: normal;
   color: white;
   border-radius: 10px;
+  transition: transform 0.4s ease;
 }
 
+#deals-section .deal button:hover {
+  background-color: var(--button-color1);
+}
 
-
+#deals-section .deal button:active{
+transform: scale(.9);
+background-color: var(--button-color);
+}
 
 
 
@@ -700,7 +738,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 }
 
 #comment-section #client-says {
-  width: 40rem;
+
   margin-inline: auto;
   
 }
@@ -711,6 +749,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 .2rem .3rem #2d2d2db0;
+  margin-bottom: 20px;
 }
 
 .comment-container img {
@@ -775,8 +814,13 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   font-weight: 600;
 }
 
+#newsletter button:hover {
+  background-color: var(--button-color1);
+}
 
-
+#newsletter button:active {
+  background-color: var(--button-color);
+}
 
 
 
@@ -787,7 +831,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 #footer {
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-top: -1px;
 }
 
 #footer i {
@@ -797,7 +841,6 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 #footer a,
 #footer p {
   color: white;
-  font-weight: 600;
 
 }
 
@@ -814,9 +857,10 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 
 
-@media (max-width: 991px) {
 
-}
+
+
+
 
 
 
@@ -826,8 +870,44 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   }
 }
 
-@media (max-width: 600px) {
-  #popular-bikes-- {
-    display: flex;
+
+
+@media (max-width: 768px) {
+  #footer img {
+    width: 20rem;
+  }
+
+  #footer {
+    margin-top: -1px;
+  }
+
+  #footer img {
+    width: 15rem;
+  }
+  #footer-left{
+    margin-bottom: 30px;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 300px) {
+  #navbar{
+    padding-block: 10px !important;
+  }
+
+  .logo-container {
+    width: 8rem;
+  }
+
+  #top-header-container{
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
   }
 }

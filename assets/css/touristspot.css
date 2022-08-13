@@ -10,11 +10,14 @@
 
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
+  
+  --button-color1: #ffc32a;
+  --light-blue: #ebebeb;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
-  --light-blue: #3B9AE1;
+  /* --light-blue: #3B9AE1; */
   --gray: #979797;
 	--red: #df4343;
   --maroon: #803C44;
@@ -177,16 +180,44 @@ main {
 
 
 
+
 /* header */
+.navbar {
+  z-index: 999;
+  padding-block: 1rem !important;
+}
+
 
 #section-top-header {
   background-color: #477eff;
+  padding-block: .325rem;
+}
+
+.top-header-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-header-contact {
+  display: flex;
+  align-items: center;
 }
 
 #header-email {
   font-size: var(--fs-6);
-
+  padding-right: 5px !important;
+  text-decoration: underline;
 }
+
+.top-header-contact a {
+  color: white !important;
+  font-size: var(--fs-6);
+  padding-left: 5px !important;
+  border-left: 1px solid white;
+  text-decoration: underline;
+}
+
 
 /* header navbar */
 
@@ -259,14 +290,15 @@ main {
   font-weight: var(--fw-700);
   color: white;
   border: 1px solid var(--button-color) !important;
+  transition: transform 0.4s ease;
 
 }
 
-#nav-button:is(:hover, :active){
+#nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
-  
+
 
 
 
@@ -298,7 +330,7 @@ main {
 
 /* ----------- touristspots section ------------ */
 #touristpots-section{
-padding: 4rem 0 7rem;
+padding: 4rem 0 10rem;
 }
 
 .touristspots {
@@ -335,11 +367,17 @@ padding: 4rem 0 7rem;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+  transition: transform 0.4s ease;
 }
 
+#touristpots-section .touristspot button:hover {
+  background-color: var(--button-color1);
+}
 
+#touristpots-section .touristspot button:active {
+background-color: var(--button-color);
 
-
+}
 
 
 
@@ -359,6 +397,7 @@ padding: 4rem 0 7rem;
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
+
   background-color: var(--blue-for-background-lighter);
 
 }
@@ -394,11 +433,14 @@ padding: 4rem 0 7rem;
 
 
 
+
+
+
 /* ----------- footer section ------------ */
 #footer {
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-top: -1px;
 }
 
 #footer i {
@@ -408,7 +450,6 @@ padding: 4rem 0 7rem;
 #footer a,
 #footer p {
   color: white;
-  font-weight: 600;
 
 }
 
@@ -421,4 +462,61 @@ padding: 4rem 0 7rem;
 #footer .col-lg-3:nth-child(4){
   padding-left: 2rem;
   margin-block: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+  #hero{
+    padding-top: 2rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #footer img {
+    width: 20rem;
+  }
+
+  #footer {
+    margin-top: -1px;
+  }
+
+  #footer img {
+    width: 15rem;
+  }
+  #footer-left{
+    margin-bottom: 30px;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 300px) {
+  #navbar{
+    padding-block: 10px !important;
+  }
+
+  .logo-container {
+    width: 8rem;
+  }
+
+  #top-header-container{
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+  }
 }

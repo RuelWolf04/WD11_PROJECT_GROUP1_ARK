@@ -8,11 +8,15 @@
 
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
+  --button-color1: #ffc32a;
+  --light-blue: #ebebeb;
 
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
+  /* --light-blue: #67b2eb; */
+
   --gray: #979797;
 	--red: #df4343;
   --maroon: #803C44;
@@ -123,15 +127,44 @@ button{
   justify-content: space-between !important;
 }
 
+
 /* header */
+.navbar {
+  z-index: 999;
+  padding-block: 1rem !important;
+}
+
 
 #section-top-header {
   background-color: #477eff;
+  padding-block: .325rem;
+}
+
+.top-header-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-header-contact {
+  display: flex;
+  align-items: center;
 }
 
 #header-email {
   font-size: var(--fs-6);
+  padding-right: 5px !important;
+  text-decoration: underline;
 }
+
+.top-header-contact a {
+  color: white !important;
+  font-size: var(--fs-6);
+  padding-left: 5px !important;
+  border-left: 1px solid white;
+  text-decoration: underline;
+}
+
 
 /* header navbar */
 
@@ -141,6 +174,7 @@ button{
 .navbar-scroll .navbar-brand {
   color: #262626;
 }
+
 
 /* Color of the navbar BEFORE scroll */
 .navbar-scroll {
@@ -154,9 +188,10 @@ button{
   color: #262626;
 }
 
+
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.938);
+  background-color: rgba(255, 255, 255, 0.854);
   box-shadow: 0 1px 15px #2d2d2db0 !important;
 
 }
@@ -166,6 +201,8 @@ button{
   padding-top: auto;
   padding-bottom: auto;
 }
+
+
 .navbar-brand {
   font-size: unset;
   height: 3.5rem;
@@ -181,7 +218,6 @@ button{
   font-weight: var(--fw-600);
   color: black;
   border: 2px solid transparent;
-
 }
 
 .nav-link.active{
@@ -200,16 +236,22 @@ button{
   border: none;
   font-weight: var(--fw-700);
   color: white;
-
   border: 1px solid var(--button-color) !important;
+  transition: transform 0.4s ease;
 
 }
 
-
-#nav-button:is(:hover, :active){
+#nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
+
+
+
+
+
+
+
 
 
 
@@ -290,7 +332,7 @@ main {
 
 #bikes {
   padding: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 
 .card{
@@ -298,16 +340,18 @@ main {
   width: 14rem;
   transition: 0.25s ease;
   box-shadow: 0px 5px 5px 1px rgb(24, 24, 24);
-  
+  border: 1px solid lightgray !important;
 }
 
-.card:is(:hover, :focus){
-  box-shadow: 0 5px 8px 1px rgb(24, 24, 24);
+.card:hover{
+  box-shadow: 1px 2px 3px rgb(24, 24, 24);
 }
 
 
 .jsb p {
   font-size: var(--fs-6);
+  color: #2d2d2d !important;
+
 }
 
 .card-header, .card-footer {
@@ -326,16 +370,23 @@ main {
 
 .card-title {
   font-weight: var(--fw-600);
+  color: #2d2d2d !important;
+
 }
 
 .card-footer p {
   font-weight: var(--fw-700);
+  color: #2d2d2d !important;
 }
 
 .card-footer button {
   border-radius: 20px;
   font-size: calc(13px, 2vw) !important;
+  transition: transform 0.4s ease;
+}
 
+.card-footer button:active{
+  transform: scale(.9);
 }
 
 .card-footer button:nth-child(1) {
@@ -347,8 +398,7 @@ main {
 }
 
 .card-footer button:nth-child(1):hover {
- background-color: #f8f8f8;
- color: var(--button-color);
+ background-color: var(--button-color1);
 }
 
 .card-footer button:nth-child(2) {
@@ -362,27 +412,22 @@ main {
 }
 
 /* card color */
-
-.card p, .card h5 {
-  color: white;
-}
-
 .card.green {
-  background-color: var(--green);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
 .card.red {
-  background-color: var(--red);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
 .card.maroon {
-  background-color: var(--maroon);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -390,28 +435,28 @@ main {
 
 
 .card.gray {
-  background-color: var(--gray  );
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
 .card.dark-green {
-  background-color: var(--dark-green);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
 .card.metalic {
-  background-color: var(--metalic);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
 .card.blue {
-  background-color: var(--blue-for-background-dark);
+  background-color: var(--light-blue);
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -461,11 +506,12 @@ main {
 
 
 
+
 /* ----------- footer section ------------ */
 #footer {
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-top: -1px;
 }
 
 #footer i {

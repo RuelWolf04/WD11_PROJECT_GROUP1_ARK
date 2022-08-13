@@ -274,24 +274,9 @@ main {
 
 
 
-/* ----------- hero section ------------ */
 
-#hero {
-  background-image: url('../img/backgrounds/motors-bg.jpg');
-  height: min(200px, 20vw);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-#hero .container {
-  height: 100% !important;
-}
 
-#hero h1 {
-  color: var(--text-in-white);
-  font-weight: var(--fw-700);
-}
 
 .tips-container .tip {
   position: relative;
@@ -315,9 +300,17 @@ main {
 /* ----------- main section ------------ */
 
 #tourists-spots-section {
-  padding: 4rem 0 7rem;
+  padding: 4rem 0 10rem;
 }
 
+.description-container h1 {
+  text-align: center;
+}
+
+.description-container p {
+  font-size: 1.1rem;
+
+}
 
 
 .description-container .description {
@@ -352,7 +345,13 @@ main {
   margin-bottom: 5rem !important;
 }
 
+#accordionFlushExample button {
+  font-size: 1.1rem;
+}
 
+#accordionFlushExample accordion-body {
+  font-size: 1.1rem !important;
+}
 
 
 

@@ -10,6 +10,8 @@
 
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
+  --button-color1: #ffc32a;
+
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
@@ -324,6 +326,10 @@ main {
   margin-bottom: 1rem !important;
 }
 
+#specific-motor-section li{
+  font-size: 1.1rem;
+}
+
 .description-container .description {
   text-align: justify;
   margin-bottom: 1rem !important;
@@ -356,6 +362,7 @@ main {
 
 .description-container p {
   margin-bottom: 1rem !important;
+  font-size: 1.1rem;
 }
 
 .description-container button {
@@ -363,18 +370,30 @@ main {
   color: white;
   padding: .625rem 2rem;
   border-radius: .325rem;
+  transition: transform 0.4s ease;
+}
+
+.description-container button:hover{
+  background-color: var(--button-color1);
 }
 
 .description-container {
   margin-bottom: 5rem !important;
 }
 
-
-
+.description-container button:active{
+  background-color: var(--button-color1);
+  transform: scale(.9);
+}
 
 /* accordion */
 #accordionFlushExample {
   margin-bottom: 5rem !important;
+}
+
+#accordionFlushExample button,
+#accordionFlushExample .accordion-body {
+  font-size: 1.1rem;
 }
 
 

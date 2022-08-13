@@ -10,11 +10,13 @@
 
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
+  --button-color1: #ffc32a;
+  --light-blue: #ebebeb;
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
-  --light-blue: #3B9AE1;
+  /* --light-blue: #3B9AE1; */
   --gray: #979797;
 	--red: #df4343;
   --maroon: #803C44;
@@ -133,16 +135,45 @@ button{
 
 
 
+
+
 /* header */
+.navbar {
+  z-index: 999;
+  padding-block: 1rem !important;
+}
+
 
 #section-top-header {
   background-color: #477eff;
+  padding-block: .325rem;
+}
+
+.top-header-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.top-header-contact {
+  display: flex;
+  align-items: center;
 }
 
 #header-email {
   font-size: var(--fs-6);
-
+  padding-right: 5px !important;
+  text-decoration: underline;
 }
+
+.top-header-contact a {
+  color: white !important;
+  font-size: var(--fs-6);
+  padding-left: 5px !important;
+  border-left: 1px solid white;
+  text-decoration: underline;
+}
+
 
 /* header navbar */
 
@@ -215,13 +246,15 @@ button{
   font-weight: var(--fw-700);
   color: white;
   border: 1px solid var(--button-color) !important;
+  transition: transform 0.4s ease;
 
 }
 
-#nav-button:is(:hover, :active){
+#nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
+
 
 
 
@@ -337,7 +370,7 @@ main {
 
 #reservation-step-4 {
   padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 
 
@@ -369,7 +402,7 @@ main {
 }
 
 #dots {
-    border-bottom: 1px dotted #262626;
+    border-bottom: 1px dotted #f8f8f8;
     height: 1.1rem;
     flex: 1;
 }
@@ -410,18 +443,34 @@ main {
   padding: .625rem 2rem;
   margin-top: 1rem;
   border-radius: 5px;
+  color: white;
+  transition: transform 0.4s ease;
 }
 
+.payment-container button:hover {
+  background-color: var(--button-color1);
+}
+
+.payment-container button:active{
+  background-color: var(--button-color);
+  transform: scale(.9);
+}
 
 
 
 /* ----------- step4 right section ------------ */
 #right-side {
-  background-color: var(--text-in-white);
+  background-color: var(--nineth-color);
   border: 1px solid rgb(141, 141, 141);
-
+  border-radius: 10px;
 }
 
+#right-side h4,
+#right-side p,
+#right-side li,
+#right-side label {
+color: white;
+}
 
 .pick-return-container {
     width: 100%;
@@ -438,6 +487,7 @@ main {
 .pis {
     border-left: 2px solid var(--button-color);
     padding-left: 1rem;
+    color: white;
 }
 
 
@@ -446,11 +496,10 @@ main {
 }
 
 
-
-
-
-
-
+#right-side .motorcycle-image-container {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+}
 
 
 
@@ -471,120 +520,126 @@ main {
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
+
   background-color: var(--blue-for-background-lighter);
 
-    margin-top: -1px;
-  }
-  
-  #newsletter h4,
-  #newsletter p {
-    color: white;
-  
-  }
-  
-  #newsletter input{
-    width: min(100px, auto);
-    border: none;
-    outline: none;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-  }
-  
-  #newsletter button{
-    color: white !important;
-    background-color: var(--button-color);
-    padding: 5px 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-weight: 600;
-  }
-  
-  
+}
+
+#newsletter h4,
+#newsletter p {
+  color: white;
+
+}
+
+#newsletter input{
+  width: min(100px, auto);
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#newsletter button{
+  color: white !important;
+  background-color: var(--button-color);
+  padding: 5px 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 600;
+}
 
 
 
 
-  /* ----------- footer section ------------ */
+
+
+
+
+
+
+
+
+/* ----------- footer section ------------ */
+#footer {
+  /* background-color: #0099FF; */
+  background-color: var(--blue-for-background-lighter);
+  margin-top: -1px;
+}
+
+#footer i {
+  font-size: 1.5rem;
+}
+
+#footer a,
+#footer p {
+  color: white;
+
+}
+
+#footer a:hover {
+  color: var(--button-color);
+}
+
+#footer .col-lg-3:nth-child(2),
+#footer .col-lg-3:nth-child(3),
+#footer .col-lg-3:nth-child(4){
+  padding-left: 2rem;
+  margin-block: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+  #hero{
+    padding-top: 2rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #footer img {
+    width: 20rem;
+  }
+
   #footer {
-    background-color: var(--blue-for-background-lighter);
-
     margin-top: -1px;
-
-  }
-  
-  #footer i {
-    font-size: 1.5rem;
-  }
-  
-  #footer a,
-  #footer p {
-    color: white;
-    font-weight: 600;
-  
-  }
-  
-  #footer a:hover {
-    color: var(--button-color);
-  }
-  
-  #footer .col-lg-3:nth-child(2),
-  #footer .col-lg-3:nth-child(3),
-  #footer .col-lg-3:nth-child(4){
-    padding-left: 2rem;
-    margin-block: 10px;
   }
 
-
-
-
-
-  /* 
-  
-  modal
-
-  */
-
-  .btn-close {
-    opacity: 1 !important;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    background-color: var(--darker-red) !important;
-    padding: 8px !important;
-    border-radius: 50% !important;
-
+  #footer img {
+    width: 15rem;
+  }
+  #footer-left{
+    margin-bottom: 30px;
   }
 
-  .modal-body h4 {
-    margin: 1rem 0 1.5rem;
+  .footer-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 300px) {
+  #navbar{
+    padding-block: 10px !important;
   }
 
-  .modal-body h5 {
-    margin-bottom: 1rem;
+  .logo-container {
+    width: 8rem;
   }
 
-  .modal-body input{
-    width: 100%;
-    margin-bottom: .625rem;
-    padding: 5px 10px 5px 5px;
+  #top-header-container{
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
   }
-
-  .modal-body input[type=submit] {
-    margin-block: .625rem;
-    background-color: #56B349;
-    border: none;
-    padding-block: .625rem;
-    border-radius: 10px;
-    color: white;
-    font-weight: 600;
-  }
-
-  .modal-body img {
-    height: 2.4rem;
-    width: auto;
-    margin-bottom: .635rem;
-  }
-
-  .modal-body .input-box {
-  }
-
+}
