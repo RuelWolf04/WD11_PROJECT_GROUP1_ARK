@@ -84,7 +84,7 @@
     <div id="hero" class="">
       <div class="container" style="align-items: center">
         <div class="row">
-          <div class="col-lg-6 d-flex align-items-center pt-md-5    ">
+          <div class="col-lg-6 d-flex align-items-center pt-md-5">
             <div class="greeting" style="padding-right: 30px">
               <h1>The Best motorcycle Rental in the philippines.</h1>
               <p>
@@ -96,8 +96,11 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6">
-            <img src="assets/img/hero/riding.jpg" alt="" />
+          <div class="col-lg-6" id="hero-right">
+            <img src="assets/img/hero/hero-bg2.png" alt="" />
+            <!-- <div class="circle-container-img1">
+              <img src="/assets/img/floater/pig.png" alt="">
+            </div> -->
           </div>
         </div>
 
@@ -152,11 +155,11 @@
 
     <!------------------ bikes section ----------------------->
     <section id="bikes" class="">
-      <div class="custom-shape-divider-top-1660187733">
+      <!-- <div class="custom-shape-divider-top-1660187733">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
         </svg>
-      </div>
+      </div> -->
 
 
       <div class="container pt-5" style="overflow-x: auto;">
@@ -292,7 +295,10 @@
     <section id="hiw" class="">
       <div class="container">
         <div class="row text-center">
-          <h2 class="mb-2">How It Works</h2>
+          <div class="under-title">
+          <h2>How It Works</h2>
+          <p class="">We know that you value time the most so to make renting more fast we recommend that you sign up first before renting. </p>
+        </div>
 
           <div class="d-flex flex-wrap" style="justify-content: space-evenly">
             <div class="hiw-card">
@@ -301,8 +307,9 @@
               </div>
               <h4>Set Location</h4>
               <p>
-                Set the return and pick up location for the rented motorcycle.
+                Set your desired location to pick-up and return the rented motorcycle.
               </p>
+              <i class="fa-solid fa-location-dot" id="back"></i>
             </div>
 
             <div class="hiw-card">
@@ -313,6 +320,7 @@
               <p>
                 Set the time and date for pick-up and return for the rented motorcycle.
               </p>
+              <i class="fa-solid fa-calendar-days" id="back"></i>
             </div>
 
             <div class="hiw-card">
@@ -323,6 +331,7 @@
               <p>
                 Choose your desired motorcycle and proceed to booking and payment.
               </p>
+              <i class="fa-solid fa-motorcycle" id="backr"></i>
             </div>
           </div>
         </div>
@@ -333,63 +342,50 @@
 
 
     <!------------------ popular deals section ----------------------->
-    <section id="deals-section">
+    <section id="popular-deals">
       <div class="container">
         <div class="row">
-          <h2>ARK Rental Deals</h2>
-
           <div class="col-lg-4">
-            <div class="deal p-3">
-              <div class="deal-img-cont">
-                <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
+            <div id="ark-deal">
+              <div>
+            <h3>ARK Motor Rental Deals</h3>
+            <p>Check out our current deals, to get big discounts!.</p>
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="deals-large-container">
+
+              <div class="deal1 deals">
+                <div class="cont">
+                  <i class="fa-solid fa-id-card"></i>
+                  <p>Student Discount</p>
+                </div>
               </div>
-              <p>Save up to <span class="key-word-deals">25%</span> MIDWEEK</p>
-              <button>MIDWEEK SPECIAL</button>
+              
+              <div class="deal2 deals">
+                <div class="cont">
+                  <i class="fa-solid fa-star"></i>
+                <p>Car Rental Coupons</p>
+              </div>
             </div>
 
-          </div>
-          <div class="col-lg-4">
-            <div class="deal p-3">
-              <div class="deal-img-cont">
-                <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
-              </div>
-              <p><span class="key-word-deals">Mistery</span> Motorcycle</p>
-              <button>Suprise Yourself!</button>
-
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="deal p-3">
-              <div class="deal-img-cont">
-                <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
-              </div>
-              <p>Check out more <span class="key-word-deals">ARK Deals</span></p>
-              <button>See more..</button>
-
-            </div>
-
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-
-    <!------------------ newsletter section ----------------------->
-    <section id="newsletter" class="bg-dark py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12 my-2">
-            <h4>Subscribe to our Newsletter</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div
-            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center">
-            <div class="newsletter-ig">
-              <form class="input-group w-100">
-                <input type="text" class="d-inline-block" />
-                <button id="subscribe">Subscribe</button>
-              </form>
+              <div class="deal3 deals"><div class="cont">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <p>Last Minute Deals</p>
+              </div></div>
+              <div class="deal4 deals"><div class="cont">
+                <i class="fa-solid fa-gem"></i>
+                <p>Senior Discount</p>
+              </div></div>
+              <div class="deal5 deals"><div class="cont">
+                <i class="fa-solid fa-medal"></i>
+                <p>Military & Veterans Discount</p>
+              </div></div>
+              <div class="deal6 deals"><div class="cont">
+                <i class="fa-solid fa-mountain-city"></i>
+                <p>Travel Discount Industry</p>
+              </div></div>
             </div>
           </div>
         </div>
@@ -405,7 +401,7 @@
     <section class="" id="comment-section">
       <div class="container">
         <div class="text-center" id="client-says">
-          <h2>What our clients says?</h2>
+          <h2>What our clients say?</h2>
           <p>We cherish the kind words from our clients and hope that they will build confidence in your decision to do
             business with us.
           </p>
@@ -497,55 +493,75 @@
       </svg>
     </div>
   </main>
+
   <footer>
-
-    <section class="py-5" id="footer">
+    <section id="newsletter" class="py-4">
       <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
-            <img src="assets/img/ARK-white1.png" alt="">
-            <div class="d-flex gap-2 justify-content-center mt-4">
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-youtube"></i>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 my-2">
+            <h4>Never miss a Deal!</h4>
+            <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
+          </div>
+          <div
+            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center subscribe"
+          >
+            <div class="newsletter-ig">
+              <form class="input-group">
+                <input type="text" class="form-control d-inline-block" />
+                <button id="subscribe">Subscribe</button>
+              </form>
             </div>
           </div>
-
-          <div class="col-lg-8 col-md-9 col-sm-12">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
-                <h4>Site map</h4>
-                <div class="d-flex flex-column">
-                  <a href="#">Bikes</a>
-                  <a href="#">About</a>
-                  <a href="#">Where to go</a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
-                <h4>Support</h4>
-                <div class="d-flex flex-column">
-                  <a href="#">FAQ's</a>
-                  <a href="#">Help</a>
-                  <a href="#">Privacy Policy</a>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
-                <h4>Contact</h4>
-                <div class="d-flex flex-column">
-                  <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
-                  <p class="p-0">Phone: 0912-345-4567</p>
-                  <a href="#">Email: arkmotorental @gmail.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
+    <section class="py-5" id="footer">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
+          <img src="assets/img/ARK-white1.png" alt="">
+          <div class="d-flex gap-2 justify-content-center mt-4">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-9 col-sm-12">
+          <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
+            <h4>Site map</h4>
+            <div class="d-flex flex-column">
+            <a href="#">Bikes</a>
+            <a href="#">About</a>
+            <a href="#">Where to go</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
+          <h4>Support</h4>
+          <div class="d-flex flex-column">
+          <a href="#">FAQ's</a>
+          <a href="#">Help</a>
+          <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
+          <h4>Contact</h4>
+              <div class="d-flex flex-column">
+              <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+              <p class="p-0">Phone: 0912-345-4567</p>
+              <a href="#">Email: arkmotorental @gmail.com</a>
+              </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
     <div class="container-fluid">
       <div class="row text-center p-3 bg-dark">
         <p class="text-light">&copy; Alrights Reserved</p>
@@ -553,7 +569,6 @@
     </div>
 
   </footer>
-
   <!------------------ bootstrap js link ----------------------->
   <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
@@ -612,12 +627,12 @@
       const checkButtons = document.getElementsByClassName('check');
 
       for(const button in rentButtons){
-        rentButtons[button].addEventListener('click', function(){
+        rentButtons[button].onclick = function(){
           window.location.href = 'reservation-step1.html';
-        });
-        checkButtons[button].addEventListener('click', function(){
+        };
+        checkButtons[button].onclick = function(){
           window.location.href = 'motorcycle-info.html';
-        });
+        };
       }
 
 

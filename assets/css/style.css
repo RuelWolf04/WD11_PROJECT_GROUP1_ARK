@@ -298,7 +298,9 @@ main {
 #hero {
   padding-top: .1rem;
   padding-bottom: 2rem !important;
+  background: url('../img/backgrounds/bg2-illustration.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #hero .container {
@@ -346,6 +348,58 @@ main {
   background-color: var(--button-color);
   transform: scale(.9);
 }
+
+
+#hero-right {
+  position: relative;
+}
+
+#hero-right .circle-container-img1 {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  animation: bounce ease alternate;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  /* transition: 5s ease; */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    /* transform: translateY(10px); */
+  }
+  
+  100% {
+    transform: translateY(10px);
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #inputG .input-group{
@@ -416,10 +470,8 @@ main {
 #bikes {
   background-color: var(--blue-for-background-lighter);
   padding-top: 8rem;
-  padding-bottom: 4rem;
-  margin-top: -1px;
+  padding-bottom: 5rem;
   position: relative;
-
 }
 
 #popular-bikes-- {
@@ -446,7 +498,7 @@ main {
 }
 
 .custom-shape-divider-top-1660187733 .shape-fill {
-  fill: #FFFFFF;
+  fill: #967FAB;
 }
 
 
@@ -475,6 +527,9 @@ main {
 
 }
 
+.card-header{
+  align-items: center;
+}
 
 .card-header, .card-footer {
   border: none !important;
@@ -489,6 +544,10 @@ main {
 #five-star i{
   font-size: var(--fs-7);
   transform: translateY(5px) !important;
+}
+
+#five-star {
+padding-bottom: 10px;
 }
 
 
@@ -594,8 +653,22 @@ main {
 #hiw {
   /* background-color: var(--blue-for-background-lighter); */
   background-color: white;
-  padding-block: 4rem;
-  box-shadow: -1px 2px 5px rgba(29, 29, 29, 0.795) inset;
+  padding-block: 5rem;
+  position: relative;
+  box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.495);
+
+}
+
+#hiw h2 {
+  margin-bottom: .625rem;
+  font-weight: 600;
+}
+
+
+#hiw .under-title {
+  width: 40rem;
+  margin-inline: auto;
+  margin-bottom: 1.5rem;
 }
 
 .hiw-card {
@@ -603,10 +676,29 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgb(231, 231, 231);
   backdrop-filter: blur(1px);
-  border-radius: 1rem;
-  padding: 2rem 3rem;
+  border-radius: .625rem;
+  padding: 3rem 3rem;
   width: 300px;
   margin-block: 10px;
+  overflow: hidden;
+}
+
+.hiw-card #back {
+  position: absolute;
+  font-size: 15rem;
+  top: 0;
+  left: -2rem;
+  color: rgba(255, 255, 255, 0.534);
+  z-index: -1;
+}
+
+.hiw-card #backr {
+  position: absolute;
+  font-size: 15rem;
+  top: 0;
+  left: -5rem;
+  color: rgba(255, 255, 255, 0.534);
+  z-index: -1;
 }
 
 .hiw-card:nth-child(1) .icon-container i,
@@ -648,54 +740,62 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 
 /* ----------- popular deals with reviews section ------------ */
-
-#deals-section {
-  /* background-color: var(--seventh-color); */
-  background-color: #2B2B2B;
-
-  margin-block: -1px;
-  padding-block: 4rem;
+#popular-deals {
+  padding-block: 7rem;
 }
 
-#deals-section h2 {
-  margin-bottom: 1rem;
-  font-weight: 600;
+#popular-deals #ark-deal{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+
+
+.deals-large-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 1;
+  padding: 2rem 1rem;
+  background-color: var(--nineth-color);
+}
+
+.deals {
+  padding-block: 2rem;
+  display: grid;
+  place-items: center;
+  flex: 1;
+  flex-basis: 200px;
+  transition: .5s ease;
+}
+
+.deals:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.795);
+}
+
+.deals .cont {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  width: 11rem;
+}
+
+.deals .cont i {
+  font-size: 1.3rem;
+  color: var(--button-color);
+}
+
+.deals .cont p {
   color: white;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-#deals-section .deal p {
-  margin-top: 1rem !important;
-  font-size: 1.5rem;
-  color: white;
+.deals:hover .cont p{
+  color: var(--button-color);
 }
-
-#deals-section .key-word-deals {
-  font-weight: 600;
-  color: #F90716;
-
-}
-
-#deals-section .deal button {
-  background-color: var(--button-color);
-  width: 100%;
-  margin-top: 1rem;
-  padding-block: 10px;
-  line-height: normal;
-  color: white;
-  border-radius: 10px;
-  transition: transform 0.4s ease;
-}
-
-#deals-section .deal button:hover {
-  background-color: var(--button-color1);
-}
-
-#deals-section .deal button:active{
-transform: scale(.9);
-background-color: var(--button-color);
-}
-
-
 
 
 
@@ -760,17 +860,26 @@ background-color: var(--button-color);
   /* background-color: var(--black-background); */
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
+  margin-bottom: -1px;
 }
 
 #newsletter h4,
 #newsletter p {
   color: white;
+}
 
+#newsletter h4 {
+  font-weight: 600;
+}
+
+#newsletter .subscribe {
+  justify-content: end;
+  width: 100%;
 }
 
 #newsletter input{
-  width: min(100px, auto);
   border: none;
+  padding-left: 10px;
   outline: none;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
