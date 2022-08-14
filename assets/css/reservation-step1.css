@@ -491,7 +491,7 @@ main {
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
-
+  display: block;
   background-color: var(--blue-for-background-lighter);
 
 }

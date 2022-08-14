@@ -120,8 +120,8 @@
                   <p class="card-text mb-2">₱500/Day</p>
 
                   <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn"><a href="motorcycle-info.html" class="text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <button class="btn rent">Rent Now</button>
+                    <button class="btn check text-dark"><i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                   </div>
                 </div>
@@ -152,8 +152,8 @@
                   <p class="card-text mb-2">₱500/Day</p>
 
                   <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn"><a href="rs150r.html" class="text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <button class="btn rent">Rent Now</button>
+                    <button class="btn text-dark check"><i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                   </div>
                 </div>
@@ -184,9 +184,8 @@
                   <p class="card-text mb-2">₱500/Day</p>
 
                   <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn"><a href="miosporty.html" class="text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </button>
+                    <button class="btn rent">Rent Now</button>
+                    <button class="btn text-dark check"><i class="fa-solid fa-magnifying-glass"></i>   </button>
                   </div>
                 </div>
               </div>
@@ -216,8 +215,8 @@
                   <p class="card-text mb-2">P500/Day</p>
 
                   <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn"><a href="supertener.html" class="text-dark"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <button class="btn rent">Rent Now</button>
+                    <button class="btn check text-dark"><i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                   </div>
                 </div>
@@ -729,5 +728,28 @@
     <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
     <script src="assets/js/index.js"></script>
+
+
+    <script>
+      
+
+    // for card buttons
+
+    const rentButtons = document.getElementsByClassName('rent');
+    const checkButtons = document.getElementsByClassName('check');
+
+      for(const button in rentButtons){
+        rentButtons[button].addEventListener('click', function(){
+          window.location.href = 'reservation-step1.html';
+        });
+        checkButtons[button].addEventListener('click', function(){
+          window.location.href = 'motorcycle-info.html';
+        });
+      }
+    </script>
+
+
+
+
   </body>
 </html>

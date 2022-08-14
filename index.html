@@ -106,7 +106,7 @@
             <p>Pick-up Location</p>
 
             <div class="input-group">
-              <input type="text" placeholder="Location" id="pickUpLocation"/>
+              <input type="text" placeholder="Location" id="pickUpLocation" required/>
               <i class="fa-solid fa-location-dot"></i>
             </div>
 
@@ -115,7 +115,7 @@
           <div class="col-lg-3 mt-1" id="inputG">
             <p>Return location</p>
             <div class="input-group">
-              <input type="text" placeholder="Location" id="return-location"/>
+              <input type="text" placeholder="Location" id="return-location" required/>
               <i class="fa-solid fa-location-dot"></i>
             </div>
           </div>
@@ -123,19 +123,19 @@
           <div class="col-lg-3 mt-1" id="inputG">
             <p>Pick-up date</p>
             <div class="input-group">
-              <input type="date" id="pickedDate"/>
+              <input type="date" id="pickedDate" required/>
             </div>
           </div>
 
           <div class="col-lg-3 mt-1" id="inputG">
             <p>Return date</p>
             <div class="input-group">
-              <input type="date" id="returnDate"/>
+              <input type="date" id="returnDate" required/>
             </div>
           </div>
           <div class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center">
             <label for="rtl" class="text-light">
-              <input type="checkbox" name="rtl" onclick="isChecked()" enabled id="return-to-location-checked" class="me-1" />Return to
+              <input type="checkbox" name="rtl" onclick="isChecked()" enabled id="return-to-location-checked" class="me-1"/>Return to
               same location</label>
           </div>
 
@@ -184,8 +184,8 @@
                 <p class="card-text mb-2">P500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="#!" class="btn">Rent Now</button>
-                  <button href="#!" class="btn">
+                  <button class="btn rent">Rent Now</button>
+                  <button class="btn check">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
@@ -213,8 +213,8 @@
                 <p class="card-text mb-2">P500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="#!" class="btn">Book Now</button>
-                  <button href="#!" class="btn">
+                  <button class="btn rent">Rent Now</button>
+                  <button class="btn check">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
@@ -240,8 +240,8 @@
                 <p class="card-text mb-2">P500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="#!" class="btn">Book Now</button>
-                  <button href="#!" class="btn">
+                  <button class="btn rent">Rent Now</button>
+                  <button class="btn check">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
@@ -267,8 +267,8 @@
                 <p class="card-text mb-2">P500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="#!" class="btn">Book Now</button>
-                  <button href="#!" class="btn">
+                  <button class="btn rent">Book Now</button>
+                  <button class="btn check">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
@@ -598,6 +598,28 @@
 
       window.location.href = 'reservation-step1.html';
     });
+
+
+
+
+
+
+
+
+    // for card buttons
+
+      const rentButtons = document.getElementsByClassName('rent');
+      const checkButtons = document.getElementsByClassName('check');
+
+      for(const button in rentButtons){
+        rentButtons[button].addEventListener('click', function(){
+          window.location.href = 'reservation-step1.html';
+        });
+        checkButtons[button].addEventListener('click', function(){
+          window.location.href = 'motorcycle-info.html';
+        });
+      }
+
 
 
 

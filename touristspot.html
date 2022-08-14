@@ -116,7 +116,7 @@
                 </div>
                 <h4>Rizal-Park</h4>
                 <p>Rizal Park is the city’s biggest public park and is very dear to the Filipinos due to its historical significance. It is one of the best places to visit in Manila, Philippines.</p>
-                <button><a href="spot.html" class="text-white">More Info</a></button>
+                <button class="text-white more-info">More Info</button>
                 </div>
 
                 <div class="touristspot">
@@ -125,7 +125,8 @@
                 </div>
                 <h4>View of Taal Volcano</h4>
                 <p>Unbeknownst to many, what we now call Taal Lake is actually the caldera of a massive ancient volcano. But don’t panic, only the tiny island in the middle of the lake remains active.</p>
-                <button>More Info</button>
+                <button class="text-white more-info">More Info</button>
+
                 </div>
 
                 <div class="touristspot">
@@ -137,7 +138,7 @@
                   popular vacation destination for many years. It's located
                   just a few kilometers off the northwest coast of Panay, so
                   it's easy to get there by boat or ..</p>
-                <button>More Info</button>
+                  <button class="text-white more-info">More Info</button>
                 </div>
 
                 <div class="touristspot">
@@ -148,7 +149,7 @@
                 <p>Chocolate Hills is a geological formation in the Bohol province of the Philippines. There are at
                   least 1,260 hills, but there may be as many as 1,776 hills spread over an area of more than 50
                   square kilometers (20 sq mi).</p>
-                <button>More Info</button>
+                  <button class="text-white more-info">More Info</button>
                 </div>
 
                 <div class="touristspot">
@@ -157,7 +158,8 @@
                 </div>
                 <h4>Mayon Volcano</h4>
                 <p>Mayon Volcano is one of the most beautiful places to visit in the Philippines and is a top attraction in any Bicol tour.</p>
-                <button>More Info</button>
+                <button class="text-white more-info">More Info</button>
+
                 </div>
 
                 <div class="touristspot">
@@ -166,7 +168,8 @@
                 </div>
                 <h4>Fort Santiago</h4>
                 <p>Fort Santiago is one of the first places to visit Metro Manila. The fort was completed in 1593 and is located in the ancient walled city of Intramuros.</p>
-                <button>More Info</button>
+                <button class="text-white more-info">More Info</button>
+
                 </div>
 
 
@@ -268,5 +271,21 @@
   <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
   <script src="assets/js/index.js"></script>
+
+  <script>
+    // buttons
+
+    const moreInfo = document.getElementsByClassName('more-info');
+
+      for(const spot in moreInfo){
+        moreInfo[spot].addEventListener('click', function(){
+          window.location.href = 'spot.html';
+        });
+      }
+
+  </script>
+
+
+
 </body>
 </html>
