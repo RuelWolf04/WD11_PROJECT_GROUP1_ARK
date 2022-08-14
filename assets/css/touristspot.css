@@ -152,7 +152,7 @@ main {
 
 .main-bottom-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -193,7 +193,7 @@ main {
   padding-block: .325rem;
 }
 
-.top-header-container{
+#top-header-container{
   display: flex;
   width: 100%;
   justify-content: space-between;

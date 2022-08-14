@@ -132,16 +132,16 @@
           <div class="col-lg-6">
             <h4>PICK-UP</h4>
             <div class="pis">
-              <p>FRIDAY, AUGUST 25, 2022 at 9:00AM</p>
-              <p>Mactan International Airport, Cebu City</p>
+              <p><span id="picked-date"></span> <span id="picked-time"></span></p>
+              <p><span id="picked-location"></span></p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <h4>RETURN</h4>
             <div class="pis">
-              <p>FRIDAY, AUGUST 25, 2022 at 9:00PM</p>
-              <p>Mactan International Airport, Cebu City</p>
+              <p><span id="return-date"></span> <span id="return-time"></span></p>
+              <p><span id="return-location"></span></p>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@
               </div>
               <img
                 src="assets/img/motor/kawasaki/ninja-400-2019/9.jpg"
-                class="card-img-top"
+                class="card-img-top motor-image"
                 alt="Fissure in Sandstone"
               />
               <div class="card-footer text-center">
@@ -203,7 +203,7 @@
               </div>
               <img
                 src="assets/img/motor/honda/rs150r-2019/rs-150.jpg"
-                class="card-img-top"
+                class="card-img-top motor-image"
                 alt="Fissure in Sandstone"
               />
               <div class="card-footer text-center">
@@ -236,7 +236,7 @@
               </div>
               <img
                 src="assets/img/motor/yamaha/mio-sporty-2019/y-mio-sporty.jpg"
-                class="card-img-top"
+                class="card-img-top motor-image"
                 alt="Fissure in Sandstone"
               />
               <div class="card-footer text-center">
@@ -269,7 +269,7 @@
               </div>
               <img
                 src="assets/img/motor/yamaha/yamaha-supert-tener-2019/yst.png"
-                class="card-img-top"
+                class="card-img-top motor-image"
                 alt="Fissure in Sandstone"
               />
               <div class="card-footer text-center">
@@ -379,7 +379,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -413,7 +413,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -451,7 +451,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -485,7 +485,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -519,7 +519,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -553,7 +553,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -587,7 +587,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -621,7 +621,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button href="reservation-step3.html" class="btn">Select</button>
+                  <button href="reservation-step3.html" class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -655,7 +655,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button id="select" class="btn">Select</button>
+                  <button id="select" class="btn select">Select</button>
 
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -689,7 +689,7 @@
                 <p class="card-text mb-2">₱500/Day</p>
 
                 <div class="input-group justify-content-center">
-                  <button id="select" class="btn">Select</button>
+                  <button id="select" class="btn select">Select</button>
                   <button href="#!" class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
@@ -799,6 +799,115 @@
   <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
   <script src="assets/js/index.js"></script>
+
+
+  <script>
+    // getting the values from localstorage
+    const rentObject = JSON.parse(sessionStorage.getItem('rentObject'));
+
+    // for( let n = 0; n < rentObject.length; n++){
+      const pickedLocation = rentObject[0];
+      const pickedDate = rentObject[1];
+      const pickedTime = rentObject[2];
+      const returnLocation = rentObject[3];
+      const returnDate = rentObject[4];
+      const returnTime = rentObject[5];
+
+    // }
+
+    // const pickedDate = JSON.parse(sessionStorage.getItem( rentObject = 'pd'));
+    // const pickedLocation = sessionStorage.getItem('pickedLocation');
+    // const returnDate = sessionStorage.getItem('returnDate');
+    // const returnLocation = sessionStorage.getItem('returnLocation');
+    // const pickedTime = sessionStorage.getItem('pickedTime');
+    // const returnTime = sessionStorage.getItem('returnTime');
+
+
+
+    //putting the extracted input to span 
+    document.getElementById('picked-date').innerText = pickedDate;
+    document.getElementById('picked-location').innerText = pickedLocation;
+    document.getElementById('picked-time').innerText = pickedTime;
+    document.getElementById('return-location').innerText = returnLocation;
+    document.getElementById('return-date').innerText = returnDate;
+    document.getElementById('return-time').innerText = returnTime;
+
+
+
+
+// declaring variables
+    // const pickLocation = document.getElementById('picked-location');
+    // const returnToLocation = document.getElementById('return-location');
+    // const pickUpDate = document.getElementById('picked-date');
+    // const returnToDate  = document.getElementById('return-date');
+    // const pickUpTime = document.getElementById('picked-time');
+    // const returnToTime = document.getElementById('return-time');
+
+    const pickLocation = document.getElementById('picked-location');
+    const returnToLocation = document.getElementById('return-location');
+    const pickUpDate = document.getElementById('picked-date');
+    const returnToDate  = document.getElementById('return-date');
+    const pickUpTime = document.getElementById('picked-time');
+    const returnToTime = document.getElementById('return-time');
+
+
+    document.addEventListener("DOMContentLoaded", function(){
+    const selectedMotorCycle = document.getElementsByClassName('select');
+    const motorImage = document.getElementsByClassName('motor-image');
+    const motorName = document.getElementsByClassName('card-title');
+
+
+
+    const pickedLocationValue = pickLocation.innerText;
+      const returnLocationValue = returnToLocation.innerText;
+      const pickedDateValue = pickUpDate.innerText;
+      const returnDateValue = returnToDate.innerText;
+      const pickedTimeValue = pickUpTime.innerText;
+    const returnTimeValue = returnToTime.innerText;
+
+
+
+    for(let n = 0; n < selectedMotorCycle.length; n++){
+      selectedMotorCycle[n].addEventListener('click', function(e){
+    //     sessionStorage.setItem('motorImage', motorImage[n].src);
+    //     sessionStorage.setItem('motorName', motorName[n].innerText),
+
+
+    const motorImaged = motorImage[n].src;
+    const motorNamed = motorName[n].innerText;
+
+        
+        const rentObject1 = [
+          pickedLocationValue,
+          pickedDateValue,
+          pickedTimeValue,
+          returnLocationValue,
+          returnDateValue,
+          returnTimeValue,
+          motorImaged,
+          motorNamed
+          
+        ];
+
+        
+
+    
+    sessionStorage.setItem('rentObject1', JSON.stringify(rentObject1));
+    
+
+    window.location.href = 'reservation-step3.html';
+    // console.log(selectedMotorCycle[n]);
+    // console.log(motorImage[n].src);
+  }); 
+  
+};
+
+    });
+
+
+  </script>
+
+
 </body>
 
 </html>

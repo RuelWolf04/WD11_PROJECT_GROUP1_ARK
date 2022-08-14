@@ -2,48 +2,39 @@
 
 :root {
 
+
   /**
    * colors
    */
 
+
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
   --button-color1: #ffc32a;
-  --light-blue: #ebebeb;
-
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
-  /* --light-blue: #67b2eb; */
-
+  --light-blue: #f2f2f2;
   --gray: #979797;
 	--red: #df4343;
   --maroon: #803C44;
   --green: #56B349;
   --dark-green: #2a473e;
-  /* --red: #F90716; */
 	--darker-red: #b20600;
 	--orange-neon: #ff8d29;
 	--orange: #ff5f00;
-  --metalic: #655946;
-
-
-
   --first-color: #56a3a6ff;
-  /* --second-color: #c16200ff; */
   --second-color: #ff5f00ff;
   --third-color: #212227ff;
   --fourth-color: #e0ca3cff;
   --fifth-color: #fceff9ff;
-
   --sixth-color: #2E0249;
   --erro-color: #C20114;
-
-  
   --nineth-color: rgb(41,41,41);
   --seventh-color: rgb(34,34,34);
   --eigth-color: rgb(31,31,31);
+  --star: #FFA900;
 
 
 
@@ -53,8 +44,9 @@
    */
 
 
-   --ff-montserrat: 'Montserrat Alternates', sans-serif;
-   --ff-poppins: 'Poppins', sans-serif;
+
+  --ff-montserrat: 'Montserrat Alternates', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
    /* 30px */
   --fs-1: 1.875rem;
@@ -88,8 +80,8 @@ html {
 
 
 body {
-  font-family: var(--ff-poppins);
-  background-color: var(--text-in-white);
+  font-family: var(--ff-poppins); 
+  background-color: #f9f9f9 !important;
 }
 
 
@@ -105,6 +97,7 @@ p{
   padding: 0 !important;
 }
 
+
 i {
   display: block !important;
 }
@@ -112,6 +105,7 @@ i {
 img {
   width: 100%;
 }
+
 
 button{
   border: none;
@@ -128,6 +122,7 @@ button{
 }
 
 
+
 /* header */
 .navbar {
   z-index: 999;
@@ -140,7 +135,7 @@ button{
   padding-block: .325rem;
 }
 
-.top-header-container{
+#top-header-container{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -230,7 +225,6 @@ button{
   color: var(--button-color) !important;
 }
 
-
 #nav-button {
   background-color: var(--button-color);
   border: none;
@@ -238,16 +232,12 @@ button{
   color: white;
   border: 1px solid var(--button-color) !important;
   transition: transform 0.4s ease;
-
 }
 
 #nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
-
-
-
 
 
 
@@ -521,7 +511,6 @@ main {
 #footer a,
 #footer p {
   color: white;
-  font-weight: 600;
 
 }
 

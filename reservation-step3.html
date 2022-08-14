@@ -8,10 +8,10 @@
   <title>ARK - Rides</title>
 
   <!------------------ custom style css link ----------------------->
-  <link rel="stylesheet" href="./assets/css/reservation-step3.css" />
+  <link rel="stylesheet" href="assets/css/reservation-step3.css" />
 
   <!------------------ bootstrap css link ----------------------->
-  <link rel="stylesheet" href="./assets/mdbootstrap/css/mdb.min.css" />
+  <link rel="stylesheet" href="assets/mdbootstrap/css/mdb.min.css" />
 
   <!------------------ font awesome ----------------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -132,16 +132,16 @@
           <div class="col-lg-6">
             <h4>PICK-UP</h4>
             <div class="pis">
-              <p>FRIDAY, AUGUST 25, 2022 at 9:00AM</p>
-              <p>Mactan International Airport, Cebu City</p>
+              <p><span id="picked-date"></span> - <span id="picked-time"></span></p>
+              <p><span id="picked-location"></span></p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <h4>RETURN</h4>
             <div class="pis">
-              <p>FRIDAY, AUGUST 25, 2022 at 9:00PM</p>
-              <p>Mactan International Airport, Cebu City</p>
+              <p><span id="return-date"></span> - <span id="return-time"></span></p>
+              <p><span id="return-location"></span></p>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
           <div class="col-lg-6" id="check_One">
 
             <div class="check_One-img-container" style="display: grid; place-items: center; height: 100%;">
-              <img class="img-card rounded" src="./assets/img/motor/kawasaki/ninja-400-2019/9.jpg" alt="" />
+              <img class="img-card rounded" src="./assets/img/motor/kawasaki/ninja-400-2019/9.jpg" id="motor-selected" alt="" />
             </div>
           </div>
 
@@ -158,7 +158,7 @@
           <div class="col-lg-6" id="check_Two">
 
             <div class="Engine">
-              <h4>KAWASAKI Versys 1000 SE</h4>
+              <h4 id="motor-name">KAWASAKI Versys 1000 SE</h4>
               <p>
                 Engine Type: 4-stroke, In-Line Four, Liquid-Cooled, Fuel
                 Injected
@@ -192,25 +192,25 @@
               <h4>Extras</h4>
               <div class="extras-item">
                 <label for="">
-                  <input type="checkbox" name="" id=""> Additional Driver</label>
+                  <input type="checkbox" name="" id="extras1" value="Additional Driver"> Additional Driver</label>
 
                 <p>₱120/Per Rental</p>
               </div>
               <div class="extras-item">
                 <label for="">
-                  <input type="checkbox" name="" id=""> GPS</label>
+                  <input type="checkbox" name="" id="extras2" value="GPS"> GPS</label>
+
+                <p>₱150/Per Rental</p>
+              </div>
+              <div class="extras-item">
+                <label for="">
+                  <input type="checkbox" name="" id="extras3" value="Eletric-Tire-Pump"> Electric Tire Pump</label>
 
                 <p>₱120/Per Rental</p>
               </div>
               <div class="extras-item">
                 <label for="">
-                  <input type="checkbox" name="" id="">Electric Tire Pump</label>
-
-                <p>₱120/Per Rental</p>
-              </div>
-              <div class="extras-item">
-                <label for="">
-                  <input type="checkbox" name="" id=""> Music</label>
+                  <input type="checkbox" name="" id="extras4" value="Music"> Music</label>
 
                 <p>₱120/Per Rental</p>
               </div>
@@ -249,7 +249,7 @@
           </div>
 
           <div class="my-3 d-flex justify-content-center" id="to-step4">
-            <button><a href="reservation-step4.html" class="text-light">Continue</a></button>
+            <button class="text-light">Continue</button>
           </div>
         </div>
       </div>
@@ -343,6 +343,50 @@
   <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
   <script src="assets/js/index.js"></script>
+
+
+  <script>
+
+
+    // getting the values from localstorage
+    const rentObject1 = JSON.parse(sessionStorage.getItem('rentObject1'));
+
+      const pickedLocation = rentObject1[0];
+      const pickedDate = rentObject1[1];
+      const pickedTime = rentObject1[2];
+      const returnLocation = rentObject1[3];
+      const returnDate = rentObject1[4];
+      const returnTime = rentObject1[5];
+    const motorImage = rentObject1[6];
+    const motorName = rentObject1[7];
+
+
+    //putting the extracted input to span 
+    document.getElementById('picked-date').innerText = pickedDate;
+    document.getElementById('picked-location').innerText = pickedLocation;
+    document.getElementById('picked-time').innerText = pickedTime;
+    document.getElementById('return-location').innerText = returnLocation;
+    document.getElementById('return-date').innerText = returnDate;
+    document.getElementById('return-time').innerText = returnTime;
+    document.getElementById('motor-selected').setAttribute('src', motorImage);
+    document.getElementById('motor-name').innerText = motorName;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
 </body>
 
 </html>

@@ -1,399 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ARK - Rides</title>
 
-    <!------------------ custom style css link ----------------------->
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARK - Rides</title>
 
-    <!------------------ bootstrap css link ----------------------->
-    <link rel="stylesheet" href="./assets/mdbootstrap/css/mdb.min.css" />
+  <!------------------ custom style css link ----------------------->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!------------------ font awesome ----------------------->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+  <!------------------ bootstrap css link ----------------------->
+  <link rel="stylesheet" href="./assets/mdbootstrap/css/mdb.min.css" />
 
-  <body>
-    <header>
-      <!------------------ header top section ----------------------->
-      <section id="section-top-header">
-        <div class="container">
-          <div id="top-header-container">
-            <div class="d-flex">
-              <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
-              <i class="fa-brands fa-instagram mx-1 text-light"></i>
-            </div>
+  <!------------------ font awesome ----------------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-            <div class="top-header-contact">
-              <p class="text-light p-0 m-0" id="header-email">
-                ARKmotorrentals@gmail.com
-              </p>
-              <a href="contact.html">Contact</a>
-            </div>
+<body>
+  <header>
+    <!------------------ header top section ----------------------->
+    <section id="section-top-header">
+      <div class="container">
+        <div id="top-header-container">
+          <div class="d-flex">
+            <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
+            <i class="fa-brands fa-instagram mx-1 text-light"></i>
+          </div>
+
+          <div class="top-header-contact">
+            <p class="text-light p-0 m-0" id="header-email">
+              ARKmotorrentals@gmail.com
+            </p>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
-      </section>
-
-      <!------------------ header navbar ----------------------->
-      <nav
-        class="navbar navbar-expand-lg navbar-scroll"
-        id="navbar"
-      >
-        <div class="container">
-          <div class="logo-container">
-            <a class="navbar-brand" href="#!"
-              ><img src="assets/img/ARK-logo.png" alt=""
-            /></a>
-          </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto gap-3">
-              <li class="nav-item">
-                <a class="nav-link active tc" href="#!">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tc" href="bikes.html">Motorcycles</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tc" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tc" href="touristspot.html">Tourist Spots</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tc" href="reservation-step1.html">Book Now</a>
-              </li>
-              <li class="nav-item">
-                <a id="nav-button" href="signin.html" class="btn btn-dark">Sign In</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!------------------ hero section ----------------------->
-
-      <section id="hero" class="">
-        <div class="container" style="align-items: center">
-          <div class="row">
-            <div class="col-lg-6 d-flex align-items-center pt-md-5    ">
-              <div class="greeting" style="padding-right: 30px">
-                <h1>The number 1 motorcycle Rental in the philippines.</h1>
-                <p>
-                  ARK offers wide variety of motorcycles that can cater to the most demanding riders. Now, you have a chance to get a limited edition ARK Leisure Package FREE when you book a Unit!
-                </p>
-                <button class="b">
-                  <a class="text-white" href="bikes.html">Choose Ride</a>
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <img src="assets/img/hero/riding.jpg" alt="" />
-            </div>
-          </div>
-
-          <div id="booked" class="row mx-auto">
-            <div class="col-lg-3 mt-1" id="inputG">
-              <p>Pick-up Location</p>
-
-              <div class="input-group">
-                <input
-                  type="text"
-                  placeholder="Location"
-                  />
-                  <i class="fa-solid fa-location-dot"></i>
-              </div>
-
-            </div>
-
-            <div class="col-lg-3 mt-1" id="inputG">
-              <p>Return location</p>
-              <div class="input-group">
-                <input
-                  type="text"
-                  placeholder="Location"
-                  />
-                  <i class="fa-solid fa-location-dot"></i>
-              </div>
-            </div>
-
-            <div class="col-lg-3 mt-1" id="inputG">
-              <p>Pick-up date</p>
-              <div class="input-group">
-                <input type="datetime-local" />
-              </div>
-            </div>
-
-            <div class="col-lg-3 mt-1" id="inputG">
-              <p>Return date</p>
-              <div class="input-group">
-                <input type="datetime-local" />
-              </div>
-            </div>
-            <div
-              class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center"
-            >
-              <label for="rtl" class="text-light">
-                <input type="checkbox" name="rtl" id="" class="me-1" />Return to
-                same location</label
-              >
-            </div>
-
-            <div
-              class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-end"
-            >
-              <a href="reservation-step1.html" class="c">Submit</a>
-            </div>
-          </div>
-        </div>
-        
-      </section>
-
-
-
-      <!------------------ bikes section ----------------------->
-      <section id="bikes" class="">
-        <div class="custom-shape-divider-top-1660187733">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
-          </svg>
       </div>
+    </section>
 
+    <!------------------ header navbar ----------------------->
+    <nav class="navbar navbar-expand-lg navbar-scroll" id="navbar">
+      <div class="container">
+        <div class="logo-container">
+          <a class="navbar-brand" href="#!"><img src="assets/img/ARK-logo.png" alt="" /></a>
+        </div>
 
-        <div class="container pt-5" style="overflow-x: auto;">
-          <div class="row g-3 text-center" style="overflow-x: auto;">
-            <h2 class="mt-3 mb-3">ARK Popular Motorcycles</h2>
-            <div id="popular-bikes--">
-              
-              <div class="card green">
-                <div class="card-header d-flex jsb">
-                  <p class="p-0" style="line-height: normal">Kawasaki</p>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
 
-                  <div class="d-flex" id="five-star">
-                    <!-- <p class="p-0" style="line-height: normal;">5</p> -->
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                  </div>
-                </div>
-                <img
-                  src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg"
-                  class="card-img-top"
-                  alt="Fissure in Sandstone"
-                />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link active tc" href="#!">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="bikes.html">Motorcycles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="touristspot.html">Tourist Spots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="reservation-step1.html">Book Now</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-button" href="signin.html" class="btn btn-dark">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!------------------ hero section ----------------------->
 
-                <div class="card-footer text-center">
-                  <h5 class="card-title">Ninja-400</h5>
-                  <p class="card-text mb-2">P500/Day</p>
-
-                  <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Rent Now</button>
-                    <button href="#!" class="btn">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <div class="card green">
-                <div class="card-header d-flex jsb">
-                  <p class="p-0" style="line-height: normal">Honda</p>
-
-                  <div class="d-flex" id="five-star">
-                    <!-- <p class="p-0" style="line-height: normal;">5</p> -->
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                  </div>
-                </div>
-                <img
-                  src="assets/img/motor/honda/rs150r-2019/rs-150.jpg"
-                  class="card-img-top"
-                  alt="Fissure in Sandstone"
-                />
-                <div class="card-footer text-center">
-                  <h5 class="card-title">RS150R</h5>
-                  <p class="card-text mb-2">P500/Day</p>
-
-                  <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card green">
-                <div class="card-header d-flex jsb">
-                  <p class="p-0" style="line-height: normal">Yamaha</p>
-
-                  <div class="d-flex" id="five-star">
-                    <!-- <p class="p-0" style="line-height: normal;">5</p> -->
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                  </div>
-                </div>
-                <img
-                  src="assets/img/motor/yamaha/mio-sporty-2019/y-mio-sporty.jpg"
-                  class="card-img-top"
-                  alt="Fissure in Sandstone"
-                />
-                <div class="card-footer text-center">
-                  <h5 class="card-title">Mio Sporty</h5>
-                  <p class="card-text mb-2">P500/Day</p>
-
-                  <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card green">
-                <div class="card-header d-flex jsb">
-                  <p class="p-0" style="line-height: normal">Yamaha</p>
-
-                  <div class="d-flex" id="five-star">
-                    <!-- <p class="p-0" style="line-height: normal;">5</p> -->
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                    <i class="fa-solid fa-star text-warning"></i>
-                  </div>
-                </div>
-                <img
-                  src="assets/img/motor/yamaha/yamaha-supert-tener-2019/yst.png"
-                  class="card-img-top"
-                  alt="Fissure in Sandstone"
-                />
-                <div class="card-footer text-center">
-                  <h5 class="card-title">Super Tener</h5>
-                  <p class="card-text mb-2">P500/Day</p>
-
-                  <div class="input-group justify-content-center">
-                    <button href="#!" class="btn">Book Now</button>
-                    <button href="#!" class="btn">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-          </div>
-
-            <div class="mt-4">
-              <button id="seeall" class="py-2 px-5">
-                <a href="reservation-step2.html" class=""
-                  >See all Motorcycles
-                  <i class="fa-solid fa-arrow-right-long d-inline-block"></i
-                ></a>
+    <div id="hero" class="">
+      <div class="container" style="align-items: center">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center pt-md-5    ">
+            <div class="greeting" style="padding-right: 30px">
+              <h1>The Best motorcycle Rental in the philippines.</h1>
+              <p>
+                ARK offers wide variety of motorcycles that can cater to the most demanding riders. Now, you have a
+                chance to get a limited edition ARK Leisure Package FREE when you book a Unit!
+              </p>
+              <button class="b">
+                <a class="text-white" href="bikes.html">Choose Ride</a>
               </button>
             </div>
           </div>
+          <div class="col-lg-6">
+            <img src="assets/img/hero/riding.jpg" alt="" />
+          </div>
         </div>
 
+        <form id="booked" class="row mx-auto">
+          <div class="col-lg-3 mt-1" id="inputG">
+            <p>Pick-up Location</p>
+
+            <div class="input-group">
+              <input type="text" placeholder="Location" id="pickUpLocation"/>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 mt-1" id="inputG">
+            <p>Return location</p>
+            <div class="input-group">
+              <input type="text" placeholder="Location" id="return-location"/>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-1" id="inputG">
+            <p>Pick-up date</p>
+            <div class="input-group">
+              <input type="date" id="pickedDate"/>
+            </div>
+          </div>
+
+          <div class="col-lg-3 mt-1" id="inputG">
+            <p>Return date</p>
+            <div class="input-group">
+              <input type="date" id="returnDate"/>
+            </div>
+          </div>
+          <div class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center">
+            <label for="rtl" class="text-light">
+              <input type="checkbox" name="rtl" onclick="isChecked()" enabled id="return-to-location-checked" class="me-1" />Return to
+              same location</label>
+          </div>
+
+          <div class="my-2 col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-end">
+            <!-- <a type="submit" href="reservation-step1.html" class="c" id="submit">Submit</a> -->
+            <input type="submit" value="Submit" id="submit">
+          </div>
+        </form>
+      </div>
+
+    </div>
 
 
-      </section>
 
-      <!------------------ how it works section ----------------------->
-      <section id="hiw" class="">
-        
-        <!-- <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#477eff" d="M0,243L60,238.5C120,234,240,225,360,189C480,153,600,90,720,94.5C840,99,960,171,1080,166.5C1200,162,1320,81,1440,72C1560,63,1680,126,1800,148.5C1920,171,2040,153,2160,148.5C2280,144,2400,153,2520,148.5C2640,144,2760,126,2880,135C3000,144,3120,180,3240,193.5C3360,207,3480,198,3600,162C3720,126,3840,63,3960,36C4080,9,4200,18,4320,49.5C4440,81,4560,135,4680,139.5C4800,144,4920,99,5040,81C5160,63,5280,72,5400,63C5520,54,5640,27,5760,36C5880,45,6000,90,6120,112.5C6240,135,6360,135,6480,121.5C6600,108,6720,81,6840,76.5C6960,72,7080,90,7200,81C7320,72,7440,36,7560,27C7680,18,7800,36,7920,76.5C8040,117,8160,180,8280,198C8400,216,8520,189,8580,175.5L8640,162L8640,270L8580,270C8520,270,8400,270,8280,270C8160,270,8040,270,7920,270C7800,270,7680,270,7560,270C7440,270,7320,270,7200,270C7080,270,6960,270,6840,270C6720,270,6600,270,6480,270C6360,270,6240,270,6120,270C6000,270,5880,270,5760,270C5640,270,5520,270,5400,270C5280,270,5160,270,5040,270C4920,270,4800,270,4680,270C4560,270,4440,270,4320,270C4200,270,4080,270,3960,270C3840,270,3720,270,3600,270C3480,270,3360,270,3240,270C3120,270,3000,270,2880,270C2760,270,2640,270,2520,270C2400,270,2280,270,2160,270C2040,270,1920,270,1800,270C1680,270,1560,270,1440,270C1320,270,1200,270,1080,270C960,270,840,270,720,270C600,270,480,270,360,270C240,270,120,270,60,270L0,270Z"></path></svg> -->
+    <!------------------ bikes section ----------------------->
+    <section id="bikes" class="">
+      <div class="custom-shape-divider-top-1660187733">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+        </svg>
+      </div>
 
 
+      <div class="container pt-5" style="overflow-x: auto;">
+        <div class="row g-3 text-center" style="overflow-x: auto;">
+          <h2 class="mt-3 mb-3">ARK Popular Motorcycles</h2>
+          <div id="popular-bikes--">
 
-        <div class="container">
-          <div class="row text-center">
-            <h2 class="mb-2">How It Works</h2>
+            <div class="card green">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal">Kawasaki</p>
 
-            <div class="d-flex flex-wrap" style="justify-content: space-evenly">
-              <div class="hiw-card">
-                <div class="icon-container">
-                  <i class="fa-solid fa-location-dot"></i>
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
                 </div>
-                <h4>Set Location</h4>
-                <p>
-                  Set the return and pick up location for the rented motorcycle.
-                </p>
+              </div>
+              <img src="assets/img/motor/kawasaki/ninja-400-2019/ninja-400.jpg" class="card-img-top"
+                alt="Fissure in Sandstone" />
+
+              <div class="card-footer text-center">
+                <h5 class="card-title">Ninja-400</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                  <button href="#!" class="btn">Rent Now</button>
+                  <button href="#!" class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
               </div>
 
-              <div class="hiw-card">
-                <div class="icon-container">
-                  <i class="fa-solid fa-calendar-days" id="gahig-ulo"></i>
-                </div>
-                <h4>Set Date</h4>
-                <p>
-                  Set the time and date for pick-up and return for the rented motorcycle.
-                </p>
-              </div>
+            </div>
 
-              <div class="hiw-card">
-                <div class="icon-container">
-                  <i class="fa-solid fa-motorcycle"></i>
+
+            <div class="card green">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal">Honda</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
                 </div>
-                <h4>Choose Ride</h4>
-                <p>
-                  Choose your desired motorcycle and proceed to booking and payment.
-                </p>
+              </div>
+              <img src="assets/img/motor/honda/rs150r-2019/rs-150.jpg" class="card-img-top"
+                alt="Fissure in Sandstone" />
+              <div class="card-footer text-center">
+                <h5 class="card-title">RS150R</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                  <button href="#!" class="btn">Book Now</button>
+                  <button href="#!" class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card green">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal">Yamaha</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+              <img src="assets/img/motor/yamaha/mio-sporty-2019/y-mio-sporty.jpg" class="card-img-top"
+                alt="Fissure in Sandstone" />
+              <div class="card-footer text-center">
+                <h5 class="card-title">Mio Sporty</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                  <button href="#!" class="btn">Book Now</button>
+                  <button href="#!" class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card green">
+              <div class="card-header d-flex jsb">
+                <p class="p-0" style="line-height: normal">Yamaha</p>
+
+                <div class="d-flex" id="five-star">
+                  <!-- <p class="p-0" style="line-height: normal;">5</p> -->
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+              <img src="assets/img/motor/yamaha/yamaha-supert-tener-2019/yst.png" class="card-img-top"
+                alt="Fissure in Sandstone" />
+              <div class="card-footer text-center">
+                <h5 class="card-title">Super Tener</h5>
+                <p class="card-text mb-2">P500/Day</p>
+
+                <div class="input-group justify-content-center">
+                  <button href="#!" class="btn">Book Now</button>
+                  <button href="#!" class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="mt-4">
+            <button id="seeall" class="py-2 px-5">
+              <a href="reservation-step2.html" class="">See all Motorcycles
+                <i class="fa-solid fa-arrow-right-long d-inline-block"></i></a>
+            </button>
+          </div>
         </div>
-        <!-- <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#477eff" d="M0,243L60,238.5C120,234,240,225,360,189C480,153,600,90,720,94.5C840,99,960,171,1080,166.5C1200,162,1320,81,1440,72C1560,63,1680,126,1800,148.5C1920,171,2040,153,2160,148.5C2280,144,2400,153,2520,148.5C2640,144,2760,126,2880,135C3000,144,3120,180,3240,193.5C3360,207,3480,198,3600,162C3720,126,3840,63,3960,36C4080,9,4200,18,4320,49.5C4440,81,4560,135,4680,139.5C4800,144,4920,99,5040,81C5160,63,5280,72,5400,63C5520,54,5640,27,5760,36C5880,45,6000,90,6120,112.5C6240,135,6360,135,6480,121.5C6600,108,6720,81,6840,76.5C6960,72,7080,90,7200,81C7320,72,7440,36,7560,27C7680,18,7800,36,7920,76.5C8040,117,8160,180,8280,198C8400,216,8520,189,8580,175.5L8640,162L8640,270L8580,270C8520,270,8400,270,8280,270C8160,270,8040,270,7920,270C7800,270,7680,270,7560,270C7440,270,7320,270,7200,270C7080,270,6960,270,6840,270C6720,270,6600,270,6480,270C6360,270,6240,270,6120,270C6000,270,5880,270,5760,270C5640,270,5520,270,5400,270C5280,270,5160,270,5040,270C4920,270,4800,270,4680,270C4560,270,4440,270,4320,270C4200,270,4080,270,3960,270C3840,270,3720,270,3600,270C3480,270,3360,270,3240,270C3120,270,3000,270,2880,270C2760,270,2640,270,2520,270C2400,270,2280,270,2160,270C2040,270,1920,270,1800,270C1680,270,1560,270,1440,270C1320,270,1200,270,1080,270C960,270,840,270,720,270C600,270,480,270,360,270C240,270,120,270,60,270L0,270Z"></path></svg> -->
-      </section>
+      </div>
+
+
+
+    </section>
+
+    <!------------------ how it works section ----------------------->
+    <section id="hiw" class="">
+
+      <!-- <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#477eff" d="M0,243L60,238.5C120,234,240,225,360,189C480,153,600,90,720,94.5C840,99,960,171,1080,166.5C1200,162,1320,81,1440,72C1560,63,1680,126,1800,148.5C1920,171,2040,153,2160,148.5C2280,144,2400,153,2520,148.5C2640,144,2760,126,2880,135C3000,144,3120,180,3240,193.5C3360,207,3480,198,3600,162C3720,126,3840,63,3960,36C4080,9,4200,18,4320,49.5C4440,81,4560,135,4680,139.5C4800,144,4920,99,5040,81C5160,63,5280,72,5400,63C5520,54,5640,27,5760,36C5880,45,6000,90,6120,112.5C6240,135,6360,135,6480,121.5C6600,108,6720,81,6840,76.5C6960,72,7080,90,7200,81C7320,72,7440,36,7560,27C7680,18,7800,36,7920,76.5C8040,117,8160,180,8280,198C8400,216,8520,189,8580,175.5L8640,162L8640,270L8580,270C8520,270,8400,270,8280,270C8160,270,8040,270,7920,270C7800,270,7680,270,7560,270C7440,270,7320,270,7200,270C7080,270,6960,270,6840,270C6720,270,6600,270,6480,270C6360,270,6240,270,6120,270C6000,270,5880,270,5760,270C5640,270,5520,270,5400,270C5280,270,5160,270,5040,270C4920,270,4800,270,4680,270C4560,270,4440,270,4320,270C4200,270,4080,270,3960,270C3840,270,3720,270,3600,270C3480,270,3360,270,3240,270C3120,270,3000,270,2880,270C2760,270,2640,270,2520,270C2400,270,2280,270,2160,270C2040,270,1920,270,1800,270C1680,270,1560,270,1440,270C1320,270,1200,270,1080,270C960,270,840,270,720,270C600,270,480,270,360,270C240,270,120,270,60,270L0,270Z"></path></svg> -->
+
+
+
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="mb-2">How It Works</h2>
+
+          <div class="d-flex flex-wrap" style="justify-content: space-evenly">
+            <div class="hiw-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h4>Set Location</h4>
+              <p>
+                Set the return and pick up location for the rented motorcycle.
+              </p>
+            </div>
+
+            <div class="hiw-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-calendar-days" id="gahig-ulo"></i>
+              </div>
+              <h4>Set Date</h4>
+              <p>
+                Set the time and date for pick-up and return for the rented motorcycle.
+              </p>
+            </div>
+
+            <div class="hiw-card">
+              <div class="icon-container">
+                <i class="fa-solid fa-motorcycle"></i>
+              </div>
+              <h4>Choose Ride</h4>
+              <p>
+                Choose your desired motorcycle and proceed to booking and payment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 270" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="#477eff" d="M0,243L60,238.5C120,234,240,225,360,189C480,153,600,90,720,94.5C840,99,960,171,1080,166.5C1200,162,1320,81,1440,72C1560,63,1680,126,1800,148.5C1920,171,2040,153,2160,148.5C2280,144,2400,153,2520,148.5C2640,144,2760,126,2880,135C3000,144,3120,180,3240,193.5C3360,207,3480,198,3600,162C3720,126,3840,63,3960,36C4080,9,4200,18,4320,49.5C4440,81,4560,135,4680,139.5C4800,144,4920,99,5040,81C5160,63,5280,72,5400,63C5520,54,5640,27,5760,36C5880,45,6000,90,6120,112.5C6240,135,6360,135,6480,121.5C6600,108,6720,81,6840,76.5C6960,72,7080,90,7200,81C7320,72,7440,36,7560,27C7680,18,7800,36,7920,76.5C8040,117,8160,180,8280,198C8400,216,8520,189,8580,175.5L8640,162L8640,270L8580,270C8520,270,8400,270,8280,270C8160,270,8040,270,7920,270C7800,270,7680,270,7560,270C7440,270,7320,270,7200,270C7080,270,6960,270,6840,270C6720,270,6600,270,6480,270C6360,270,6240,270,6120,270C6000,270,5880,270,5760,270C5640,270,5520,270,5400,270C5280,270,5160,270,5040,270C4920,270,4800,270,4680,270C4560,270,4440,270,4320,270C4200,270,4080,270,3960,270C3840,270,3720,270,3600,270C3480,270,3360,270,3240,270C3120,270,3000,270,2880,270C2760,270,2640,270,2520,270C2400,270,2280,270,2160,270C2040,270,1920,270,1800,270C1680,270,1560,270,1440,270C1320,270,1200,270,1080,270C960,270,840,270,720,270C600,270,480,270,360,270C240,270,120,270,60,270L0,270Z"></path></svg> -->
+    </section>
 
 
 
 
-      <!------------------ popular deals section ----------------------->
-      <section id="deals-section">
-        <div class="container">
-          <div class="row">
+    <!------------------ popular deals section ----------------------->
+    <section id="deals-section">
+      <div class="container">
+        <div class="row">
           <h2>ARK Rental Deals</h2>
 
           <div class="col-lg-4">
             <div class="deal p-3">
-            <div class="deal-img-cont">
-              <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
+              <div class="deal-img-cont">
+                <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
+              </div>
+              <p>Save up to <span class="key-word-deals">25%</span> MIDWEEK</p>
+              <button>MIDWEEK SPECIAL</button>
             </div>
-            <p>Save up to <span class="key-word-deals">25%</span> MIDWEEK</p>
-            <button>MIDWEEK SPECIAL</button>
-          </div>
 
           </div>
           <div class="col-lg-4">
@@ -403,227 +366,279 @@
               </div>
               <p><span class="key-word-deals">Mistery</span> Motorcycle</p>
               <button>Suprise Yourself!</button>
-  
+
             </div>
           </div>
           <div class="col-lg-4">
-                      
-
-          <div class="deal p-3">
-            <div class="deal-img-cont">
-              <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
-            </div>
-            <p>Check out more <span class="key-word-deals">ARK Deals</span></p>
-            <button>See more..</button>
-
-          </div>
-
-          </div>
 
 
-          </div>
-        </div>
-      </section>
-
-              <!------------------ newsletter section ----------------------->
-              <section id="newsletter" class="bg-dark py-4">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12 my-2">
-                      <h4>Subscribe to our Newsletter</h4>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div
-                      class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center"
-                    >
-                      <div class="newsletter-ig">
-                        <form class="input-group w-100">
-                          <input type="text" class="d-inline-block" />
-                          <button id="subscribe">Subscribe</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-
-
-
-
-      <!------------------ popular deals section ----------------------->
-
-      <section class="" id="comment-section">
-        <div class="container">
-          <div class="text-center" id="client-says">
-            <h2>What our clients says?</h2>
-            <p>We cherish the kind words from our clients and hope that they will build confidence in your decision to do business with us.
-            </p>
-          </div>
-          
-    
-    
-          <div class="row mt-4">
-    
-            <div class="col-lg-4">
-              <article class="swiper-slide">
-                <div class="comment-container">
-                  <div class="comment-top">
-                    <img src="assets/img/testimonial/jane doe2.jpg"">
-                    <div class="r-side">
-                      <h5>Nathasha Rosales</h5>
-                      <div class="comment-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>You have a great place there. The bikes are not only beautiful but very well maintained. Your selection is also the best I have ever seen in the Philippines :-)</p>
-                </div>
-              </article>
-            </div>
-    
-            <div class="col-lg-4">
-              <article class="swiper-slide">
-                <div class="comment-container">
-                  <div class="comment-top">
-                    <img src="assets/img/testimonial/john Doe.png" alt="">
-                    <div class="r-side">
-                      <h5>Andrea Bochilli</h5>
-                      <div class="comment-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>I'm very satisfied with the service and quality of the bikes. Everything was smooth, timely and efficient. I will come again and recommend this company to everyone!
-                  </p>
-                </div>
-              </article>
-            </div>
-    
-            <div class="col-lg-4">
-              <article class="swiper-slide">
-                <div class="comment-container">
-                  <div class="comment-top">
-                    <img src="assets/img/testimonial/jane doe2.jpg" alt="">
-                    <div class="r-side">
-                      <h5>Bernadette Santos</h5>
-                      <div class="comment-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>I have just booked with you for 4 bikes to go to Baguio rally from Manila - everything is great, and I'm looking forward to my trip next week. Can't wait!
-                  </p>
-                </div>
-              </article>
-            </div>
-    
-          </div>
-        </div>
-    
-      </section>
-    
-
-      <div class="main-bottom-divider">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    </main>
-      <footer>
-
-              <!------------------ newsletter section ----------------------->
-              <section id="newsletter" class="py-4">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12 my-2">
-                      <h4>Subscribe to our Newsletter</h4>
-                      <p>When you subscribed we'll be sending you awesome content and great deals. Please remember that our newsletter is for subscribers only so sign up now!</p>
-                    </div>
-                    <div
-                      class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center"
-                    >
-                      <div class="newsletter-ig">
-                        <form class="input-group w-100">
-                          <input type="text" class="d-inline-block" />
-                          <button id="subscribe">Subscribe</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-        <section class="py-5" id="footer">
-        <div class="container">
-          <div class="row justify-content-between">
-
-            <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
-              <img src="assets/img/ARK-white1.png" alt="">
-              <div class="d-flex gap-2 justify-content-center mt-4">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
+            <div class="deal p-3">
+              <div class="deal-img-cont">
+                <img src="assets/img/motor/honda/pcx160/honda-pcx160.jpg" alt="">
               </div>
+              <p>Check out more <span class="key-word-deals">ARK Deals</span></p>
+              <button>See more..</button>
+
             </div>
 
-            <div class="col-lg-8 col-md-9 col-sm-12">
-              <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!------------------ newsletter section ----------------------->
+    <section id="newsletter" class="bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 my-2">
+            <h4>Subscribe to our Newsletter</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div
+            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center">
+            <div class="newsletter-ig">
+              <form class="input-group w-100">
+                <input type="text" class="d-inline-block" />
+                <button id="subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!------------------ popular deals section ----------------------->
+
+    <section class="" id="comment-section">
+      <div class="container">
+        <div class="text-center" id="client-says">
+          <h2>What our clients says?</h2>
+          <p>We cherish the kind words from our clients and hope that they will build confidence in your decision to do
+            business with us.
+          </p>
+        </div>
+
+
+
+        <div class="row mt-4">
+
+          <div class="col-lg-4">
+            <article class="swiper-slide">
+              <div class="comment-container">
+                <div class="comment-top">
+                  <img src="assets/img/testimonial/jane doe2.jpg"">
+                    <div class=" r-side">
+                  <h5>Nathasha Rosales</h5>
+                  <div class="comment-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>You have a great place there. The bikes are not only beautiful but very well maintained. Your selection
+                is also the best I have ever seen in the Philippines :-)</p>
+          </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4">
+          <article class="swiper-slide">
+            <div class="comment-container">
+              <div class="comment-top">
+                <img src="assets/img/testimonial/john Doe.png" alt="">
+                <div class="r-side">
+                  <h5>Andrea Bochilli</h5>
+                  <div class="comment-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>I'm very satisfied with the service and quality of the bikes. Everything was smooth, timely and
+                efficient. I will come again and recommend this company to everyone!
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-4">
+          <article class="swiper-slide">
+            <div class="comment-container">
+              <div class="comment-top">
+                <img src="assets/img/testimonial/jane doe2.jpg" alt="">
+                <div class="r-side">
+                  <h5>Bernadette Santos</h5>
+                  <div class="comment-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p>I have just booked with you for 4 bikes to go to Baguio rally from Manila - everything is great, and
+                I'm looking forward to my trip next week. Can't wait!
+              </p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      </div>
+
+    </section>
+
+
+    <div class="main-bottom-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </main>
+  <footer>
+
+    <!------------------ newsletter section ----------------------->
+    <!-- <section id="newsletter" class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 my-2">
+            <h4>Subscribe to our Newsletter</h4>
+            <p>When you subscribed we'll be sending you awesome content and great deals. Please remember that our
+              newsletter is for subscribers only so sign up now!</p>
+          </div>
+          <div
+            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center">
+            <div class="newsletter-ig">
+              <form class="input-group w-100">
+                <input type="text" class="d-inline-block" />
+                <button id="subscribe">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="py-5" id="footer">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
+            <img src="assets/img/ARK-white1.png" alt="">
+            <div class="d-flex gap-2 justify-content-center mt-4">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
                 <h4>Site map</h4>
                 <div class="d-flex flex-column">
-                <a href="#">Bikes</a>
-                <a href="#">About</a>
-                <a href="#">Where to go</a>
+                  <a href="#">Bikes</a>
+                  <a href="#">About</a>
+                  <a href="#">Where to go</a>
+                </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
-              <h4>Support</h4>
-              <div class="d-flex flex-column">
-              <a href="#">FAQ's</a>
-              <a href="#">Help</a>
-              <a href="#">Privacy Policy</a>
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
+                <h4>Support</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Help</a>
+                  <a href="#">Privacy Policy</a>
+                </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
-              <h4>Contact</h4>
-                  <div class="d-flex flex-column">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
+                <h4>Contact</h4>
+                <div class="d-flex flex-column">
                   <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
                   <p class="p-0">Phone: 0912-345-4567</p>
                   <a href="#">Email: arkmotorental @gmail.com</a>
-                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          </div>
 
-          </div>
         </div>
-      </section>
-        <div class="container-fluid">
-          <div class="row text-center p-3 bg-dark">
-            <p class="text-light">&copy; Alrights Reserved</p>
-          </div>
-        </div>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <div class="row text-center p-3 bg-dark">
+        <p class="text-light">&copy; Alrights Reserved</p>
+      </div>
+    </div>
 
-      </footer>
+  </footer>
 
-      <!------------------ bootstrap js link ----------------------->
-      <script src="assets/mdbootstrap/js/mdb.min.js"></script>
+  <!------------------ bootstrap js link ----------------------->
+  <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
-      <script src="assets/js/index.js"></script>
-    </body>
-  </html>
+  <script src="assets/js/index.js"></script>
+
+  <script>
+    function isChecked() {
+      if(document.getElementById('return-to-location-checked').checked){
+        const rtl = document.getElementById('return-location');
+        rtl.setAttribute('value', document.getElementById('pickUpLocation').value);
+        rtl.setAttribute('disabled', 'disabled');
+      }
+      else if(document.getElementById('return-to-location-checked')) {
+        const rtl = document.getElementById('return-location');
+        rtl.removeAttribute('disabled');
+        rtl.removeAttribute('value');
+      }
+    };
+
+
+
+
+    const book = document.getElementById('booked');
+    const pickedLocation = document.getElementById('pickUpLocation');
+    const returnLocation = document.getElementById('return-location');
+    const pickedDate = document.getElementById('pickedDate');
+    const returnDate = document.getElementById('returnDate');
+
+
+    book.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const pickedLocationValue = pickedLocation.value;
+      const returnLocationValue = returnLocation.value;
+      const pickedDateValue = pickedDate.value;
+      const returnDateValue = returnDate.value;
+
+      sessionStorage.setItem('pickedLocation', pickedLocationValue);
+      sessionStorage.setItem('returnLocation', returnLocationValue);
+      sessionStorage.setItem('pickedDate', pickedDateValue);
+      sessionStorage.setItem('returnDate', returnDateValue);
+
+      window.location.href = 'reservation-step1.html';
+    });
+
+
+
+
+  </script>
+
+</body>
+
+</html>

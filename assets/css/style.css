@@ -134,7 +134,7 @@ button{
   padding-block: .325rem;
 }
 
-.top-header-container{
+#top-header-container{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -224,7 +224,6 @@ button{
   color: var(--button-color) !important;
 }
 
-
 #nav-button {
   background-color: var(--button-color);
   border: none;
@@ -232,7 +231,6 @@ button{
   color: white;
   border: 1px solid var(--button-color) !important;
   transition: transform 0.4s ease;
-
 }
 
 #nav-button:hover{
@@ -262,7 +260,7 @@ main {
 
 .main-bottom-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -301,9 +299,8 @@ main {
 
 #hero {
   padding-top: .1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem !important;
   background-size: cover;
-  margin-bottom: -1px;
 }
 
 #hero .container {
@@ -435,7 +432,7 @@ main {
 
 .custom-shape-divider-top-1660187733 {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -553,7 +550,9 @@ main {
 }
 
 .card.green {
-  background-color: var(--light-blue);
+  /* background-color: var(--light-blue); */
+  background-color: #eeeeee;
+
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -831,7 +830,7 @@ background-color: var(--button-color);
 #footer {
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-  margin-top: -1px;
+
 }
 
 #footer i {

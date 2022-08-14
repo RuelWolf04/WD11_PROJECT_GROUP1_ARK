@@ -2,40 +2,41 @@
 
 :root {
 
+
   /**
    * colors
    */
 
+
   --text-in-white: #f8f8f8;
   --button-color: #FEB800;
   --button-color1: #ffc32a;
-
   --black-background: #2d2d2d;
 	--white-background: #eeeeee;
   --blue-for-background-dark: #0379c1;
   --blue-for-background-lighter: #477eff;
+  --light-blue: #67b2eb;
   --gray: #979797;
 	--red: #df4343;
   --maroon: #803C44;
   --green: #56B349;
   --dark-green: #2a473e;
-
-
-
-
-
+	--darker-red: #b20600;
+	--orange-neon: #ff8d29;
+	--orange: #ff5f00;
   --first-color: #56a3a6ff;
-  /* --second-color: #c16200ff; */
   --second-color: #ff5f00ff;
   --third-color: #212227ff;
   --fourth-color: #e0ca3cff;
   --fifth-color: #fceff9ff;
   --sixth-color: #2E0249;
   --erro-color: #C20114;
-	--darker-red: #b20600;
-	--orange-neon: #ff8d29;
-	--orange: #ff5f00;
+  --nineth-color: rgb(41,41,41);
+  --seventh-color: rgb(34,34,34);
+  --eigth-color: rgb(31,31,31);
   --star: #FFA900;
+
+
 
 
   /**
@@ -43,8 +44,9 @@
    */
 
 
-   --ff-montserrat: 'Montserrat Alternates', sans-serif;
-   --ff-poppins: 'Poppins', sans-serif;
+
+  --ff-montserrat: 'Montserrat Alternates', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 
    /* 30px */
   --fs-1: 1.875rem;
@@ -73,10 +75,12 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
+
 body {
-  font-family: var(--ff-poppins);
+  font-family: var(--ff-poppins); 
 }
 
 
@@ -92,6 +96,7 @@ p{
   padding: 0 !important;
 }
 
+
 i {
   display: block !important;
 }
@@ -99,6 +104,7 @@ i {
 img {
   width: 100%;
 }
+
 
 button{
   border: none;
@@ -116,10 +122,6 @@ button{
 
 
 
-
-
-
-
 /* header */
 .navbar {
   z-index: 999;
@@ -132,7 +134,7 @@ button{
   padding-block: .325rem;
 }
 
-.top-header-container{
+#top-header-container{
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -218,10 +220,9 @@ button{
 
 
 
-.nav-link:is(:hover, :focus){
+.nav-link:hover{
   color: var(--button-color) !important;
 }
-
 
 #nav-button {
   background-color: var(--button-color);
@@ -230,16 +231,12 @@ button{
   color: white;
   border: 1px solid var(--button-color) !important;
   transition: transform 0.4s ease;
-
 }
 
 #nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
-
-
-
 
 
 
@@ -257,7 +254,7 @@ main {
 
 .main-bottom-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -332,7 +329,8 @@ main {
 
 /* ----------- our team section ------------ */
 #ourTeam {
-  padding-block: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .mc-container {
@@ -341,9 +339,16 @@ main {
   place-items: center;
 }
 
+.mc-container h5,
+.mc-container h6,
+.mc-container p {
+  color: white;
+}
+
 #ourTeam .member-card {
   text-align: center;
-  background-color: var(--text-in-white);
+  /* background-color: var(--text-in-white); */
+  background-color: var(--nineth-color);
   border-radius: .8rem;
   padding: 3rem 5px;
   width: 15rem;
@@ -358,8 +363,14 @@ main {
   /* margin: auto; */
 }
 
+
+
+
+
+
 #mav {
   padding-block: 3rem;
+  position: relative;
 }
 
 #mav h1,
@@ -370,6 +381,7 @@ main {
 .Vison,
 .mission {
   background-color: var(--blue-for-background-lighter);
+  margin-block: -1px;
 }
 
 
@@ -378,13 +390,17 @@ main {
 
 }
 
+#svg-mav-top {
+  position: absolute;
+  top: -13rem;
+}
 
 
 
 /* ----------- stats section ------------ */
 #stats {
   background-color: var(--blue-for-background-lighter);
-  
+  margin-block: -1px;
 }
 
 #stats i{
@@ -416,7 +432,7 @@ padding: 3rem;
 
 /* -----------comment section ------------ */
 #comment-section {
-  padding-block: 10rem;
+  padding-bottom: 10rem;
   
 }
 
