@@ -99,32 +99,35 @@
         <div class="row">
           <div class="col-lg-6 mb-3">
             <div class="image-large-container">
-              <img src="assets/img/touristspots/rizal-park/1.jpg" alt="">
+              <img src="assets/img/touristspots/rizal-park/1.jpg" alt="" id="image-main">
             </div>
             <div class="small-images-flex">
               <div class="small-image image1">
-                <img src="assets/img/touristspots/rizal-park/2.jpg" alt="">
+                <img src="assets/img/touristspots/rizal-park/2.jpg" alt="" class="smallimage">
               </div>
               <div class="small-image image2">
-                <img src="assets/img/touristspots/rizal-park/3.jpg" alt="">
+                <img src="assets/img/touristspots/rizal-park/3.jpg" alt="" class="smallimage">
               </div>
               <div class="small-image image3">
-                <img src="assets/img/touristspots/rizal-park/4.jpg" alt="">
+                <img src="assets/img/touristspots/rizal-park/4.jpg" alt="" class="smallimage">
               </div>
               <div class="small-image image4">
-                <img src="assets/img/touristspots/rizal-park/5.jpg" alt="">
-              </div>
-
-              <div class="small-image image4">
-                <img src="assets/img/touristspots/rizal-park/5.jpg" alt="">
+                <img src="assets/img/touristspots/rizal-park/5.jpg" alt="" class="smallimage">
               </div>
 
-              <div class="small-image image4">
-                <img src="assets/img/touristspots/rizal-park/5.jpg" alt="">
+              <div class="small-image image5">
+                <img src="assets/img/touristspots/rizal-park/6.jpg" alt="" class="smallimage">
               </div>
 
-              <div class="small-image image4">
-                <img src="assets/img/touristspots/rizal-park/5.jpg" alt="">
+              <div class="small-image image6">
+                <img src="assets/img/touristspots/rizal-park/7.jpg" alt="" class="smallimage">
+              </div>
+
+              <div class="small-image image7">
+                <img src="assets/img/touristspots/rizal-park/8.jpg" alt="" class="smallimage">
+              </div>
+              <div class="small-image image7">
+                <img src="assets/img/touristspots/rizal-park/1.jpg" alt="" class="smallimage">
               </div>
             </div>
           </div>
@@ -371,6 +374,41 @@
   </footer>
 
   <!------------------ bootstrap js link ----------------------->
+<script>
+  var mainImage = document.getElementById("image-main");
+  var smallImg = document.getElementsByClassName("smallimage");
+
+  smallImg[0].onclick = function(){
+    mainImage.src = smallImg[0].src;
+  };
+  smallImg[1].onclick = function(){
+    mainImage.src = smallImg[1].src;
+  };
+  smallImg[2].onclick = function(){
+    mainImage.src = smallImg[2].src;
+  };
+  smallImg[3].onclick = function(){
+    mainImage.src = smallImg[3].src;
+  };
+  smallImg[4].onclick = function(){
+    mainImage.src = smallImg[4].src;
+  };
+  smallImg[5].onclick = function(){
+    mainImage.src = smallImg[5].src;
+  };
+  smallImg[6].onclick = function(){
+    mainImage.src = smallImg[6].src;
+  };
+  smallImg[7].onclick = function(){
+    mainImage.src = smallImg[7].src;
+  };
+  
+ 
+</script>
+
+
+
+
   <script src="assets/mdbootstrap/js/mdb.min.js"></script>
 
   <script src="assets/js/index.js"></script>
