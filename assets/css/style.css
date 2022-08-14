@@ -218,8 +218,6 @@ button{
   color: var(--button-color)
 }
 
-
-
 .nav-link:is(:hover, :focus){
   color: var(--button-color) !important;
 }
@@ -314,7 +312,7 @@ main {
 }
 
 #hero p {
-  margin-block: 1rem !important;
+  margin-block: 1.1rem !important;
 
 }
 
@@ -325,6 +323,7 @@ main {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 2px;
+  font-size: 1.1rem;
 }
 
 
@@ -388,7 +387,7 @@ main {
 
 }
 
-#booked a{
+#booked input[type='submit']{
   padding: .525rem 1.5rem;
   background-color: var(--button-color);
   color: white;
@@ -398,11 +397,11 @@ main {
 }
 
 
-#booked a:hover{
+#booked input[type='submit']:hover{
   background-color: var(--button-color1);
 }
 
-#booked a:active{
+#booked input[type='submit']:active{
   background-color: var(--button-color);
   transform: scale(.9);
 }
@@ -532,7 +531,7 @@ main {
 
 .card-footer button:nth-child(2) {
   border: 1px solid var(--button-color);
-  color: #262626;
+  color: white;
   background-color: #bebebe38;
   padding: 10px 15px;
   transition: 0.15s ease;
@@ -541,52 +540,25 @@ main {
 
 .card-footer button:nth-child(2):hover {
   background-color: #f1f1f1;
+  color: var(--nineth-color);
 }
 
 /* card color */
 
 .card p, .card h5 {
-  color: #2d2d2d;
+  color: white !important;
 }
 
 .card.green {
   /* background-color: var(--light-blue); */
-  background-color: #eeeeee;
+  background-color: var(--nineth-color);
 
   padding: 5px;
   border-top-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.705);
+  /* border: 1px solid rgba(255, 255, 255, 0.705); */
 }
 
-.card.red {
-  background-color: var(--red);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-.card.maroon {
-  background-color: var(--maroon);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-
-.card.gray {
-  background-color: var(--gray  );
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-.card.dark-green {
-  background-color: var(--dark-green);
-  padding: 5px;
-  border-top-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
 
 /* 
 - bikes button
