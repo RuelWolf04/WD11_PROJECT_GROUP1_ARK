@@ -281,7 +281,7 @@ main {
 
 #hero {
   background-image: url('../img/backgrounds/bg-6.jpg');
-  height: min(200px, 20vw);
+  height: min(200px, 30vw);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 10px;
