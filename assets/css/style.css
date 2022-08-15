@@ -450,7 +450,7 @@ main {
   background-color: var(--button-color);
   color: white;
   border-radius: 10px;
-  font-weight: 600;
+  /* font-weight: 500; */
   transition: transform 0.4s ease;
 }
 
@@ -826,7 +826,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 }
 
 #comment-section #client-says {
-
+  max-width: 40rem;
   margin-inline: auto;
   
 }
@@ -893,7 +893,6 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 #newsletter .subscribe {
   justify-content: end;
   align-items: center;
-
 }
 
 #newsletter input{
@@ -913,12 +912,9 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   font-weight: 600;
 }
 .newsletter-ig {
-  width: 80%;
+  width: 100%;
 }
 
-.newsletter-ig .input-group{
-  /* max-width: 600px; */
-}
 
 #newsletter button:hover {
   background-color: var(--button-color1);
@@ -937,7 +933,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 #footer {
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-top: -1px;
 }
 
 #footer i {
@@ -1062,6 +1058,14 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 @media (max-width: 300px){
   html {
     font-size: 15px;
+  }
+
+  #newsletter-ig{
+    justify-content: center;
+  }
+
+  #newsletter-ig .input-group{
+    width: 100%;
   }
 
   #top-header-container {

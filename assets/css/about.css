@@ -76,6 +76,7 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-size: 15.5px;
 }
 
 
@@ -247,11 +248,6 @@ main {
   position: relative;
 }
 
-
-
-
-
-
 .main-bottom-divider {
   position: absolute;
   bottom: -2px;
@@ -288,7 +284,7 @@ main {
 /* ----------- hero section ------------ */
 #hero {
   background-image: url('../img/backgrounds/motors-bg.jpg');
-  height: min(200px, 50vw);
+  height: min(200px, 70vw);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -308,6 +304,11 @@ main {
 
 
 /* ----------- who we are section ------------ */
+.section1 {
+  padding-block: 5rem;
+}
+
+
 #firstrow h2{
   position: relative;
   margin: 0;
@@ -327,10 +328,16 @@ main {
 
 
 
+
+
+
+
+
 /* ----------- our team section ------------ */
 #ourTeam {
   padding-top: 5rem;
   padding-bottom: 10rem;
+  position: relative;
 }
 
 .mc-container {
@@ -359,8 +366,30 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 50px;
+
   margin-bottom: 3rem;
   /* margin: auto; */
+}
+
+
+.custom-shape-divider-bottom-1660542759 {
+  position: absolute;
+  bottom: 0rem;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1660542759 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 138px;
+}
+
+.custom-shape-divider-bottom-1660542759 .shape-fill {
+  fill: #477eff;
 }
 
 
@@ -368,8 +397,10 @@ main {
 
 
 
+
+
+
 #mav {
-  padding-block: 3rem;
   position: relative;
 }
 
@@ -380,20 +411,21 @@ main {
 
 .Vison,
 .mission {
-  background-color: var(--blue-for-background-lighter);
   margin-block: -1px;
+  background-color: var(--blue-for-background-lighter);
+  padding-block: 2rem;
 }
+
 
 
 #img-container-mav {
-  width: 30rem;
-
+  max-width: 30rem;
 }
 
-#svg-mav-top {
-  position: absolute;
-  top: -13rem;
-}
+
+
+
+
 
 
 
@@ -415,7 +447,8 @@ main {
 
 #stat-container {
 text-align: center;
-padding: 3rem;
+padding-inline: 3rem;
+padding-block: 2rem;
 }
 
 #top-stats {
@@ -432,12 +465,13 @@ padding: 3rem;
 
 /* -----------comment section ------------ */
 #comment-section {
+  padding-top: 2rem;
   padding-bottom: 10rem;
   
 }
 
 #comment-section #client-says {
-  width: 40rem;
+  max-width: 40rem;
   margin-inline: auto;
   
 }
@@ -448,6 +482,8 @@ padding: 3rem;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 .2rem .3rem #2d2d2db0;
+  margin-bottom: 20px;
+
 }
 
 .comment-container img {
@@ -483,36 +519,31 @@ padding: 3rem;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------- newsletter section section ------------ */
 #newsletter {
-
   background-color: var(--blue-for-background-lighter);
+  margin-bottom: -1px;
+  padding-top: 3rem;
 
 }
 
 #newsletter h4,
 #newsletter p {
   color: white;
+}
 
+#newsletter h4 {
+  font-weight: 600;
+}
+
+#newsletter .subscribe {
+  justify-content: end;
+  align-items: center;
 }
 
 #newsletter input{
-  width: min(100px, auto);
   border: none;
+  padding-left: 10px;
   outline: none;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -527,6 +558,17 @@ padding: 3rem;
   font-weight: 600;
 }
 
+.newsletter-ig {
+  width: 100%;
+}
+
+#newsletter button:hover {
+  background-color: var(--button-color1);
+}
+
+#newsletter button:active {
+  background-color: var(--button-color);
+}
 
 
 
@@ -568,22 +610,34 @@ padding: 3rem;
 
 
 
-
-
-
-
-
-
-
-@media (max-width: 780px) {
-  #hero{
-    padding-top: 2rem;
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
   }
+
 }
 
 
 
 @media (max-width: 768px) {
+  #firstrow h2,
+  #firstrow p {
+    text-align: center;
+    margin-block: 10px;
+  }
+
+  #firstrow h2::before{
+    display: none;
+  }
+
+  .section1 {
+    padding-inline: 2% !important;
+  }
+
+  #img-container-mav {
+    margin-top: 2rem;
+  }
+
   #footer img {
     width: 20rem;
   }
@@ -607,7 +661,43 @@ padding: 3rem;
 
 
 
+
+
+
+
+@media (max-width: 520px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+  #navbar{
+    padding-block: 10px !important;
+  }
+
+  .logo-container {
+    width: 8rem;
+  }
+
+}
+
+
+
 @media (max-width: 300px) {
+  html {
+    font-size: 15px;
+  }
+
   #navbar{
     padding-block: 10px !important;
   }
@@ -621,4 +711,18 @@ padding: 3rem;
     place-items: center;
     margin-inline: auto;
   }
+
+  #newsletter-ig{
+    justify-content: center;
+  }
+
+  #newsletter-ig .input-group{
+    width: 100%;
+  }
+
+  #top-header-container {
+    display: grid;
+    place-items: center;
+  }
+
 }
