@@ -76,6 +76,7 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-size: 15.5px;
 }
 
 
@@ -297,10 +298,17 @@ main {
 
 #hero {
   padding-top: .1rem;
-  padding-bottom: 2rem !important;
+  padding-bottom: max(8vw);
+  background-color: var(--blue-for-background-lighter);
   background: url('../img/backgrounds/bg2-illustration.jpg');
   background-size: cover;
   background-position: center;
+  border-bottom-left-radius: 20vw;
+  border-bottom-right-radius: 20vw;
+  position: relative;
+  margin-bottom: -15rem;
+  z-index: 1;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.495);
 }
 
 #hero .container {
@@ -327,10 +335,6 @@ main {
   padding-left: 2px;
   font-size: 1.1rem;
 }
-
-
-
-
 
 #hero button.b{
   background-color: var(--button-color);
@@ -465,11 +469,17 @@ main {
 
 
 
+
+
+
+
+
+
 /* ----------- bikes section ------------ */
 
 #bikes {
   background-color: var(--blue-for-background-lighter);
-  padding-top: 8rem;
+  padding-top: 18rem;
   padding-bottom: 5rem;
   position: relative;
 }
@@ -500,6 +510,10 @@ main {
 .custom-shape-divider-top-1660187733 .shape-fill {
   fill: #967FAB;
 }
+
+
+
+
 
 
 
@@ -649,13 +663,16 @@ padding-bottom: 10px;
 
 
 
+
+
+
 /* ----------- how it works section ------------ */
 #hiw {
   /* background-color: var(--blue-for-background-lighter); */
   background-color: white;
   padding-block: 5rem;
   position: relative;
-  box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.495);
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.495);
 
 }
 
@@ -861,6 +878,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
   margin-bottom: -1px;
+  padding-top: 3rem;
 }
 
 #newsletter h4,
@@ -874,7 +892,8 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 #newsletter .subscribe {
   justify-content: end;
-  width: 100%;
+  align-items: center;
+
 }
 
 #newsletter input{
@@ -892,6 +911,13 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   font-weight: 600;
+}
+.newsletter-ig {
+  width: 80%;
+}
+
+.newsletter-ig .input-group{
+  /* max-width: 600px; */
 }
 
 #newsletter button:hover {
@@ -944,15 +970,44 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 
 
-@media (max-width: 780px) {
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+
   #hero{
     padding-top: 2rem;
+  }
+
+  #hiw {
+    padding-block: 5rem !important;
+  }
+
+  #popular-deals {
+    padding-block: 2rem !important;
   }
 }
 
 
 
 @media (max-width: 768px) {
+
+  #hero {
+    padding-bottom: 3rem !important;
+  }
+
+  #hero-right {
+    padding-block: 5rem !important;
+  }
+  
+  #hiw {
+    padding-bottom: 2rem;
+  }
+
+  #popular-deals {
+    padding-block: .625rem;
+  }
+
   #footer img {
     width: 20rem;
   }
@@ -976,7 +1031,7 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   #navbar{
     padding-block: 10px !important;
   }
@@ -985,9 +1040,32 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
     width: 8rem;
   }
 
-  #top-header-container{
+  #hero {
+    padding-bottom: 3rem !important;
+  }
+
+  #hero-right {
+    padding-block: 5rem !important;
+  }
+  
+  #hiw {
+    padding-bottom: 2rem;
+  }
+
+  #popular-deals {
+    padding-block: .625rem;
+  }
+
+
+}
+
+@media (max-width: 300px){
+  html {
+    font-size: 15px;
+  }
+
+  #top-header-container {
     display: grid;
     place-items: center;
-    margin-inline: auto;
   }
 }
