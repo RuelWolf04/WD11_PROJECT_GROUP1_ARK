@@ -975,6 +975,12 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
     padding-top: 2rem;
   }
 
+  .sign-in {
+    display: flex;
+    justify-content: center;
+  }
+
+
   #hiw {
     padding-block: 5rem !important;
   }

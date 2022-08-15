@@ -528,7 +528,14 @@ main {
   #popular-deals {
     padding-block: 2rem !important;
   }
+
+  .sign-in {
+    display: flex;
+    justify-content: center;
+  }
+
 }
+
 
 
 

@@ -541,4 +541,12 @@ main {
     flex-wrap: nowrap;
   }
   
+  .sign-in {
+    display: flex;
+    justify-content: center;
+  }
+
+  
 }
+
+
