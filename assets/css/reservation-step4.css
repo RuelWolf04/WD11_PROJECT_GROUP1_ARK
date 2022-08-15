@@ -298,11 +298,12 @@ main {
 
 /* ----------- hero section ------------ */
 #hero {
-    padding: 5rem 0 0;
+  padding-top: max(2rem, 8vw);
+  background-color: var(--nineth-color);
 }
 
 #hero h1 {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 #hero .steps {
     display: flex;
@@ -314,7 +315,6 @@ main {
 .step {
     position: relative;
     padding-bottom: 2rem;
-    padding-inline: 2rem;
     overflow: hidden;
 }
 
@@ -342,7 +342,7 @@ main {
     height: 1rem;
     width: 100%;
     background-color: var(--button-color);
-    left: -100%;
+    left: -102%;
     bottom: 0rem;
     transition: 0.3s ease;
 }
@@ -374,6 +374,9 @@ main {
     padding-block: 3rem;
 }
 
+#pi-inputs {
+  margin-bottom: 2rem;
+}
 
 #pi-inputs input{
     margin-top: .875rem;
@@ -469,6 +472,7 @@ color: white;
 
 .pick-return-container {
     width: 100%;
+    padding: 3rem;
 }
 
 .pick-return-container a{
@@ -490,7 +494,22 @@ color: white;
   display: flex;
 }
 
+.motor-edit {
+  display: flex;
+  justify-content: space-between;
+}
 
+.car-summary-container {
+  padding: 3rem;
+}
+
+.choose-option-container {
+  padding: 3rem;
+}
+
+.option {
+  margin-bottom: 3px;
+}
 
 
 
@@ -517,17 +536,27 @@ color: white;
   /* background-color: var(--black-background); */
   /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
+  margin-bottom: -1px;
+  padding-top: 3rem;
 }
 
 #newsletter h4,
 #newsletter p {
   color: white;
+}
 
+#newsletter h4 {
+  font-weight: 600;
+}
+
+#newsletter .subscribe {
+  justify-content: end;
+  align-items: center;
 }
 
 #newsletter input{
-  width: min(100px, auto);
   border: none;
+  padding-left: 10px;
   outline: none;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -541,6 +570,10 @@ color: white;
   border-bottom-right-radius: 10px;
   font-weight: 600;
 }
+.newsletter-ig {
+  width: 100%;
+}
+
 
 #newsletter button:hover {
   background-color: var(--button-color1);
@@ -587,58 +620,6 @@ color: white;
 
 
 
-
-
-
-
-
-@media (max-width: 780px) {
-  #hero{
-    padding-top: 2rem;
-  }
-}
-
-
-
-@media (max-width: 768px) {
-  #footer img {
-    width: 20rem;
-  }
-
-  #footer {
-    margin-top: -1px;
-  }
-
-  #footer img {
-    width: 15rem;
-  }
-  #footer-left{
-    margin-bottom: 30px;
-  }
-
-  .footer-right {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-}
-
-
-
-@media (max-width: 300px) {
-  #navbar{
-    padding-block: 10px !important;
-  }
-
-  .logo-container {
-    width: 8rem;
-  }
-
-  #top-header-container{
-    display: grid;
-    place-items: center;
-    margin-inline: auto;
-  }
-}
 
   /* 
   
@@ -690,3 +671,119 @@ color: white;
   .modal-body .input-box {
   }
 
+
+
+
+
+
+  
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  #footer {
+    margin-top: -1px;
+  }
+
+  #footer img {
+    width: 10rem;
+  }
+  #footer-left{
+    margin-bottom: 30px;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #navbar{
+    padding-block: 10px !important;
+  }
+
+  .logo-container {
+    width: 8rem;
+  }
+
+  #date-summary {
+    padding-inline: 1rem;
+  }
+
+  #reservation-step-4 {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+  }
+
+  .payment-options {
+    display: grid;
+    gap: 5px;
+  }
+
+  .estimated-total-row {
+    margin-block: 10px !important;
+    display: grid;
+}
+
+.estimated-total-row #dots {
+  display: none;
+}
+
+.pick-return-container {
+  padding-inline: 1rem !important;
+}
+
+.pick-return-container a {
+  margin-left: 80%;
+}
+
+.car-summary-container {
+  padding: 1rem;
+}
+
+.motor-edit {
+  display: grid;
+}
+
+.choose-option-container {
+  padding: 1rem;
+}
+
+ 
+}
+
+
+
+@media (max-width: 300px){
+  html {
+    font-size: 14px;
+  }
+
+  #newsletter-ig{
+    justify-content: center;
+  }
+
+  #newsletter-ig .input-group{
+    width: 100%;
+  }
+
+  #top-header-container {
+    display: grid;
+    place-items: center;
+
+  }
+
+
+
+}

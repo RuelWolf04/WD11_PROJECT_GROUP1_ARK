@@ -284,7 +284,7 @@ main {
 /* ----------- hero section ------------ */
 #hero {
   background-image: url('../img/backgrounds/motors-bg.jpg');
-  height: min(200px, 70vw);
+  height: min(200px, 20vw);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -305,7 +305,7 @@ main {
 
 /* ----------- who we are section ------------ */
 .section1 {
-  padding-block: 5rem;
+  padding-block: 1rem;
 }
 
 
@@ -335,7 +335,7 @@ main {
 
 /* ----------- our team section ------------ */
 #ourTeam {
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 10rem;
   position: relative;
 }
@@ -639,16 +639,13 @@ padding-block: 2rem;
   }
 
   #footer img {
-    width: 20rem;
+    width: 10rem;
   }
 
   #footer {
     margin-top: -1px;
   }
 
-  #footer img {
-    width: 15rem;
-  }
   #footer-left{
     margin-bottom: 30px;
   }

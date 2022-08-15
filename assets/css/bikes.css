@@ -262,7 +262,7 @@ main {
 
 .main-bottom-divider {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -301,7 +301,7 @@ main {
 
 #hero {
   background-image: url('../img/backgrounds/2aa.jpg');
-  height: min(200px, 20vw);
+  height: min(200px, 30vw);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -321,7 +321,7 @@ main {
 /* ----------- bikes section ------------ */
 
 #bikes {
-  padding: 3rem;
+  padding-top: 3rem;
   padding-bottom: 10rem;
   background-color: white;
 }
@@ -460,21 +460,33 @@ main {
 
 
 
+
 /* ----------- newsletter section section ------------ */
 #newsletter {
+  /* background-color: var(--black-background); */
+  /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-bottom: -1px;
+  padding-top: 3rem;
 }
 
 #newsletter h4,
 #newsletter p {
   color: white;
+}
 
+#newsletter h4 {
+  font-weight: 600;
+}
+
+#newsletter .subscribe {
+  justify-content: end;
+  align-items: center;
 }
 
 #newsletter input{
-  width: min(100px, auto);
   border: none;
+  padding-left: 10px;
   outline: none;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -488,10 +500,18 @@ main {
   border-bottom-right-radius: 10px;
   font-weight: 600;
 }
+.newsletter-ig {
+  width: 100%;
+}
 
 
+#newsletter button:hover {
+  background-color: var(--button-color1);
+}
 
-
+#newsletter button:active {
+  background-color: var(--button-color);
+}
 
 
 
@@ -525,4 +545,73 @@ main {
   padding-left: 2rem;
   margin-block: 10px;
 }
+
+
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  #footer {
+    margin-top: -1px;
+  }
+
+  #footer img {
+    width: 10rem;
+  }
+  #footer-left{
+    margin-bottom: 30px;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #navbar{
+    padding-block: 10px !important;
+  }
+
+  .logo-container {
+    width: 8rem;
+  }
+
+}
+
+
+
+@media (max-width: 300px){
+  html {
+    font-size: 15px;
+  }
+
+  #newsletter-ig{
+    justify-content: center;
+  }
+
+  #newsletter-ig .input-group{
+    width: 100%;
+  }
+
+  #top-header-container {
+    display: grid;
+    place-items: center;
+  }
+}
+
+
+
+
 

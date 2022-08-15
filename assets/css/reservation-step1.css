@@ -144,14 +144,13 @@ button{
 }
 
 #top-header-container{
-  display: flex !important;
+  display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
 .top-header-contact {
   display: flex;
-
   align-items: center;
 }
 
@@ -234,7 +233,6 @@ button{
   color: var(--button-color) !important;
 }
 
-
 #nav-button {
   background-color: var(--button-color);
   border: none;
@@ -242,17 +240,12 @@ button{
   color: white;
   border: 1px solid var(--button-color) !important;
   transition: transform 0.4s ease;
-
 }
 
 #nav-button:hover{
   background-color: #f8f8f8;
   color: var(--button-color);
 }
-
-
-
-
 
 
 
@@ -303,11 +296,14 @@ main {
 
 /* ----------- hero section ------------ */
 #hero {
-    padding: 5rem 0 0;
+  /* height: min(200px, 20vw); */
+  padding-top: max(2rem, 8vw);
+  background-color: var(--nineth-color);
+
 }
 
 #hero h1 {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 #hero .steps {
     display: flex;
@@ -319,7 +315,6 @@ main {
 .step {
     position: relative;
     padding-bottom: 2rem;
-    padding-inline: 2rem;
     overflow: hidden;
 }
 
@@ -347,7 +342,7 @@ main {
     height: 1rem;
     width: 100%;
     background-color: var(--button-color);
-    left: -100%;
+    left: -102%;
     bottom: 0rem;
     transition: 0.3s ease;
 }
@@ -418,7 +413,6 @@ main {
 #section-1 {
   padding-top: 3rem !important;
   padding-bottom: 10rem !important;
-
 }
 
 #section-1 h3 {
@@ -487,24 +481,32 @@ main {
 
 
 
-
-
 /* ----------- newsletter section section ------------ */
 #newsletter {
-  display: block;
+  /* background-color: var(--black-background); */
+  /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-bottom: -1px;
+  padding-top: 3rem;
 }
 
 #newsletter h4,
 #newsletter p {
   color: white;
+}
 
+#newsletter h4 {
+  font-weight: 600;
+}
+
+#newsletter .subscribe {
+  justify-content: end;
+  align-items: center;
 }
 
 #newsletter input{
-  width: min(100px, auto);
   border: none;
+  padding-left: 10px;
   outline: none;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -518,12 +520,18 @@ main {
   border-bottom-right-radius: 10px;
   font-weight: 600;
 }
+.newsletter-ig {
+  width: 100%;
+}
 
 
+#newsletter button:hover {
+  background-color: var(--button-color1);
+}
 
-
-
-
+#newsletter button:active {
+  background-color: var(--button-color);
+}
 
 
 
@@ -562,30 +570,23 @@ main {
 
 
 
-
-
-
-
-
-@media (max-width: 780px) {
-  #hero{
-    padding-top: 2rem;
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
   }
 }
 
 
 
+
 @media (max-width: 768px) {
-  #footer img {
-    width: 20rem;
-  }
 
   #footer {
     margin-top: -1px;
   }
 
   #footer img {
-    width: 15rem;
+    width: 10rem;
   }
   #footer-left{
     margin-bottom: 30px;
@@ -598,8 +599,7 @@ main {
 }
 
 
-
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   #navbar{
     padding-block: 10px !important;
   }
@@ -608,9 +608,29 @@ main {
     width: 8rem;
   }
 
-  #top-header-container{
+}
+
+
+
+@media (max-width: 300px){
+  html {
+    font-size: 14px;
+  }
+
+  #newsletter-ig{
+    justify-content: center;
+  }
+
+  #newsletter-ig .input-group{
+    width: 100%;
+  }
+
+  #top-header-container {
     display: grid;
     place-items: center;
-    margin-inline: auto;
+
   }
 }
+
+
+

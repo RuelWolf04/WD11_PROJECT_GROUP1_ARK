@@ -29,79 +29,62 @@
 </head>
 <body>
   <header>
+    <!------------------ header top section ----------------------->
+    <section id="section-top-header">
+      <div class="container">
+        <div id="top-header-container">
+          <div class="d-flex">
+            <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
+            <i class="fa-brands fa-instagram mx-1 text-light"></i>
+          </div>
 
-  <!------------------ header top section ----------------------->
-<section id="section-top-header">
-
-  <div id="container" class="container d-flex align-items-center py-1">
-
-    <div class="d-flex" style="width: 100%; justify-content: space-between;">
-
-      <div class="d-flex">
-        <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
-        <i class="fa-brands fa-instagram mx-1 text-light"></i>
+          <div class="top-header-contact">
+            <p class="text-light p-0 m-0" id="header-email">
+              ARKmotorrentals@gmail.com
+            </p>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <p class="text-light p-0 m-0" id="header-email">ARKmotorrentals@gmail.com</p>
+    <!------------------ header navbar ----------------------->
+    <nav class="navbar navbar-expand-lg navbar-scroll" id="navbar">
+      <div class="container">
+        <div class="logo-container">
+          <a class="navbar-brand" href="#!"><img src="assets/img/ARK-logo.png" alt="" /></a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link tc" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="bikes.html">Motorcycles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="touristspot.html">Tourist Spots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tc" href="reservation-step1.html">Book Now</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-button" href="signin.html" class="btn btn-dark">Sign In</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-    </div>
-  </div>
-
-</section>
-
-
-
-  <!------------------ header navbar ----------------------->
-  <nav
-  class="navbar navbar-expand-lg navbar-scroll py-3"
-  id="navbar"
->
-  <div class="container">
-    <div class="logo-container">
-      <a class="navbar-brand" href="index.html"
-        ><img src="assets/img/ARK-logo.png" alt=""
-      /></a>
-    </div>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto gap-3" style="">
-        <li class="nav-item">
-          <a class="nav-link tc" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tc" href="bikes.html">Motorcycles</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tc" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active tc" href="#!">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link tc" href="reservation-step1.html">Book Now</a>
-        </li>
-        <li class="nav-item">
-          <a id="nav-button" href="signin.html" class="btn btn-dark">Sign In</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+    </nav>
   </header>
   <main>
     
@@ -175,20 +158,20 @@
   </main>
   
   <footer>
-    <!------------------ newsletter section ----------------------->
     <section id="newsletter" class="py-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-12 my-2">
-            <h4>Subscribe to our Newsletter</h4>
-            <p>When you subscribed we'll be sending you awesome content and great deals. Please remember that our newsletter is for subscribers only so sign up now!</p>
+            <h4>Never miss a Deal!</h4>
+            <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
           </div>
+
           <div
-            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center"
+            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex subscribe"
           >
             <div class="newsletter-ig">
-              <form class="input-group w-100">
-                <input type="text" class="d-inline-block" />
+              <form class="input-group">
+                <input type="text" class="form-control" required/>
                 <button id="subscribe">Subscribe</button>
               </form>
             </div>
@@ -196,56 +179,60 @@
         </div>
       </div>
     </section>
-<section class="py-5" id="footer">
-<div class="container">
-<div class="row">
+    <section class="py-5" id="footer">
+    <div class="container">
+      <div class="row justify-content-between">
 
-  <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2">
-    <img src="assets/img/ARK-white1.png" alt="">
-    <div class="d-flex gap-2 justify-content-center mt-4">
-      <i class="fa-brands fa-square-facebook"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-3 col-sm-4  col-12 my-sm-2">
-      <h3>Site Map</h3>
-      <div class="d-flex flex-column">
-      <a href="#">Bikes</a>
-      <a href="#">About</a>
-      <a href="#">Where to go</a>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-3 col-sm-4  col-12 my-sm-2">
-    <h3>Support</h3>
-    <div class="d-flex flex-column">
-    <a href="#">FAQ's</a>
-    <a href="#">Help</a>
-    <a href="#">Privacy Policy</a>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-3 col-sm-4 col-12 my-sm-2">
-    <h3>Contact</h3>
-        <div class="d-flex flex-column">
-        <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
-        <p class="p-0">Phone: 0912-345-4567</p>
-        <a href="#">Email: ark.motorental@gmail.com</a>
+        <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
+          <img src="assets/img/ARK-white1.png" alt="">
+          <div class="d-flex gap-2 justify-content-center mt-4">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
         </div>
-  </div>
 
-</div>
-</div>
-</section>
-<div class="container-fluid">
-<div class="row text-center p-3 bg-dark">
-  <p class="text-light">&copy; Alrights Reserved</p>
-</div>
-</div>
+        <div class="col-lg-8 col-md-9 col-sm-12">
+          <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
+            <h4>Site map</h4>
+            <div class="d-flex flex-column">
+            <a href="#">Bikes</a>
+            <a href="#">About</a>
+            <a href="#">Where to go</a>
+          </div>
+        </div>
 
-</footer>
+        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
+          <h4>Support</h4>
+          <div class="d-flex flex-column">
+          <a href="#">FAQ's</a>
+          <a href="#">Help</a>
+          <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
+          <h4>Contact</h4>
+              <div class="d-flex flex-column">
+              <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+              <p class="p-0">Phone: 0912-345-4567</p>
+              <a href="#">Email: arkmotorental @gmail.com</a>
+              </div>
+        </div>
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+    <div class="container-fluid">
+      <div class="row text-center p-3 bg-dark">
+        <p class="text-light">&copy; Alrights Reserved</p>
+      </div>
+    </div>
+
+  </footer>
 
   
   

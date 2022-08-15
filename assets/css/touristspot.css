@@ -142,13 +142,7 @@ button{
 
 main {
   position: relative;
-
 }
-
-
-
-
-
 
 .main-bottom-divider {
   position: absolute;
@@ -171,7 +165,6 @@ main {
   fill: var(--blue-for-background-lighter);
 
 }
-
 
 
 
@@ -283,7 +276,6 @@ main {
   color: var(--button-color) !important;
 }
 
-
 #nav-button {
   background-color: var(--button-color);
   border: none;
@@ -291,7 +283,6 @@ main {
   color: white;
   border: 1px solid var(--button-color) !important;
   transition: transform 0.4s ease;
-
 }
 
 #nav-button:hover{
@@ -306,11 +297,12 @@ main {
 
 
 
+
 /* ----------- hero section ------------ */
 
 #hero {
-  background-image: url('../img/backgrounds/6.jpg');
-  height: min(200px, 20vw);
+  background-image: url('../img/backgrounds/5.jpg');
+  height: min(200px, 30vw);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -323,6 +315,8 @@ main {
 #hero h1 {
   color: var(--text-in-white);
   font-weight: var(--fw-700);
+  font-size: min();
+  text-align: center;
 }
 
 
@@ -394,23 +388,32 @@ background-color: var(--button-color);
 
 
 
-
 /* ----------- newsletter section section ------------ */
 #newsletter {
-
+  /* background-color: var(--black-background); */
+  /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
-
+  margin-bottom: -1px;
+  padding-top: 3rem;
 }
 
 #newsletter h4,
 #newsletter p {
   color: white;
+}
 
+#newsletter h4 {
+  font-weight: 600;
+}
+
+#newsletter .subscribe {
+  justify-content: end;
+  align-items: center;
 }
 
 #newsletter input{
-  width: min(100px, auto);
   border: none;
+  padding-left: 10px;
   outline: none;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -424,12 +427,18 @@ background-color: var(--button-color);
   border-bottom-right-radius: 10px;
   font-weight: 600;
 }
+.newsletter-ig {
+  width: 100%;
+}
 
 
+#newsletter button:hover {
+  background-color: var(--button-color1);
+}
 
-
-
-
+#newsletter button:active {
+  background-color: var(--button-color);
+}
 
 
 
@@ -468,30 +477,23 @@ background-color: var(--button-color);
 
 
 
-
-
-
-
-
-@media (max-width: 780px) {
-  #hero{
-    padding-top: 2rem;
+@media (max-width: 991px) {
+  html {
+    font-size: 16px;
   }
 }
 
 
 
+
 @media (max-width: 768px) {
-  #footer img {
-    width: 20rem;
-  }
 
   #footer {
     margin-top: -1px;
   }
 
   #footer img {
-    width: 15rem;
+    width: 10rem;
   }
   #footer-left{
     margin-bottom: 30px;
@@ -504,8 +506,7 @@ background-color: var(--button-color);
 }
 
 
-
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   #navbar{
     padding-block: 10px !important;
   }
@@ -514,9 +515,28 @@ background-color: var(--button-color);
     width: 8rem;
   }
 
-  #top-header-container{
+}
+
+
+
+@media (max-width: 300px){
+  html {
+    font-size: 15px;
+  }
+
+  #newsletter-ig{
+    justify-content: center;
+  }
+
+  #newsletter-ig .input-group{
+    width: 100%;
+  }
+
+  #top-header-container {
     display: grid;
     place-items: center;
-    margin-inline: auto;
   }
 }
+
+
+

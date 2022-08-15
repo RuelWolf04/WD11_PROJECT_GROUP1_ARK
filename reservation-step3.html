@@ -126,10 +126,10 @@
 
 
     <!------------------ check out section 1------------------->
-    <section class="p-5">
+    <section class="">
       <div class="container" id="check_out">
         <div class="row my-4" id="date-summary">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <h4>PICK-UP</h4>
             <div class="pis">
               <p><span id="picked-location"></span></p>
@@ -137,7 +137,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <h4>RETURN</h4>
             <div class="pis">
               <p><span id="return-location"></span></p>
@@ -146,7 +146,7 @@
           </div>
         </div>
 
-        <div class="row p-5 my-2 bike-summary">
+        <div class="row my-2 bike-summary">
           <div class="col-lg-6" id="check_One">
 
             <div class="check_One-img-container" style="display: grid; place-items: center; height: 100%;">
@@ -187,7 +187,7 @@
     <section id="section-extras">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 my-2">
             <div class="extras-container">
               <h4>Extras</h4>
               <div class="extras-item">
@@ -218,7 +218,7 @@
           </div>
 
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 my-2">
             <div class="extras-container">
               <h4>Protection</h4>
               <div class="extras-item">
@@ -267,15 +267,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-12 my-2">
-            <h4>Subscribe to our Newsletter</h4>
-            <p>When you subscribed we'll be sending you awesome content and great deals. Please remember that our newsletter is for subscribers only so sign up now!</p>
+            <h4>Never miss a Deal!</h4>
+            <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
           </div>
+
           <div
-            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center"
+            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex subscribe"
           >
             <div class="newsletter-ig">
-              <form class="input-group w-100">
-                <input type="text" class="d-inline-block" />
+              <form class="input-group">
+                <input type="text" class="form-control" required/>
                 <button id="subscribe">Subscribe</button>
               </form>
             </div>
@@ -337,6 +338,7 @@
     </div>
 
   </footer>
+
 
 
   <!------------------ bootstrap js link ----------------------->

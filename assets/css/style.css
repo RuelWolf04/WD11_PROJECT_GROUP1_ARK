@@ -995,6 +995,8 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   #hero-right {
     padding-block: 5rem !important;
   }
+
+  
   
   #hiw {
     padding-bottom: 2rem;
@@ -1004,16 +1006,13 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
     padding-block: .625rem;
   }
 
-  #footer img {
-    width: 20rem;
-  }
 
   #footer {
     margin-top: -1px;
   }
 
   #footer img {
-    width: 15rem;
+    width: 10rem;
   }
   #footer-left{
     margin-bottom: 30px;
@@ -1053,11 +1052,16 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   }
 
 
+  #footer img {
+    width: 10rem;
+  }
+
+
 }
 
 @media (max-width: 300px){
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #newsletter-ig{
