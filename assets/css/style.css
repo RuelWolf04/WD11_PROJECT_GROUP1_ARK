@@ -342,7 +342,7 @@ main {
   border-bottom-left-radius: 20vw;
   border-bottom-right-radius: 20vw;
   position: relative;
-  margin-bottom: -15rem;
+  margin-bottom: -27rem;
   z-index: 1;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.495);
 }
@@ -498,7 +498,7 @@ main {
 
 #bikes {
   background-color: var(--blue-for-background-lighter);
-  padding-top: 18rem;
+  padding-top: 30rem;
   padding-bottom: 5rem;
   position: relative;
 }
