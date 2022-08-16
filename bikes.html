@@ -734,12 +734,12 @@
     const checkButtons = document.getElementsByClassName('check');
 
       for(const button in rentButtons){
-        rentButtons[button].addEventListener('click', function(){
+        rentButtons[button].onclick = function(){
           window.location.href = 'reservation-step1.html';
-        });
-        checkButtons[button].addEventListener('click', function(){
+        };
+        checkButtons[button].onclick = function(){
           window.location.href = 'motorcycle-info.html';
-        });
+        };
       }
     </script>
 
