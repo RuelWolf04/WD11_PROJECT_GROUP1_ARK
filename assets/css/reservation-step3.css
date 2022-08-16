@@ -152,7 +152,12 @@ button{
   justify-content: space-between;
 }
 
+#section-top-header i {
+  cursor: pointer;
+}
+
 .top-header-contact {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -451,10 +456,6 @@ border-radius: 10px;
 
 .extras-container .extras-item:last-child{
   border: none;
-}
-
-.extras-container .extras-item input {
-
 }
 
 #section-extras button {

@@ -28,6 +28,8 @@
           <div class="d-flex">
             <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
             <i class="fa-brands fa-instagram mx-1 text-light"></i>
+            <i class="fa-brands fa-youtube mx-1 text-light"></i>
+
           </div>
 
           <div class="top-header-contact">
@@ -41,31 +43,20 @@
     </section>
 
     <!------------------ header navbar ----------------------->
-    <nav
-      class="navbar navbar-expand-lg navbar-scroll"
-      id="navbar"
-    >
+    <nav class="navbar navbar-expand-lg navbar-scroll" id="navbar">
       <div class="container">
         <div class="logo-container">
-          <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/ARK-logo.png" alt=""
-          /></a>
+          <a class="navbar-brand" href="index.html"><img src="assets/img/ARK-logo.png" alt="" /></a>
         </div>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto gap-3" >
+          <ul class="navbar-nav ms-auto gap-3">
             <li class="nav-item">
               <a class="nav-link tc" href="index.html">Home</a>
             </li>
@@ -133,7 +124,7 @@
             <h4>PICK-UP</h4>
             <div class="pis">
               <p><span id="picked-location"></span></p>
-              <p><span id="picked-date"></span> 	&#124; <span id="picked-time"></span></p>
+              <p><span id="picked-date"></span> &#124; <span id="picked-time"></span></p>
             </div>
           </div>
 
@@ -141,7 +132,7 @@
             <h4>RETURN</h4>
             <div class="pis">
               <p><span id="return-location"></span></p>
-              <p><span id="return-date"></span> 	&#124; <span id="return-time"></span></p>
+              <p><span id="return-date"></span> &#124; <span id="return-time"></span></p>
             </div>
           </div>
         </div>
@@ -150,7 +141,8 @@
           <div class="col-lg-6" id="check_One">
 
             <div class="check_One-img-container" style="display: grid; place-items: center; height: 100%;">
-              <img class="img-card rounded" src="./assets/img/motor/kawasaki/ninja-400-2019/9.jpg" id="motor-selected" alt="" />
+              <img class="img-card rounded" src="./assets/img/motor/kawasaki/ninja-400-2019/9.jpg" id="motor-selected"
+                alt="" />
             </div>
           </div>
 
@@ -171,7 +163,7 @@
               <p>Fuel Capacity: 21 Litres</p>
               <p>Fuel System: Fuel Injection</p>
             </div>
-          
+
             <div class="d-flex justify-content-center align-items-center">
 
               <button><a href="reservation-step2.html" class="text-light">CHANGE</a></button>
@@ -249,7 +241,7 @@
           </div>
 
           <div class="my-3 d-flex justify-content-center" id="to-step4">
-            <button class="text-light">Continue</button>
+            <button class="text-light" onclick="window.location.href = 'reservation-step4.html'">Continue</button>
           </div>
         </div>
       </div>
@@ -257,10 +249,12 @@
 
     <div class="main-bottom-divider">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
       </svg>
 
-    <!----------------------check out section 2 end------------------------>
+      <!----------------------check out section 2 end------------------------>
   </main>
   <footer>
     <section id="newsletter" class="py-4">
@@ -268,17 +262,15 @@
         <div class="row" id="newsletter-container">
           <div class="col-lg-7 col-md-7 col-12 my-2">
             <div id="nc-left">
-            <h4>Never miss a Deal!</h4>
-            <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
-          </div>
+              <h4>Never miss a Deal!</h4>
+              <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
+            </div>
           </div>
 
-          <div
-            class="my-2 col-lg-5 col-md-5 col-sm-12 col-12 subscribe"
-          >
+          <div class="my-2 col-lg-5 col-md-5 col-sm-12 col-12 subscribe">
             <div class="newsletter-ig">
               <form class="input-group">
-                <input type="text" class="form-control" required/>
+                <input type="text" class="form-control" required />
                 <button id="subscribe">Subscribe</button>
               </form>
             </div>
@@ -287,52 +279,53 @@
       </div>
     </section>
     <section class="py-5" id="footer">
-    <div class="container">
-      <div class="row justify-content-between">
+      <div class="container">
+        <div class="row justify-content-between">
 
-        <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
-          <img src="assets/img/ARK-white1.png" alt="">
-          <div class="d-flex gap-2 justify-content-center mt-4">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+          <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
+            <img src="assets/img/ARK-white1.png" alt="" onclick="window.location.href = 'index.html'"
+              style="cursor: pointer;">
+            <div class="d-flex gap-2 justify-content-center mt-4">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-8 col-md-9 col-sm-12">
-          <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
-            <h4>Site map</h4>
-            <div class="d-flex flex-column">
-            <a href="#">Bikes</a>
-            <a href="#">About</a>
-            <a href="#">Where to go</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
-          <h4>Support</h4>
-          <div class="d-flex flex-column">
-          <a href="#">FAQ's</a>
-          <a href="#">Help</a>
-          <a href="#">Privacy Policy</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
-          <h4>Contact</h4>
-              <div class="d-flex flex-column">
-              <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
-              <p class="p-0">Phone: 0912-345-4567</p>
-              <a href="#">Email: arkmotorental @gmail.com</a>
+          <div class="col-lg-8 col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
+                <h4>Site map</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">Bikes</a>
+                  <a href="#">About</a>
+                  <a href="#">Where to go</a>
+                </div>
               </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
+                <h4>Support</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Help</a>
+                  <a href="#">Privacy Policy</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
+                <h4>Contact</h4>
+                <div class="d-flex flex-column">
+                  <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+                  <p class="p-0">Phone: 0912-345-4567</p>
+                  <a href="#">Email: arkmotorental @gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
     <div class="container-fluid">
       <div class="row text-center p-3 bg-dark">
         <p class="text-light">&copy; Alrights Reserved</p>
@@ -355,12 +348,12 @@
     // getting the values from localstorage
     const rentObject1 = JSON.parse(sessionStorage.getItem('rentObject1'));
 
-      const pickedLocation = rentObject1[0];
-      const pickedDate = rentObject1[1];
-      const pickedTime = rentObject1[2];
-      const returnLocation = rentObject1[3];
-      const returnDate = rentObject1[4];
-      const returnTime = rentObject1[5];
+    const pickedLocation = rentObject1[0];
+    const pickedDate = rentObject1[1];
+    const pickedTime = rentObject1[2];
+    const returnLocation = rentObject1[3];
+    const returnDate = rentObject1[4];
+    const returnTime = rentObject1[5];
     const motorImage = rentObject1[6];
     const motorName = rentObject1[7];
 

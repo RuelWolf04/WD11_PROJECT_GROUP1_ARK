@@ -29,6 +29,8 @@
           <div class="d-flex">
             <i class="fa-brands fa-square-facebook mx-1 text-light"></i>
             <i class="fa-brands fa-instagram mx-1 text-light"></i>
+            <i class="fa-brands fa-youtube mx-1 text-light"></i>
+
           </div>
 
           <div class="top-header-contact">
@@ -120,89 +122,90 @@
 
           <div class="col-lg-6">
             <div class="p-2">
-            <div class="personal-info-container">
-              <h4>Personal Information</h4>
+              <div class="personal-info-container">
+                <h4>Personal Information</h4>
 
-              <div class="row" id="pi-inputs">
-                <div class="col-lg-6 col-md-6">
-                  <input type="text" placeholder="First Name" id="user-fname" required>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <input type="text" placeholder="Last Name" id="user-lname" required>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <input type="text" placeholder="Phone Number" id="user-pnumber" required>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <input type="email" placeholder="Email" id="user-email" required>
+                <div class="row" id="pi-inputs">
+                  <div class="col-lg-6 col-md-6">
+                    <input type="text" placeholder="First Name" id="user-fname" required>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input type="text" placeholder="Last Name" id="user-lname" required>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input type="text" placeholder="Phone Number" id="user-pnumber" required>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input type="email" placeholder="Email" id="user-email" required>
 
+                  </div>
+                </div>
+
+                <p><input type="checkbox" name="" id=""> I want to recieve text messages regarding my reservation. See
+                  <a href="terms.html">Terms and Conditions</a></p>
+
+              </div>
+              <div class="extras-container mt-2">
+                <h4>Your Order</h4>
+                <div class="extras">
+                  <div class="extra">
+                    <p>Mio Soul i125 <span id="product"></span></p>
+                    <span id="dots"></span>
+                    <p><span id="total">₱108.00</span></p>
+                  </div>
+                  <div class="extra">
+                    <p>Extra Options <span id="product"></span></p>
+                    <span id="dots"></span>
+                    <p><span id="total">₱159.00</span></p>
+                  </div>
                 </div>
               </div>
 
-              <p><input type="checkbox" name="" id=""> I want to recieve text messages regarding my reservation. See <a
-                  href="terms.html">Terms and Conditions</a></p>
+              <div class="payment-container">
+                <h4>Payment Method</h4>
+                <div class="payment-options">
+                  <label for="">
+                    <input type="radio" name="payment-type" id="pay-offline"> Pay at Rental Counter
+                  </label>
 
-            </div>
-            <div class="extras-container mt-2">
-              <h4>Your Order</h4>
-              <div class="extras">
-                <div class="extra">
-                  <p>Mio Soul i125 <span id="product"></span></p>
+                  <label for="">
+                    <input type="radio" name="payment-type" id="pay-online"> Pay Online (Save ₱250)
+                  </label>
+                </div>
+
+                <div class="estimated-total-row mt-2">
+                  <p>Estimated Total</p>
                   <span id="dots"></span>
-                  <p><span id="total">₱108.00</span></p>
+                  <p id="estimated-total-sum">₱178.00</p>
                 </div>
-                <div class="extra">
-                  <p>Extra Options <span id="product"></span></p>
-                  <span id="dots"></span>
-                  <p><span id="total">₱159.00</span></p>
-                </div>
+
+                <p class="mt-2"><input type="checkbox" name="" id="pm-terms"> I agree with the <a
+                    href="terms.html">Terms and Conditions</a></p>
+
+                <button data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">Book Now</button>
               </div>
             </div>
-
-            <div class="payment-container">
-              <h4>Payment Method</h4>
-              <div class="payment-options">
-                <label for="">
-                  <input type="radio" name="payment-type" id="pay-offline"> Pay at Rental Counter
-                </label>
-
-                <label for="">
-                  <input type="radio" name="payment-type" id="pay-online"> Pay Online (Save ₱250)
-                </label>
-              </div>
-
-              <div class="estimated-total-row mt-2">
-              <p>Estimated Total</p>
-              <span id="dots"></span>
-              <p id="estimated-total-sum">₱178.00</p>
-            </div>
-
-            <p class="mt-2"><input type="checkbox" name="" id="pm-terms">  I agree with the <a href="terms.html">Terms and Conditions</a></p>
-
-            <button data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">Book Now</button>
-            </div>
-          </div>
           </div>
 
 
           <div class="col-lg-6" id="right-side">
             <div class="pick-return-container">
-              
+
               <a href="">Edit <i class="fa-solid fa-pen-to-square d-inline-block"></i></a>
 
               <div class="pick-container">
                 <h4>Pick Up</h4>
                 <div class="pis">
-                <p id="pick-date">SUNDAY, AUGUST 14, 2022 AT 09:00 AM</p>
-                <p id="pick-location">123  ARK SUBDIVISION STA. ANA, MANILA</p>
+                  <p id="pick-date">SUNDAY, AUGUST 14, 2022 AT 09:00 AM</p>
+                  <p id="pick-location">123 ARK SUBDIVISION STA. ANA, MANILA</p>
+                </div>
               </div>
-            </div>
 
               <div class="return-container">
                 <h4>Return</h4>
                 <div class="pis">
-                <p id="return-date">MONDAY, AUGUST 15, 2022 AT 09:00 AM</p>
-                <p id="pick-location">123  ARK SUBDIVISION STA. ANA, MANILA</p>
+                  <p id="return-date">MONDAY, AUGUST 15, 2022 AT 09:00 AM</p>
+                  <p id="pick-location">123 ARK SUBDIVISION STA. ANA, MANILA</p>
                 </div>
               </div>
             </div>
@@ -216,21 +219,21 @@
               <div class="car-summary-info mt-3">
                 <div class="car-summary-brand">
                   <a href="">Edit <i class="fa-solid fa-pen-to-square d-inline-block"></i></a>
-                <div class="motor-edit">
-                <h4>Kawasaki ninja 400 KRT</h4>
+                  <div class="motor-edit">
+                    <h4>Kawasaki ninja 400 KRT</h4>
 
-              </div>
-                <p>Kawasaki</p>
-              </div>
-              <div class="car-summary-attributes mt-3">
-                <ul>
-                  <li>Tools</li>
-                  <li>Tire Repair Kit</li>
-                  <li>Flashlight</li>
-                  <li>Whistle</li>
-                  <li>Matches/Lighter</li>
-                </ul>
-              </div>
+                  </div>
+                  <p>Kawasaki</p>
+                </div>
+                <div class="car-summary-attributes mt-3">
+                  <ul>
+                    <li>Tools</li>
+                    <li>Tire Repair Kit</li>
+                    <li>Flashlight</li>
+                    <li>Whistle</li>
+                    <li>Matches/Lighter</li>
+                  </ul>
+                </div>
 
               </div>
 
@@ -269,7 +272,9 @@
 
     <div class="main-bottom-divider">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
       </svg>
   </main>
 
@@ -279,17 +284,15 @@
         <div class="row" id="newsletter-container">
           <div class="col-lg-7 col-md-7 col-12 my-2">
             <div id="nc-left">
-            <h4>Never miss a Deal!</h4>
-            <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
-          </div>
+              <h4>Never miss a Deal!</h4>
+              <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
+            </div>
           </div>
 
-          <div
-            class="my-2 col-lg-5 col-md-5 col-sm-12 col-12 subscribe"
-          >
+          <div class="my-2 col-lg-5 col-md-5 col-sm-12 col-12 subscribe">
             <div class="newsletter-ig">
               <form class="input-group">
-                <input type="text" class="form-control" required/>
+                <input type="text" class="form-control" required />
                 <button id="subscribe">Subscribe</button>
               </form>
             </div>
@@ -298,52 +301,53 @@
       </div>
     </section>
     <section class="py-5" id="footer">
-    <div class="container">
-      <div class="row justify-content-between">
+      <div class="container">
+        <div class="row justify-content-between">
 
-        <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
-          <img src="assets/img/ARK-white1.png" alt="">
-          <div class="d-flex gap-2 justify-content-center mt-4">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+          <div class="col-lg-3 col-md-3 col-sm-12  col-12 my-sm-2 text-center" id="footer-left">
+            <img src="assets/img/ARK-white1.png" alt="" onclick="window.location.href = 'index.html'"
+              style="cursor: pointer;">
+            <div class="d-flex gap-2 justify-content-center mt-4">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-8 col-md-9 col-sm-12">
-          <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
-            <h4>Site map</h4>
-            <div class="d-flex flex-column">
-            <a href="#">Bikes</a>
-            <a href="#">About</a>
-            <a href="#">Where to go</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
-          <h4>Support</h4>
-          <div class="d-flex flex-column">
-          <a href="#">FAQ's</a>
-          <a href="#">Help</a>
-          <a href="#">Privacy Policy</a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
-          <h4>Contact</h4>
-              <div class="d-flex flex-column">
-              <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
-              <p class="p-0">Phone: 0912-345-4567</p>
-              <a href="#">Email: arkmotorental @gmail.com</a>
+          <div class="col-lg-8 col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 ms-auto footer-right">
+                <h4>Site map</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">Bikes</a>
+                  <a href="#">About</a>
+                  <a href="#">Where to go</a>
+                </div>
               </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4  col-12 my-sm-2 footer-right">
+                <h4>Support</h4>
+                <div class="d-flex flex-column">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Help</a>
+                  <a href="#">Privacy Policy</a>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 my-sm-2 footer-right">
+                <h4>Contact</h4>
+                <div class="d-flex flex-column">
+                  <p class="p-0">Address: 21 Pio Del Pilar, Makati City</p>
+                  <p class="p-0">Phone: 0912-345-4567</p>
+                  <a href="#">Email: arkmotorental @gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      </div>
-
-      </div>
-    </div>
-  </section>
+    </section>
     <div class="container-fluid">
       <div class="row text-center p-3 bg-dark">
         <p class="text-light">&copy; Alrights Reserved</p>
@@ -360,112 +364,105 @@
 
 
 
-<!-- 
+  <!-- 
 
     modals
 
 -->
 
-<div
-  class="modal fade"
-  id="staticBackdrop"
-  data-mdb-backdrop="static"
-  data-mdb-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
         <button class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-      
-      <div class="modal-body">
-        <div class="container-fluid">
-        <div class="row">
-          <h4>ARK Motorcycle Rental</h4>
-          <div class="col-lg-6">
-            <h5>Billing Address</h5>
 
-            <div>
-              <span>Full Name:</span>
-              <input type="text" name="" id="">
-            </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <h4>ARK Motorcycle Rental</h4>
+              <div class="col-lg-6">
+                <h5>Billing Address</h5>
 
-            <div>
-              <span>Email:</span>
-              <input type="text" name="" id="">
-            </div>
-
-            <div>
-              <span>Address:</span>
-              <input type="text" name="" id="">
-            </div>
-
-            <div>
-              <span>City:</span>
-              <input type="text" name="" id="">
-            </div>
-
-            <div class="input-box d-flex gap-2">
-              <div>
-                <span>Exp. Year:</span>
-                <input type="text" name="" id="">
-              </div>
-              <div>
-                <span>CVV:</span>
-                <input type="text" name="" id="">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <h5>Payment</h5>
-
-            <div class="input-box">
-              <span>Cards Accepted:</span>
-              <img src="assets/img/Payment_Apps/cards-final.jpg" alt="">
-            </div>
-
-            <div class="input-box">
-              <span>Name on Card:</span>
-              <input type="text" name="" id="">
-            </div>
-
-            <div class="input-box">
-              <span>Credit Card Number:</span>
-              <input type="text" name="" id="">
-            </div>
-
-            <div class="input-box">
-              <span>Exp. Month:</span>
-              <input type="text" name="" id="">
-            </div>
-
-            <div class="input-box d-flex gap-2">
                 <div>
-                  <span>Exp. Year:</span>
+                  <span>Full Name:</span>
                   <input type="text" name="" id="">
                 </div>
+
                 <div>
-                  <span>CVV:</span>
+                  <span>Email:</span>
                   <input type="text" name="" id="">
                 </div>
-            </div>
+
+                <div>
+                  <span>Address:</span>
+                  <input type="text" name="" id="">
+                </div>
+
+                <div>
+                  <span>City:</span>
+                  <input type="text" name="" id="">
+                </div>
+
+                <div class="input-box d-flex gap-2">
+                  <div>
+                    <span>Exp. Year:</span>
+                    <input type="text" name="" id="">
+                  </div>
+                  <div>
+                    <span>CVV:</span>
+                    <input type="text" name="" id="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <h5>Payment</h5>
+
+                <div class="input-box">
+                  <span>Cards Accepted:</span>
+                  <img src="assets/img/Payment_Apps/cards-final.jpg" alt="">
+                </div>
+
+                <div class="input-box">
+                  <span>Name on Card:</span>
+                  <input type="text" name="" id="">
+                </div>
+
+                <div class="input-box">
+                  <span>Credit Card Number:</span>
+                  <input type="text" name="" id="">
+                </div>
+
+                <div class="input-box">
+                  <span>Exp. Month:</span>
+                  <input type="text" name="" id="">
+                </div>
+
+                <div class="input-box d-flex gap-2">
+                  <div>
+                    <span>Exp. Year:</span>
+                    <input type="text" name="" id="">
+                  </div>
+                  <div>
+                    <span>CVV:</span>
+                    <input type="text" name="" id="">
+                  </div>
+                </div>
+
+              </div>
 
             </div>
-              
-          </div> 
-          <input type="submit" value="Submit">
-        </div>
+            <input type="submit" value="Submit">
           </div>
         </div>
       </div>
-
-      
     </div>
+
+
   </div>
-</div>
+  </div>
+  </div>
 
 
 

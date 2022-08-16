@@ -147,7 +147,12 @@ button{
   align-items: center;
 }
 
+.top-header-social-links {
+  cursor: pointer;
+}
+
 #header-email {
+  cursor: pointer;
   font-size: var(--fs-6);
   padding-right: 5px !important;
   text-decoration: underline;
@@ -159,6 +164,11 @@ button{
   padding-left: 5px !important;
   border-left: 1px solid white;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.top-header-contact a:first-child {
+border: none;
 }
 
 

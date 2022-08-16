@@ -154,7 +154,12 @@ button{
   align-items: center;
 }
 
+#section-top-header i {
+  cursor: pointer;
+}
+
 #header-email {
+  cursor: pointer;
   font-size: var(--fs-6);
   padding-right: 5px !important;
   text-decoration: underline;
