@@ -410,6 +410,7 @@ main {
 #section-1 {
   padding-top: 3rem !important;
   padding-bottom: 10rem !important;
+  padding-inline: 2rem;
 }
 
 #section-1 h3 {
@@ -465,12 +466,6 @@ main {
   transform: scale(.9);
 }
 
-#promo-code button a {
-  color: white;
-}
-
-
-
 
 
 
@@ -480,11 +475,13 @@ main {
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
-  /* background-color: var(--black-background); */
-  /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
   margin-bottom: -1px;
   padding-top: 3rem;
+}
+
+#newsletter #nc-left {
+  width: 80%;
 }
 
 #newsletter h4,
@@ -497,6 +494,7 @@ main {
 }
 
 #newsletter .subscribe {
+  display: flex;
   justify-content: end;
   align-items: center;
 }
@@ -512,10 +510,11 @@ main {
 #newsletter button{
   color: white !important;
   background-color: var(--button-color);
-  padding: 5px 10px;
+  padding: .3125rem 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   font-weight: 600;
+
 }
 .newsletter-ig {
   width: 100%;
@@ -529,7 +528,6 @@ main {
 #newsletter button:active {
   background-color: var(--button-color);
 }
-
 
 
 
@@ -585,6 +583,10 @@ main {
 
 
 @media (max-width: 768px) {
+  #newsletter #nc-left {
+    width: 100%;
+  }
+  
 
   #footer {
     margin-top: -1px;
@@ -602,6 +604,80 @@ main {
     margin-bottom: 30px;
   }
 }
+
+
+
+
+
+@media (max-width: 450px){
+  /* ----------- select day section ------------ */
+#section-1 {
+  padding-top: 3rem !important;
+  padding-bottom: 10rem !important;
+  padding-inline: 1rem;
+}
+
+#section-1 h3 {
+  font-weight: 600;
+}
+
+#section-1 .container{
+  background-color: #0379c1;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #f8f8f8;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pick-day-container {
+  display: grid;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--white-background);
+  margin-block: 1rem;
+  border-radius: 10px;
+}
+
+.pick-day-container p {
+  padding: 0 .625rem .625rem !important;
+  background-color: var(--white-background);
+  width: 9rem;
+}
+
+.pick-day-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem .625rem 1rem .625rem;
+  border-radius: 5px;
+}
+
+
+#promo-code button {
+  background-color: var(--button-color);
+  padding: .625rem 3rem;
+  border-radius: .625rem;
+  transition: transform 0.4s ease;
+}
+
+#promo-code button:hover{
+  background-color: var(--button-color1);
+}
+
+#promo-code button:active{
+  background-color: var(--button-color);
+  transform: scale(.9);
+}
+
+}
+
+
+
+
+
+
+
 
 
 @media (max-width: 400px) {

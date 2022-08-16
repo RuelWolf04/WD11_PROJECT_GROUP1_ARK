@@ -517,14 +517,15 @@ padding-block: 2rem;
 
 
 
-
-
 /* ----------- newsletter section section ------------ */
 #newsletter {
   background-color: var(--blue-for-background-lighter);
   margin-bottom: -1px;
   padding-top: 3rem;
+}
 
+#newsletter #nc-left {
+  width: 80%;
 }
 
 #newsletter h4,
@@ -537,6 +538,7 @@ padding-block: 2rem;
 }
 
 #newsletter .subscribe {
+  display: flex;
   justify-content: end;
   align-items: center;
 }
@@ -557,10 +559,10 @@ padding-block: 2rem;
   border-bottom-right-radius: 10px;
   font-weight: 600;
 }
-
 .newsletter-ig {
   width: 100%;
 }
+
 
 #newsletter button:hover {
   background-color: var(--button-color1);
@@ -569,7 +571,6 @@ padding-block: 2rem;
 #newsletter button:active {
   background-color: var(--button-color);
 }
-
 
 
 
@@ -641,6 +642,10 @@ padding-block: 2rem;
 
   #img-container-mav {
     margin-top: 2rem;
+  }
+
+  #newsletter #nc-left {
+    width: 100%;
   }
 
   #footer img {

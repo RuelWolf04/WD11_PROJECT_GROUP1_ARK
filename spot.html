@@ -299,17 +299,20 @@
   <footer>
     <section id="newsletter" class="py-4">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-12 my-2">
-            <h4>Subscribe to our Newsletter</h4>
-            <p>When you subscribed we'll be sending you awesome content and great deals. Please remember that our newsletter is for subscribers only so sign up now!</p>
+        <div class="row" id="newsletter-container">
+          <div class="col-lg-7 col-md-7 col-12 my-2">
+            <div id="nc-left">
+            <h4>Never miss a Deal!</h4>
+            <p>Subscribe to our newsletter to be updated for the upcoming big deals.</p>
           </div>
+          </div>
+
           <div
-            class="my-2 col-lg-6 col-md-6 col-sm-12 col-12 d-flex align-items-center justify-content-lg-end justify-content-md-end justify-content-sm-center"
+            class="my-2 col-lg-5 col-md-5 col-sm-12 col-12 subscribe"
           >
             <div class="newsletter-ig">
-              <form class="input-group w-100">
-                <input type="text" class="d-inline-block" />
+              <form class="input-group">
+                <input type="text" class="form-control" required/>
                 <button id="subscribe">Subscribe</button>
               </form>
             </div>

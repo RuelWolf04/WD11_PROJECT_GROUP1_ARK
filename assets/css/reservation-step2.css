@@ -554,11 +554,13 @@ main {
 
 /* ----------- newsletter section section ------------ */
 #newsletter {
-  /* background-color: var(--black-background); */
-  /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
   margin-bottom: -1px;
   padding-top: 3rem;
+}
+
+#newsletter #nc-left {
+  width: 80%;
 }
 
 #newsletter h4,
@@ -571,6 +573,7 @@ main {
 }
 
 #newsletter .subscribe {
+  display: flex;
   justify-content: end;
   align-items: center;
 }
@@ -586,10 +589,11 @@ main {
 #newsletter button{
   color: white !important;
   background-color: var(--button-color);
-  padding: 5px 10px;
+  padding: .3125rem 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   font-weight: 600;
+
 }
 .newsletter-ig {
   width: 100%;
@@ -603,6 +607,8 @@ main {
 #newsletter button:active {
   background-color: var(--button-color);
 }
+
+
 
 
 
@@ -658,6 +664,16 @@ main {
 
 @media (max-width: 768px) {
 
+  #date-summary {
+    padding: 1rem;
+    gap: 20px;
+  }
+
+  #newsletter #nc-left {
+    width: 100%;
+  }
+  
+
   #footer {
     margin-top: -1px;
   }
@@ -685,9 +701,6 @@ main {
     width: 8rem;
   }
 
-  #date-summary {
-    padding-inline: 1rem;
-  }
 
  
 }

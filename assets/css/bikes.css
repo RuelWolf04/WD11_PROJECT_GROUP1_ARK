@@ -460,14 +460,15 @@ main {
 
 
 
-
 /* ----------- newsletter section section ------------ */
 #newsletter {
-  /* background-color: var(--black-background); */
-  /* background-color: #0099FF; */
   background-color: var(--blue-for-background-lighter);
   margin-bottom: -1px;
   padding-top: 3rem;
+}
+
+#newsletter #nc-left {
+  width: 80%;
 }
 
 #newsletter h4,
@@ -480,6 +481,7 @@ main {
 }
 
 #newsletter .subscribe {
+  display: flex;
   justify-content: end;
   align-items: center;
 }
@@ -566,6 +568,10 @@ main {
 
 
 @media (max-width: 768px) {
+  #newsletter #nc-left {
+    width: 100%;
+  }
+  
 
   #footer {
     margin-top: -1px;
