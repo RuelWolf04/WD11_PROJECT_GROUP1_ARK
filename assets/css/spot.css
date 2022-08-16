@@ -290,6 +290,31 @@ main {
 }
 
 
+#message {
+  position: fixed;
+  background-color: var(--blue-for-background-lighter);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 500;
+  font-size: 2rem;
+  animation: message ease alternate;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
 
 

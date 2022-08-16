@@ -290,6 +290,31 @@ main {
 }
 
 
+#message {
+  position: fixed;
+  background-color: var(--blue-for-background-lighter);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 500;
+  font-size: 2rem;
+  animation: message ease alternate;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
 
 
@@ -369,7 +394,7 @@ main {
   position: relative;
 }
 
-#hero-right .circle-container-img1 {
+/* #hero-right .circle-container-img1 {
   position: absolute;
   top: 3rem;
   right: 5rem;
@@ -381,24 +406,7 @@ main {
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   /* transition: 5s ease; */
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    /* transform: translateY(10px); */
-  }
-  
-  100% {
-    transform: translateY(10px);
-  }
-
-  
-}
-
+/* } */
 
 
 
