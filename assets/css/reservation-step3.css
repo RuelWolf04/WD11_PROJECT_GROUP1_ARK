@@ -713,7 +713,7 @@ border-radius: 10px;
   #top-header-container{
     display: grid;
     place-items: center;
-    margin-left: 10%;
+    padding-left: 10%;
   }
 
 

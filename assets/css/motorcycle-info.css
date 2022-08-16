@@ -633,6 +633,6 @@ main {
   #top-header-container{
     display: grid;
     place-items: center;
-    margin-left: 10%;
+    padding-left: 10%;
   }
 }

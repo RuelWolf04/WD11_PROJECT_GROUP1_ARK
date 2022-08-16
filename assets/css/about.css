@@ -793,7 +793,7 @@ padding-block: 2rem;
   #top-header-container{
     display: grid;
     place-items: center;
-    margin-left: 10%;
+    padding-left: 10%;
   }
 
   #newsletter-ig{
