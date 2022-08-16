@@ -350,12 +350,14 @@ main {
   padding: 2rem 4rem;
   display: grid;
   place-items: center;
+  /* position: relative; */
 }
 
 .mc-container h5,
 .mc-container h6,
 .mc-container p {
   color: white;
+  z-index: 5;
 }
 
 #ourTeam .member-card {
@@ -365,16 +367,37 @@ main {
   border-radius: .8rem;
   padding: 3rem 5px;
   width: 15rem;
-  box-shadow: 0 .2rem .1rem #2d2d2db0;
+  position: relative;
+  box-shadow: .1rem .2rem .1rem #2d2d2db0;
+  overflow: hidden;
+  z-index: 2;
 }
+
+
+
 
 #ourTeam img {
   width: 100px;
   height: 100px;
   border-radius: 50px;
-
+  z-index: 5;
   margin-bottom: 3rem;
+  position: relative;
+
   /* margin: auto; */
+}
+
+.member-card #letter1 {
+  color: #13131383;
+  font-weight: 700;
+  font-size: 15rem;
+  position: absolute;
+  top: -5rem;
+  right: -5rem;
+  z-index: 1;
+  -webkit-background-clip: text;
+/* -webkit-text-fill-color: transparent;   */
+  font-family: var(--ff-montserrat);
 }
 
 
