@@ -917,6 +917,18 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
 
 #footer i {
   font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: .4s ease;
+}
+#footer i:hover {
+  color: var(--button-color);
+  transform: scale(1.15);
+}
+
+#footer i:active{
+  color: white;
+  transform: scale(1);
 }
 
 #footer a,
