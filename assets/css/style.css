@@ -997,6 +997,14 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
   #popular-deals {
     padding-block: 2rem !important;
   }
+
+  #message {
+    font-size: 1.5rem;
+    padding: 13px;
+    bottom: 2rem;
+    right: 1rem;
+  }
+  
 }
 
 
@@ -1012,6 +1020,13 @@ background: linear-gradient(135deg, rgba(253,187,45,1) 13%, rgba(255,141,41,1) 5
     padding-block: 5rem !important;
   }
 
+
+  #message {
+    bottom: 16px;
+    right: 10px;
+    font-size: 1.4rem;
+    padding: 10px;
+  }
   
   
   #hiw {

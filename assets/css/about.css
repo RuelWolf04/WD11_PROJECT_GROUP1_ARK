@@ -682,6 +682,13 @@ padding-block: 2rem;
     display: flex;
     justify-content: center;
   }
+
+  #message {
+    font-size: 1.5rem;
+    padding: 13px;
+    bottom: 2rem;
+    right: 1rem;
+  }
 }
 
 
@@ -689,6 +696,13 @@ padding-block: 2rem;
 
 
 @media (max-width: 768px) {
+
+  #message {
+    bottom: 16px;
+    right: 10px;
+    font-size: 1.4rem;
+    padding: 10px;
+  }
   #firstrow h2,
   #firstrow p {
     text-align: center;
