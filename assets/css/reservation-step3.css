@@ -710,10 +710,10 @@ border-radius: 10px;
     width: 100%;
   }
 
-  #top-header-container {
+  #top-header-container{
     display: grid;
     place-items: center;
-
+    margin-left: 10%;
   }
 
 

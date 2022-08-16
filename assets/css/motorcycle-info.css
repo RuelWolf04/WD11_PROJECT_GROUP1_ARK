@@ -628,3 +628,11 @@ main {
     padding: 10px;
   }
 }
+
+@media (max-width: 300px){
+  #top-header-container{
+    display: grid;
+    place-items: center;
+    margin-left: 10%;
+  }
+}

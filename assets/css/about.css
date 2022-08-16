@@ -793,7 +793,7 @@ padding-block: 2rem;
   #top-header-container{
     display: grid;
     place-items: center;
-    margin-inline: auto;
+    margin-left: 10%;
   }
 
   #newsletter-ig{
@@ -804,9 +804,5 @@ padding-block: 2rem;
     width: 100%;
   }
 
-  #top-header-container {
-    display: grid;
-    place-items: center;
-  }
 
 }
