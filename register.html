@@ -42,34 +42,31 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="right-side">
           <div class="signin-container">
-            <h2>Welcome Back</h2>
+            <h2>Make an Account</h2>
 
             <div class="input-container">
               <div class="input-group">
-                <input type="text" placeholder="Email or Number" />
-                <i class="fa-solid fa-envelope"></i>
+                <input type="text" placeholder="Name" required/>
+                <i class="fa-solid fa-user"></i>
               </div>
               <div class="input-group">
-                <input type="text" placeholder="Password" />
+                <input type="text" placeholder="Email" required/>
+                <i class="fa-solid fa-envelope"></i>
+
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Password" required/>
                 <i class="fa-solid fa-lock"></i>
               </div>
+              <div class="input-group">
+                <input type="text" placeholder="Confirm Password" required/>
+                <i class="fa-solid fa-lock"></i>
+              </div>
+
             </div>
 
-            <div id="remember-me">
-              <label for="">
-                <input type="checkbox" class="me-2" />Remember me</label
-              >
-            </div>
 
-            <button id="signin-button"><a href="index.html">Sign in</a></button>
-
-            <button id="google-signin">
-              <i class="fa-brands fa-google"></i> Sign Up with Google
-            </button>
-
-            <p id="dont-have-acc" class="text-dark">
-              Don't have an account? <a href="register.html">Sign Up</a>
-            </p>
+            <button id="signin-button" onclick="window.location.href = 'signin.html'" class="text-light">Sign In</button>
           </div>
         </div>
       </div>
